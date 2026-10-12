@@ -407,7 +407,13 @@
     margin-bottom: 0.9rem;
   }
 
-  .modal-links { margin-bottom: 1.1rem; }
+  .modal-meta {
+    margin: 0 0 0.9rem;
+    color: var(--ink-muted);
+    font-size: 0.82rem;
+  }
+
+  .modal-links { margin-bottom: 1.1rem; display: flex; gap: 0.9rem; flex-wrap: wrap; }
 
   .gr-link {
     display: inline-block;
@@ -616,6 +622,7 @@
         <h2 id="modal-title"></h2>
         <p class="modal-author" id="modal-author"></p>
         <div class="modal-series" id="modal-series"></div>
+        <p class="modal-meta" id="modal-meta"></p>
         <div class="modal-links" id="modal-links"></div>
         <h3>In the GV100</h3>
         <ul class="history-list" id="modal-history"></ul>
@@ -744,12 +751,14 @@
   const modalTitleEl = document.getElementById('modal-title');
   const modalAuthorEl = document.getElementById('modal-author');
   const modalSeriesEl = document.getElementById('modal-series');
+  const modalMetaEl = document.getElementById('modal-meta');
   const modalCoverEl = document.getElementById('modal-cover');
   const modalLinksEl = document.getElementById('modal-links');
   const modalHistoryEl = document.getElementById('modal-history');
 
   let wideByKey = {};
   let coversByKey = {};
+  let jaapleestByKey = {};
   let lastFocused = null;
   let modalIndex = -1; // position of the open book within currentRows, for ←/→ nav
 
@@ -776,14 +785,26 @@
     modalSeriesEl.style.display = w.series ? '' : 'none';
     modalSeriesEl.innerHTML = seriesTagHtml(w.series);
 
+    const jl = jaapleestByKey[workKey];
+    const metaBits = [];
+    if (jl?.age_rating) metaBits.push(jl.age_rating);
+    if (jl?.publisher) metaBits.push(jl.publisher);
+    if (jl?.illustrator) metaBits.push(`ill. ${jl.illustrator}`);
+    modalMetaEl.style.display = metaBits.length ? '' : 'none';
+    modalMetaEl.textContent = metaBits.join(' · ');
+
     const coverPath = coversByKey[workKey];
     modalCoverEl.innerHTML = coverPath
       ? `<img src="${coverPath}" alt="Cover of ${escapeHtml(w.title)}">`
       : `<div class="cover-placeholder"><span class="initial">${escapeHtml(w.title.charAt(0).toUpperCase())}</span><p>No cover yet</p></div>`;
 
-    modalLinksEl.innerHTML = w.goodreads_id
-      ? `<a class="gr-link" href="https://www.goodreads.com/book/show/${w.goodreads_id}" target="_blank" rel="noopener">View on Goodreads &#8599;</a>`
+    const goodreadsLink = w.goodreads_id
+      ? `<a class="gr-link" href="https://www.goodreads.com/book/show/${w.goodreads_id}" target="_blank" rel="noopener">Goodreads &#8599;</a>`
       : noIdChipHtml();
+    const jaapleestLink = jl?.url
+      ? `<a class="gr-link" href="${jl.url}" target="_blank" rel="noopener">jaapleest.nl &#8599;</a>`
+      : '';
+    modalLinksEl.innerHTML = goodreadsLink + jaapleestLink;
 
     modalHistoryEl.innerHTML = YEARS.map(y => {
       const rk = w[`rank_${y}`];
@@ -845,13 +866,15 @@
   Promise.all([
     fetch('gv100_long.json').then(r => r.json()),
     fetch('gv100_editions.json').then(r => r.json()),
-    fetch('covers.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))
-  ]).then(([longJson, editionsJson, coversJson]) => {
+    fetch('covers.json').then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    fetch('jaapleest.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))
+  ]).then(([longJson, editionsJson, coversJson, jaapleestJson]) => {
     longData = longJson;
     editionsData = editionsJson;
     YEARS = [...new Set(longData.map(r => r.year))].sort((a, b) => a - b);
     wideByKey = buildWideByKey(longData);
     coversByKey = coversJson;
+    jaapleestByKey = jaapleestJson;
     currentYear = Math.max(...YEARS);
     renderYearBar();
     renderMeta();

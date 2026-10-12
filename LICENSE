@@ -4,9 +4,11 @@ HTML/CSS/JS, and configuration) and to any written analysis or commentary
 
 It does not apply to:
 
-- `data/` and `site/covers.json` — the compiled GV100 rankings themselves.
-  No copyright or license is claimed over this data; it is a factual record
-  of a public reader vote, used here as-is.
+- `data/`, `site/covers.json`, and `site/jaapleest.json` — the compiled GV100
+  rankings and the review links/age ratings/publisher names matched from
+  jaapleest.nl. No copyright or license is claimed over this data; it is a
+  factual record of a public reader vote and of published review metadata,
+  used here as-is.
 - `site/covers/` — book cover images. These are copyrighted by their
   respective publishers and illustrators, not by this project. They are
   included for identification purposes in a non-commercial, informational

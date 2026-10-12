@@ -1,0 +1,565 @@
+{
+  "lampje | schaap": {
+    "url": "https://jaapleest.nl/lampje/",
+    "age_rating": "10+",
+    "publisher": "Querido",
+    "illustrator": "Annet Schaap"
+  },
+  "pluk van de petteflet | schmidt": {
+    "url": "https://jaapleest.nl/nog-meer-genieten-herziene-editie-pluk-van-de-petteflet/",
+    "age_rating": "4+",
+    "illustrator": "Fiep Westendorp"
+  },
+  "gozert | koolwijk": {
+    "url": "https://jaapleest.nl/gozert/",
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Linde Faas"
+  },
+  "alfabet | dematons": {
+    "url": "https://jaapleest.nl/alfabet/",
+    "age_rating": "4+",
+    "publisher": "Hoogland & van Klaveren",
+    "illustrator": "Charlotte Dematons"
+  },
+  "de jongen de mol de vos en het paard | mackesy": {
+    "url": "https://jaapleest.nl/de-jongen-de-mol-de-vos-en-het-paard/",
+    "age_rating": "8+",
+    "publisher": "Kok Boekencentrum",
+    "illustrator": "Charlie Mackesy"
+  },
+  "de tuinen van dorr | biegel": {
+    "url": "https://jaapleest.nl/de-tuinen-van-dorr/",
+    "age_rating": "8+",
+    "publisher": "Holland / Lemniscaat (Paul Biegel Bibliotheek)",
+    "illustrator": "Charlotte Dematons"
+  },
+  "lennox en de gouden sikkel | zevenbergen": {
+    "url": "https://jaapleest.nl/lennox/",
+    "age_rating": "8+",
+    "publisher": "De Harmonie",
+    "illustrator": "Hedy Tjin en Brian Elstak"
+  },
+  "briefjes voor pelle | slegers": {
+    "url": "https://jaapleest.nl/briefjes-voor-pelle/",
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff",
+    "illustrator": "Linde Faas"
+  },
+  "het verlangen van de prins | kunst": {
+    "url": "https://jaapleest.nl/het-verlangen-van-de-prins/",
+    "age_rating": "8+",
+    "publisher": "Gottmer",
+    "illustrator": "Marieke Nelissen"
+  },
+  "zonder titel | sassen": {
+    "url": "https://jaapleest.nl/zonder-titel/",
+    "age_rating": "15+",
+    "publisher": "Leopold",
+    "illustrator": "Martijn van der Linden"
+  },
+  "de geheime tuin | burnett": {
+    "url": "https://jaapleest.nl/de-geheime-tuin/",
+    "age_rating": "10+",
+    "publisher": "Leopold",
+    "illustrator": "Linde Faas"
+  },
+  "de zweetvoetenman over rechtszaken regels en een hoop gedoe | huizing": {
+    "url": "https://jaapleest.nl/de-zweetvoetenman/",
+    "age_rating": "8+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Margot Westermann"
+  },
+  "de meisjes zeven sprookjes | schaap": {
+    "url": "https://jaapleest.nl/de-meisjes/",
+    "age_rating": "6+",
+    "publisher": "Querido",
+    "illustrator": "Annet Schaap"
+  },
+  "luna | koolwijk": {
+    "url": "https://jaapleest.nl/lunda/",
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Linde Faas"
+  },
+  "de tunnel | woltz": {
+    "url": "https://jaapleest.nl/tunnel/",
+    "age_rating": "12+",
+    "publisher": "Querido"
+  },
+  "ik geef je de zon | nelson": {
+    "url": "https://jaapleest.nl/met-iedere-zin-ik-geef-je-de-zon-iets-bijzonders/",
+    "age_rating": "15+",
+    "publisher": "Blossom Books"
+  },
+  "wat je moet doen als je over een nijlpaard struikelt | vendel": {
+    "url": "https://jaapleest.nl/wat-je-moet-doen-als/",
+    "age_rating": "8+",
+    "publisher": "Querido",
+    "illustrator": "Martijn van der Linden"
+  },
+  "morrigan crow en het wondergenootschap | townsend": {
+    "url": "https://jaapleest.nl/nevermoore/",
+    "age_rating": "12+"
+  },
+  "jij mag alles zijn | beeck": {
+    "url": "https://jaapleest.nl/griet/",
+    "age_rating": "10+",
+    "publisher": "Prometheus",
+    "illustrator": "Linde Faas"
+  },
+  "dromer | janssen": {
+    "url": "https://jaapleest.nl/dromer/",
+    "age_rating": "4+",
+    "publisher": "CPNB/Lemniscaat",
+    "illustrator": "Mark Janssen"
+  },
+  "spinder | geest": {
+    "url": "https://jaapleest.nl/het-geheim-een-sluipwesp-die-alles-kapot-maakt/",
+    "age_rating": "10+",
+    "illustrator": "Karst-Janneke Rogaar"
+  },
+  "films die nergens draaien | goldewijk": {
+    "url": "https://jaapleest.nl/films-die-nergens/",
+    "age_rating": "10+",
+    "publisher": "Ploegsma",
+    "illustrator": "Yvonne Lacet"
+  },
+  "honderd uur nacht | woltz": {
+    "url": "https://jaapleest.nl/ik-geloofde-grote-mensen-en-nu-geloof-ik-nergens-meer/",
+    "age_rating": "12+",
+    "publisher": "Querido"
+  },
+  "de veger | auxier": {
+    "url": "https://jaapleest.nl/de-veger/",
+    "age_rating": "10+",
+    "publisher": "Billy Bones"
+  },
+  "alaska | woltz": {
+    "url": "https://jaapleest.nl/als-epilepsie-een-sport-was-zou-sven-er-niet-op-gaan/",
+    "age_rating": "10+",
+    "publisher": "Querido"
+  },
+  "lepelsnijder | hof": {
+    "url": "https://jaapleest.nl/lepelsnijder/",
+    "age_rating": "12+",
+    "publisher": "Querido",
+    "illustrator": "Annette Fienieg"
+  },
+  "hele verhalen voor een halve soldaat | lindelauf": {
+    "url": "https://jaapleest.nl/halve-soldaat/",
+    "age_rating": "15+",
+    "publisher": "Querido",
+    "illustrator": "Ludwig Volbeda"
+  },
+  "allemaal willen we de hemel | beerten": {
+    "url": "https://jaapleest.nl/een-volwassen-jeugdroman/",
+    "age_rating": "15+"
+  },
+  "het gulden vlies van thule | beckman": {
+    "url": "https://jaapleest.nl/de-thule-trilogie-van-thea-beckman/",
+    "age_rating": "12+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Martijn van der Linden (new cover art)"
+  },
+  "koningskind | noort": {
+    "url": "https://jaapleest.nl/koningskind/",
+    "age_rating": "12+",
+    "publisher": "Leopold"
+  },
+  "dit is geen dagboek | sassen": {
+    "url": "https://jaapleest.nl/erna-sassen-overtuigt/",
+    "age_rating": "15+"
+  },
+  "avonturen van de dappere ridster | schotveld": {
+    "url": "https://jaapleest.nl/dappere-ridster/",
+    "age_rating": "8+",
+    "publisher": "Van Holkema & Warendorf",
+    "illustrator": "Milja Praagman"
+  },
+  "gips | woltz": {
+    "url": "https://jaapleest.nl/het-huwelijk-van-fitz-ouders-moet-naar-het-ziekenhuis/",
+    "age_rating": "10+",
+    "publisher": "Querido"
+  },
+  "zeb | samson": {
+    "url": "https://jaapleest.nl/zeb/",
+    "age_rating": "8+",
+    "publisher": "Leopold",
+    "illustrator": "Joren Joshua"
+  },
+  "wonderbos | schutten": {
+    "url": "https://jaapleest.nl/wonderbos-2/",
+    "age_rating": "10+",
+    "publisher": "Lannoo",
+    "illustrator": "Medy Oberendorff"
+  },
+  "mot en de metaalvissers | rooseboom": {
+    "url": "https://jaapleest.nl/mot/",
+    "age_rating": "8+",
+    "publisher": "Van Goor",
+    "illustrator": "Sophie Pluim"
+  },
+  "dodo | kroonenberg": {
+    "url": "https://jaapleest.nl/dodo/",
+    "age_rating": "10+",
+    "publisher": "De Vier Windstreken"
+  },
+  "het meisje met de vlechtjes | geldof": {
+    "url": "https://jaapleest.nl/de-vlechtjes-van-freddie/",
+    "age_rating": "12+",
+    "publisher": "Luitingh-Sijthoff"
+  },
+  "het weeshuis in de azuurblauwe zee | klune": {
+    "url": "https://jaapleest.nl/het-weeshuis-in-de-azuurblauwe-zee/",
+    "age_rating": "12+",
+    "publisher": "Volt"
+  },
+  "misjka | vendel": {
+    "url": "https://jaapleest.nl/misjk/",
+    "age_rating": "6+",
+    "publisher": "Querido",
+    "illustrator": "Annet Schaap"
+  },
+  "een zee van liefde | gaudesaboos": {
+    "url": "https://jaapleest.nl/zee-van-liefde/",
+    "age_rating": "6+",
+    "publisher": "Lannoo",
+    "illustrator": "Pieter Gaudesaboos"
+  },
+  "terra ultima de ontdekkingsreis van een onbekend continent | deleo": {
+    "url": "https://jaapleest.nl/terra-ultima/",
+    "age_rating": "10+",
+    "publisher": "Lannoo",
+    "illustrator": "Raoul Deleo"
+  },
+  "heel de wereld wordt wakker | robben": {
+    "url": "https://jaapleest.nl/poezie/",
+    "age_rating": "8+",
+    "publisher": "Gottmer",
+    "illustrator": "Sebastiaan Van Doninck"
+  },
+  "mus kapitein kwaadbaard en de 5 slangen | hassing": {
+    "url": "https://jaapleest.nl/kwaadbaard/",
+    "age_rating": "8+",
+    "publisher": "Luitingh-Sijthoff",
+    "illustrator": "Linde Faas"
+  },
+  "quotum project z | morshuis": {
+    "url": "https://jaapleest.nl/quotum/",
+    "age_rating": "12+",
+    "publisher": "Lemniscaat"
+  },
+  "rekenen voor je leven | vendel": {
+    "url": "https://jaapleest.nl/rekenen/",
+    "age_rating": "10+",
+    "publisher": "Nieuwezijds",
+    "illustrator": "Floor de Goede"
+  },
+  "patroon | kunst": {
+    "url": "https://jaapleest.nl/patroon/",
+    "age_rating": "12+",
+    "publisher": "Gottmer"
+  },
+  "bob popcorn | rinck": {
+    "url": "https://jaapleest.nl/bob-popcorn/",
+    "age_rating": "4+",
+    "publisher": "Querido",
+    "illustrator": "Martijn van der Linden"
+  },
+  "ik praat als een rivier | scott": {
+    "url": "https://jaapleest.nl/rivier/",
+    "age_rating": "4+",
+    "publisher": "Querido",
+    "illustrator": "Sydney Smith"
+  },
+  "morris | moeyaert": {
+    "url": "https://jaapleest.nl/je-moet-morris-geen-jongetje-noemen/",
+    "age_rating": "4+",
+    "publisher": "Querido",
+    "illustrator": "Sebastiaan Van Doninck"
+  },
+  "gebr | lieshout": {
+    "url": "https://jaapleest.nl/gebr-nog-steeds-adembenemend/",
+    "age_rating": "12+"
+  },
+  "het boek zonder tekeningen | novak": {
+    "url": "https://jaapleest.nl/het-boek-dat-grote-mensen-domme-dingen-doet-zeggen/",
+    "age_rating": "1+",
+    "publisher": "Lannoo"
+  },
+  "ijzerkop | rijckeghem": {
+    "url": "https://jaapleest.nl/ijzeerkop/",
+    "age_rating": "12+",
+    "publisher": "Querido"
+  },
+  "de jongen die van de wereld hield | veldkamp": {
+    "url": "https://jaapleest.nl/de-jongen-die-van-de-wereld-hield/",
+    "age_rating": "10+",
+    "publisher": "Querido",
+    "illustrator": "Mark Janssen"
+  },
+  "zolang de citroenbomen bloeien | katouh": {
+    "url": "https://jaapleest.nl/citroenbomen/",
+    "age_rating": "15+",
+    "publisher": "Blossom Books"
+  },
+  "we moeten je iets vertellen | slegers": {
+    "url": "https://jaapleest.nl/we-moeten-je-iets-vertellen/",
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff"
+  },
+  "ik denk dat ik ontvoerd ben en andere gedichten | lammers": {
+    "url": "https://jaapleest.nl/ik-denk-dat-ik-ontvoerd-ben/",
+    "age_rating": "8+",
+    "publisher": "Querido",
+    "illustrator": "Sarah van Dongen"
+  },
+  "het boomhuis in het bos | klune": {
+    "url": "https://jaapleest.nl/de-boomhuis-in-het-bos/",
+    "age_rating": "15+",
+    "publisher": "Volt"
+  },
+  "hart van staal | geest": {
+    "url": "https://jaapleest.nl/hart-van-staal/",
+    "age_rating": "10+",
+    "publisher": "Querido"
+  },
+  "tori | elstak": {
+    "url": "https://jaapleest.nl/tori/",
+    "age_rating": "4+",
+    "publisher": "Das Mag",
+    "illustrator": "Brian Elstak"
+  },
+  "jefferson | mourlevat": {
+    "url": "https://jaapleest.nl/jefferson/",
+    "age_rating": "10+",
+    "publisher": "Lannoo"
+  },
+  "gelukkig en blij | vendel": {
+    "url": "https://jaapleest.nl/gelukkig-en-blij/",
+    "age_rating": "10+",
+    "publisher": "Querido",
+    "illustrator": "Martijn van der Linden"
+  },
+  "het kleine heelal | mieras": {
+    "url": "https://jaapleest.nl/het-kleine-heelal/",
+    "age_rating": "10+",
+    "publisher": "Lemniscaat"
+  },
+  "de reis van manie schaafijs | zevenbergen": {
+    "url": "https://jaapleest.nl/manie-schaafijs/",
+    "age_rating": "8+",
+    "publisher": "De Harmonie",
+    "illustrator": "Hedi Tjin"
+  },
+  "jona | praag": {
+    "url": "https://jaapleest.nl/jona/",
+    "age_rating": "15+",
+    "publisher": "Lemniscaat"
+  },
+  "de zoon van de berentemmer | petit": {
+    "url": "https://jaapleest.nl/zijn-schaaktalent-sleurt-hem-uit-de-ellende/",
+    "age_rating": "12+",
+    "publisher": "Ploegsma"
+  },
+  "de allergrootste | morosinotto": {
+    "url": "https://jaapleest.nl/de-allergrootste/",
+    "age_rating": "12+",
+    "publisher": "Pelckmans"
+  },
+  "in het vervloekte hart | orie": {
+    "url": "https://jaapleest.nl/in-het-vervloekte-hart/",
+    "age_rating": "15+",
+    "publisher": "Moon"
+  },
+  "een kleine geschiedenis van de mens door dierenogen | akveld": {
+    "url": "https://jaapleest.nl/een-kleine-geschiedenis-van-de-mens-door-dierenogen/",
+    "age_rating": "10+",
+    "publisher": "Lannoo",
+    "illustrator": "Djenné Fila"
+  },
+  "het pad van de roverkoning | rijpert": {
+    "url": "https://jaapleest.nl/zeven-sleutels/",
+    "age_rating": "10+",
+    "publisher": "Pelckmans"
+  },
+  "de zomer die alles was | overman": {
+    "url": "https://jaapleest.nl/de-zomer-die-alles-was-van-mariska-overmars/",
+    "age_rating": "10+",
+    "publisher": "Kluitman"
+  },
+  "oever | volbeda": {
+    "url": "https://jaapleest.nl/oever/",
+    "age_rating": "12+",
+    "publisher": "Querido",
+    "illustrator": "Ludwig Volbeda"
+  },
+  "vandaag komen we niet meer thuis | koens": {
+    "url": "https://jaapleest.nl/vandaag-komen-we-niet-meer-thuis-van-enne-koens/",
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff",
+    "illustrator": "Maartje Kuiper"
+  },
+  "welkom thuis chrononauten | weber": {
+    "url": "https://jaapleest.nl/welkom-thuis-chrononauten-van-dirk-weber/",
+    "age_rating": "12+",
+    "publisher": "Querido"
+  },
+  "de lijst van violet sopjes | vlietstra": {
+    "url": "https://jaapleest.nl/de-lijst-van-violet-sopjes-van-david-vlietstra/",
+    "age_rating": "10+",
+    "publisher": "Gottmer",
+    "illustrator": "Yoko Heiligers"
+  },
+  "de trein van vier over twaalf | palmkvist": {
+    "url": "https://jaapleest.nl/de-trein/",
+    "age_rating": "10+",
+    "publisher": "Kluitman"
+  },
+  "de spin en de sleutel | woltz": {
+    "url": "https://jaapleest.nl/de-spin-en-de-sleutel/",
+    "age_rating": "10+",
+    "publisher": "Querido"
+  },
+  "de boom die een wereld was | goldewijk": {
+    "url": "https://jaapleest.nl/de-boom-die-een-wereld-was/",
+    "age_rating": "8+",
+    "publisher": "Ploegsma",
+    "illustrator": "Jeska Verstegen"
+  },
+  "neem nooit een beste vriend | sassen": {
+    "url": "https://jaapleest.nl/neem-nooit-een-beste-vriend/",
+    "age_rating": "15+",
+    "publisher": "Leopold",
+    "illustrator": "Martijn van der Linden"
+  },
+  "de toch niet zo eenzame tocht van torre | overduin": {
+    "url": "https://jaapleest.nl/de-toch-niet-zo-eenzame-tocht-van-torre-van-annekarijn-overduin/",
+    "age_rating": "8+",
+    "publisher": "Gottmer",
+    "illustrator": "Sophie Pluim"
+  },
+  "ghost | reynolds": {
+    "url": "https://jaapleest.nl/ghost/",
+    "age_rating": "10+"
+  },
+  "struikmeisje | honingh": {
+    "url": "https://jaapleest.nl/struikmeisje/",
+    "age_rating": "10+",
+    "publisher": "Van Goor"
+  },
+  "zoef | schotveld": {
+    "url": "https://jaapleest.nl/zoef-van-janneke-schotveld/",
+    "age_rating": "8+",
+    "publisher": "Van Goor",
+    "illustrator": "Nadia Meezen"
+  },
+  "umbrador | smithuis": {
+    "url": "https://jaapleest.nl/umbrador/",
+    "age_rating": "10+",
+    "publisher": "Querido",
+    "illustrator": "Jeska Verstegen"
+  },
+  "kauw van jou | terwindt": {
+    "url": "https://jaapleest.nl/kauw-van-jou-van-kris-terwindt/",
+    "age_rating": "10+",
+    "publisher": "Lemniscaat"
+  },
+  "roversjong | aerts": {
+    "url": "https://jaapleest.nl/roversjong-van-jef-aerts-en-martijn-van-der-linden/",
+    "age_rating": "4+",
+    "publisher": "Querido",
+    "illustrator": "Martijn van der Linden"
+  },
+  "als de wereld wankelt | nelson": {
+    "url": "https://jaapleest.nl/als-de-wereld-wankelt-van-jandy-nelson/",
+    "age_rating": "15+",
+    "publisher": "Blossom Books"
+  },
+  "een slijmzoen voor je oma | meeuwsen": {
+    "url": "https://jaapleest.nl/een-slijmzoen-voor-je-oma/",
+    "age_rating": "9+",
+    "publisher": "Querido",
+    "illustrator": "Paco Vink"
+  },
+  "krekel | schaap": {
+    "url": "https://jaapleest.nl/krekel-van-annet-schaap/",
+    "age_rating": "10+"
+  },
+  "nog 27 dagen leven | stoffels": {
+    "url": "https://jaapleest.nl/nog-27-dagen-leven-van-maren-stoffels/",
+    "age_rating": "12+",
+    "publisher": "Leopold",
+    "illustrator": "Amy Kuijper"
+  },
+  "een rugzak vol | koolwijk": {
+    "url": "https://jaapleest.nl/een-rugzak-vol-van-pieter-koolwijk/",
+    "age_rating": "8+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Linde Faas"
+  },
+  "de wonderverteller | dijkstra": {
+    "url": "https://jaapleest.nl/de-wonderverteller-van-lida-dijkstra/",
+    "age_rating": "12+",
+    "publisher": "Luitingh Sijthoff",
+    "illustrator": "Djenné Fila"
+  },
+  "de heksenkind trilogie | furlong": {
+    "url": "https://jaapleest.nl/de-heksenkind-trilogie-van-moncia-furlong/",
+    "age_rating": "10+",
+    "publisher": "Lemniscaat"
+  },
+  "albatros | goldewijk": {
+    "url": "https://jaapleest.nl/albatros-van-yorick-goldewijk/",
+    "age_rating": "12+",
+    "publisher": "Ploegsma"
+  },
+  "19 91 | rijpert": {
+    "url": "https://jaapleest.nl/1991-van-tom-rijpert/",
+    "age_rating": "12+"
+  },
+  "schildpadmeisje | slegers": {
+    "url": "https://jaapleest.nl/schildpadmeisje-van-marlies-slegers/",
+    "age_rating": "10+",
+    "publisher": "Luitingh Sijthoff"
+  },
+  "de glazenwasser van het rijksmuseum | sy": {
+    "url": "https://jaapleest.nl/de-glazenwasser-van-het-rijksmuseum-van-astrid-sy/",
+    "age_rating": "10+",
+    "publisher": "Luitingh Sijthoff",
+    "illustrator": "Marieke Nelissen"
+  },
+  "duizend stukjes overal | overman": {
+    "url": "https://jaapleest.nl/duizend-stukjes-overal-van-mariska-overman/",
+    "age_rating": "10+",
+    "publisher": "Kluitman"
+  },
+  "het meisje dat er niet mocht zijn | geldof": {
+    "url": "https://jaapleest.nl/het-meisje-dat-er-niet-mocht-zijn-van-wilma-geldof/",
+    "age_rating": "14+",
+    "publisher": "Luitingh Sijthoff"
+  },
+  "wat ons nog rest | sax": {
+    "url": "https://jaapleest.nl/wat-ons-nog-rest/",
+    "age_rating": "15+",
+    "publisher": "Davidsfonds/Infodok"
+  },
+  "ik ben vincent en ik ben niet bang | koens": {
+    "url": "https://jaapleest.nl/vincent-en-bang/",
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff"
+  },
+  "complot de spannendste samenzweringstheorieen en zijn ze waar | schutten": {
+    "url": "https://jaapleest.nl/complot-van-jan-paul-schutten/",
+    "age_rating": "10+",
+    "publisher": "Blauw Gras",
+    "illustrator": "Koen Aelterman"
+  },
+  "het laatste jaar | goodfellow": {
+    "url": "https://jaapleest.nl/het-laatste-jaar-van-matt-goodfellow/",
+    "age_rating": "10+",
+    "publisher": "Volt",
+    "illustrator": "Joe Todd-Stanton"
+  }
+}

@@ -15,6 +15,7 @@ mkdirSync(DIST);
 
 cpSync(join(ROOT, "site", "index.html"), join(DIST, "index.html"));
 cpSync(join(ROOT, "site", "covers.json"), join(DIST, "covers.json"));
+cpSync(join(ROOT, "site", "jaapleest.json"), join(DIST, "jaapleest.json"));
 cpSync(join(ROOT, "site", "covers"), join(DIST, "covers"), { recursive: true });
 for (const name of ["gv100_long.json", "gv100_editions.json"]) {
   cpSync(join(ROOT, "data", name), join(DIST, name));
