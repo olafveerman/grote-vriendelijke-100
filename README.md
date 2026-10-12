@@ -6,10 +6,14 @@ Structured data for **De Grote Vriendelijke 100**, the yearly reader-voted list 
 
 | File | Grain | Notes |
 |---|---|---|
-| `data/gv100_long.json` | one record per edition × rank | `year, rank, title, series, author, work_key, goodreads_id, source` |
+| `data/gv100_books.json` | one record per distinct book | `work_key, title, authors, series, goodreads_id, cover, jaapleest, age_rating, publisher, illustrator, editions: [{year, rank, source}, ...]` |
 | `data/gv100_editions.json` | one record per edition | voter counts, dates, source, completeness |
 
-`work_key` is a normalised title + author surname. It links the same book across years, because sources often point to different editions of the same book. The per-book "rank in every edition" view (what used to be a generated `gv100_wide.json`) is now a pivot of `long` computed on the fly, client-side in the site's JS, rather than a second file that could drift from it.
+`work_key` is a normalised title + author surname. It links the same book across years, because sources often point to different editions of the same book.
+
+`gv100_books.json` is the single canonical file — one book per entry, with its full rank history nested in `editions` — and it's **hand-maintained directly**, not generated. It used to be three separate files (a per-edition-row table, a cover-image lookup, a jaapleest.nl lookup) produced by a build script from an embedded literal; that script is gone now too. Correcting a title, adding a co-author, sourcing a cover, adding a year — all of it means editing `data/gv100_books.json` itself. `scripts/validate.mjs` (run automatically by `pnpm run build`) checks it for the mistakes hand-editing risks: every year having exactly ranks 1–100 with no duplicate `work_key`, and `gv100_editions.json` covering exactly the same years.
+
+A handful of books (9 of 189) have a different `goodreads_id` per edition in reality — different print runs linked from different years' source pages — but we keep only one value per book here (first one encountered, in year order). The site only ever shows one Goodreads link per book regardless, so the extra fidelity wasn't worth the complexity.
 
 ### Coverage
 
@@ -24,18 +28,21 @@ Structured data for **De Grote Vriendelijke 100**, the yearly reader-voted list 
 ### Sources and caveats
 
 - The official lists are hosted on Hebban, which doesn't allow automated access. The 2021/2023/2024/2025 editions are taken from reader-maintained Goodreads copies (links in `gv100_editions.json`). Their top-10s and previous-year positions were cross-checked against press coverage from Tzum, NBD Biblion and nieuws.nl.
-- The Goodreads copy of the 2022 list was broken/misordered, so 2022 comes from a manually saved copy of the official Hebban page instead. `goodreads_id` is backfilled from matching works in other editions where possible; it's blank for the ~13 titles unique to 2022 that weren't looked up individually.
-- `authors` supports co-authors, but they're only populated for the 2022 edition, where the source was scraped directly (2 of its titles have one). The other four editions were hand-curated with a single author per book historically; backfilling their co-authors is a TODO. `work_key` is always anchored on the first-listed author, so adding co-authors to a row never changes which editions it links to.
+- The Goodreads copy of the 2022 list was broken/misordered, so 2022 comes from a manually saved copy of the official Hebban page instead. `goodreads_id` is backfilled from matching works in other editions, or looked up directly on Goodreads where a title is unique to 2022; it's blank for 2 omnibus/compilation titles with no dedicated Goodreads entry (*Het tegendeel van zorgen*, *Een jaar bij Kikker en Pad*).
+- `authors` supports co-authors. Populated for: the 2022 edition (scraped directly, 2 titles have one), plus 2 more works found via jaapleest.nl (*Misjka*, *Tori* — both missing a second author across every edition they appear in). The other 185 of 189 books still record only a single author; backfilling the rest is a TODO. `work_key` is always anchored on the first-listed author, so adding co-authors to a book never changes which editions it links to.
 - Some entries may refer to the same work under different titles and might need to be merged by hand. Examples: *Hier is de boze heks* (2021–22) vs *De grote boze heks* (2023+), and *Heksenkind* vs *De Heksenkind trilogie*.
-- [jaapleest.nl](https://jaapleest.nl) is run by one of the people behind De Grote Vriendelijke Podcast and the GV100 chart itself. A one-time research sweep (October 2026) matched 103 of the 189 distinct works there by title+author and pulled `site/jaapleest.json` (review link, age rating, publisher, illustrator where shown) plus 55 extra cover images. It skews toward reviewing newer releases, so classics (Harry Potter, Matilda, Pippi Langkous, Astrid Lindgren's books, etc.) mostly came back unmatched — and it doesn't carry publication year, original language, or author nationality at all, so those stay open regardless of how many more titles it ends up reviewing. `jaapleest.json` is hand-curated output from that sweep, not something `pnpm run build` regenerates — redoing it means redoing the search matching, not just rerunning a script.
+- [jaapleest.nl](https://jaapleest.nl) is run by one of the people behind De Grote Vriendelijke Podcast and the GV100 chart itself. A one-time research sweep (October 2026) matched 103 of the 189 distinct works there by title+author and pulled a review link, age rating, publisher, and illustrator where shown, plus 55 extra cover images and 2 missing co-authors (cross-checking its `Auteur:` field against what we had) — all now folded into `data/gv100_books.json`. It skews toward reviewing newer releases, so classics (Harry Potter, Matilda, Pippi Langkous, Astrid Lindgren's books, etc.) mostly came back unmatched — and it doesn't carry publication year, original language, or author nationality at all, so those stay open regardless of how many more titles it ends up reviewing. One oddity found along the way: its review of *Terra ultima* credits a fictional in-story narrator as "Auteur" and the real author (Raoul Deleo, who we already have right) only as illustrator — left unchanged, noted here in case it's confusing later.
+- The remaining 2 unresolved `goodreads_id`s and the full cover set were finished off with a direct per-title Goodreads lookup (same sweep) rather than jaapleest — Goodreads blocks plain fetches with a bot challenge, worked around via a text-rendering proxy reading the page's `og:image`/`og:title` tags.
 
-## Rebuilding the data
+## Editing the data
+
+Edit `data/gv100_books.json` directly, then run:
 
 ```bash
-node scripts/build_gv100.mjs   # no dependencies; rewrites data/*.json
+node scripts/validate.mjs   # no dependencies; checks ranks and work_keys are consistent
 ```
 
-The list data is embedded in the script. To correct or add a year, edit it there and rerun the script.
+Adding a new year (e.g. 2026) means: appending an `{year, rank, source}` entry to `editions` for every returning book, creating a new book entry for anything appearing for the first time, and adding the year to `gv100_editions.json`. There's no shortcut for the ~100 rank assignments that come with a new edition — that tradeoff was made deliberately, in exchange for not having a second, build-generated file to reconcile against.
 
 ## Site
 
@@ -46,19 +53,18 @@ pnpm install
 pnpm run serve   # builds dist/ and serves it at http://localhost:5173
 ```
 
-`pnpm run build` assembles `dist/` from `site/index.html`, `site/covers/` and a freshly rebuilt `data/gv100_long.json` + `gv100_editions.json` — that's the one folder that gets deployed. Pushing to `main` runs the same build in `.github/workflows/pages.yml` and publishes `dist/` to GitHub Pages (enable Pages → *Build and deployment: GitHub Actions* in the repo settings once, first time).
+`pnpm run build` validates `data/gv100_books.json` (see above), then assembles `dist/` from `site/index.html`, `site/covers/`, `data/gv100_books.json` and `gv100_editions.json` — that's the one folder that gets deployed. Pushing to `main` runs the same build in `.github/workflows/pages.yml` and publishes `dist/` to GitHub Pages (enable Pages → *Build and deployment: GitHub Actions* in the repo settings once, first time).
 
-Covers exist for 155 of the 189 distinct works — the 2022 edition's 100 titles (`scripts/sync_covers.mjs`, from a manually saved copy of the Hebban page) plus 55 more pulled from matched jaapleest.nl reviews (see caveats above); the remaining 34 show a placeholder in the modal. The modal also shows age rating, publisher, illustrator, and a jaapleest.nl link next to the Goodreads one, wherever `site/jaapleest.json` has a match.
+Every one of the 189 distinct works has a cover now: the 2022 edition's 100 titles (from a manually saved copy of the Hebban page), 55 more from matched jaapleest.nl reviews, and the last 34 pulled directly from Goodreads (see caveats above). The images themselves are plain committed files in `site/covers/`; each book's path to its own file lives in its `cover` field in `data/gv100_books.json`. There's no script that (re)produces any of this — add a new cover by dropping the file in `site/covers/` and setting `cover` on the matching book by hand. The modal also shows age rating, publisher, illustrator, and a jaapleest.nl link next to the Goodreads one, wherever those fields are set.
 
 ## TODO
 
 - [ ] Add 2026 once it is announced (November 2026)
-- [ ] Look up `goodreads_id` for the 11 titles unique to 2022 that are still blank in `EDITIONS[2022]` (ranks 32, 33, 44, 68, 78, 82, 90, 93, 94, 97, 98 in `scripts/build_gv100.mjs`)
-- [ ] Enrich with publication year and original language — not available on jaapleest.nl either (checked); needs another source
+- [ ] Look up `goodreads_id` for 2 remaining titles with no dedicated Goodreads entry: *Het tegendeel van zorgen*, *Een jaar bij Kikker en Pad* — may need a different edition/bundling to match against
+- [ ] Enrich with publication year and original language — confirmed absent on jaapleest.nl; Goodreads pages often show a "first published" date, worth checking there instead (not yet attempted)
 - [ ] Enrich with author nationality — not on jaapleest.nl; a per-author lookup (e.g. Wikipedia), not per-book
-- [ ] Re-check jaapleest.nl for the 86 works it hadn't reviewed as of the October 2026 sweep (`site/jaapleest.json`) — it skews toward newer releases, so some gaps may close as it reviews more of the backlist
-- [ ] Source covers for the 34 works that still don't have one (`site/covers.json`)
-- [ ] Backfill co-authors for the 2021/2023/2024/2025 editions (schema already supports it; see `authors` in `data/gv100_long.json`)
+- [ ] Re-check jaapleest.nl for the 86 works it hadn't reviewed as of the October 2026 sweep — it skews toward newer releases, so some gaps may close as it reviews more of the backlist
+- [ ] Backfill co-authors for the 185 of 189 books still recording only a single author (schema already supports it; see `authors` in `data/gv100_books.json`)
 
 ## License
 

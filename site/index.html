@@ -609,7 +609,7 @@
   </section>
 
   <footer class="site">
-    Data: <code>gv100_long.json</code> &middot; rebuilt from <code>scripts/build_gv100.mjs</code> in the <strong>gv100-analysis</strong> repo.
+    Data: <code>gv100_books.json</code> in the <strong>gv100-analysis</strong> repo.
   </footer>
 </div>
 
@@ -653,10 +653,11 @@
   const rowsBody = document.getElementById('edition-rows');
   const filterInput = document.getElementById('filter-input');
 
-  let longData = [];
+  let books = [];
+  let booksByKey = {};
   let editionsData = [];
   let currentYear = null;
-  let currentRows = []; // the rows currently rendered in the table (post-filter), for modal ←/→ nav
+  let currentRows = []; // [{book, rank}] currently rendered in the table (post-filter), for modal ←/→ nav
 
   function renderYearBar() {
     yearBar.innerHTML = '';
@@ -689,9 +690,10 @@
 
   function renderTable() {
     const q = filterInput.value.trim().toLowerCase();
-    const rows = longData
-      .filter(r => r.year === currentYear)
-      .filter(r => !q || r.title.toLowerCase().includes(q) || r.authors.join(' ').toLowerCase().includes(q))
+    const rows = books
+      .map(b => ({ book: b, rank: b.editions.find(e => e.year === currentYear)?.rank }))
+      .filter(x => x.rank != null)
+      .filter(x => !q || x.book.title.toLowerCase().includes(q) || x.book.authors.join(' ').toLowerCase().includes(q))
       .sort((a, b) => a.rank - b.rank);
     currentRows = rows;
 
@@ -707,36 +709,36 @@
       return;
     }
 
-    rows.forEach(r => {
+    rows.forEach(({ book: b, rank }) => {
       const tr = document.createElement('tr');
 
       const tdRank = document.createElement('td');
       tdRank.className = 'col-rank';
       const rankSpan = document.createElement('span');
       rankSpan.className = 'rank-num';
-      rankSpan.textContent = String(r.rank).padStart(3, '0');
+      rankSpan.textContent = String(rank).padStart(3, '0');
       tdRank.appendChild(rankSpan);
 
       const tdTitle = document.createElement('td');
       tdTitle.className = 'title-cell';
       const titleEl = document.createElement('span');
       titleEl.className = 'book-title';
-      titleEl.textContent = r.title;
+      titleEl.textContent = b.title;
       tdTitle.appendChild(titleEl);
-      tdTitle.insertAdjacentHTML('beforeend', seriesTagHtml(r.series));
-      if (!r.goodreads_id) tdTitle.insertAdjacentHTML('beforeend', noIdChipHtml());
+      tdTitle.insertAdjacentHTML('beforeend', seriesTagHtml(b.series));
+      if (!b.goodreads_id) tdTitle.insertAdjacentHTML('beforeend', noIdChipHtml());
 
       const tdAuthor = document.createElement('td');
       tdAuthor.className = 'author-cell';
-      tdAuthor.textContent = r.authors.join(', ');
+      tdAuthor.textContent = b.authors.join(', ');
 
       tr.append(tdRank, tdTitle, tdAuthor);
       tr.tabIndex = 0;
       tr.setAttribute('role', 'button');
-      tr.setAttribute('aria-label', `Details for ${r.title}`);
-      tr.addEventListener('click', () => openModal(r.work_key));
+      tr.setAttribute('aria-label', `Details for ${b.title}`);
+      tr.addEventListener('click', () => openModal(b.work_key));
       tr.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(r.work_key); }
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(b.work_key); }
       });
       rowsBody.appendChild(tr);
     });
@@ -756,9 +758,6 @@
   const modalLinksEl = document.getElementById('modal-links');
   const modalHistoryEl = document.getElementById('modal-history');
 
-  let wideByKey = {};
-  let coversByKey = {};
-  let jaapleestByKey = {};
   let lastFocused = null;
   let modalIndex = -1; // position of the open book within currentRows, for ←/→ nav
 
@@ -775,40 +774,39 @@
   }
 
   function openModal(workKey) {
-    const w = wideByKey[workKey];
-    if (!w) return;
-    modalIndex = currentRows.findIndex(r => r.work_key === workKey);
+    const b = booksByKey[workKey];
+    if (!b) return;
+    modalIndex = currentRows.findIndex(x => x.book.work_key === workKey);
 
-    modalTitleEl.textContent = w.title;
-    modalAuthorEl.textContent = w.authors.join(', ');
+    modalTitleEl.textContent = b.title;
+    modalAuthorEl.textContent = b.authors.join(', ');
 
-    modalSeriesEl.style.display = w.series ? '' : 'none';
-    modalSeriesEl.innerHTML = seriesTagHtml(w.series);
+    modalSeriesEl.style.display = b.series ? '' : 'none';
+    modalSeriesEl.innerHTML = seriesTagHtml(b.series);
 
-    const jl = jaapleestByKey[workKey];
     const metaBits = [];
-    if (jl?.age_rating) metaBits.push(jl.age_rating);
-    if (jl?.publisher) metaBits.push(jl.publisher);
-    if (jl?.illustrator) metaBits.push(`ill. ${jl.illustrator}`);
+    if (b.age_rating) metaBits.push(b.age_rating);
+    if (b.publisher) metaBits.push(b.publisher);
+    if (b.illustrator) metaBits.push(`ill. ${b.illustrator}`);
     modalMetaEl.style.display = metaBits.length ? '' : 'none';
     modalMetaEl.textContent = metaBits.join(' · ');
 
-    const coverPath = coversByKey[workKey];
-    modalCoverEl.innerHTML = coverPath
-      ? `<img src="${coverPath}" alt="Cover of ${escapeHtml(w.title)}">`
-      : `<div class="cover-placeholder"><span class="initial">${escapeHtml(w.title.charAt(0).toUpperCase())}</span><p>No cover yet</p></div>`;
+    modalCoverEl.innerHTML = b.cover
+      ? `<img src="${b.cover}" alt="Cover of ${escapeHtml(b.title)}">`
+      : `<div class="cover-placeholder"><span class="initial">${escapeHtml(b.title.charAt(0).toUpperCase())}</span><p>No cover yet</p></div>`;
 
-    const goodreadsLink = w.goodreads_id
-      ? `<a class="gr-link" href="https://www.goodreads.com/book/show/${w.goodreads_id}" target="_blank" rel="noopener">Goodreads &#8599;</a>`
+    const goodreadsLink = b.goodreads_id
+      ? `<a class="gr-link" href="https://www.goodreads.com/book/show/${b.goodreads_id}" target="_blank" rel="noopener">Goodreads &#8599;</a>`
       : noIdChipHtml();
-    const jaapleestLink = jl?.url
-      ? `<a class="gr-link" href="${jl.url}" target="_blank" rel="noopener">jaapleest.nl &#8599;</a>`
+    const jaapleestLink = b.jaapleest
+      ? `<a class="gr-link" href="${b.jaapleest}" target="_blank" rel="noopener">jaapleest.nl &#8599;</a>`
       : '';
     modalLinksEl.innerHTML = goodreadsLink + jaapleestLink;
 
+    const bestRank = Math.min(...b.editions.map(e => e.rank));
     modalHistoryEl.innerHTML = YEARS.map(y => {
-      const rk = w[`rank_${y}`];
-      const isBest = rk != null && rk === w.best_rank;
+      const rk = b.editions.find(e => e.year === y)?.rank;
+      const isBest = rk === bestRank;
       return `<li class="${isBest ? 'best' : ''}"><span class="hy-year">${y}</span><span class="hy-rank${rk == null ? ' absent' : ''}">${rk != null ? '#' + rk : '&mdash;'}</span></li>`;
     }).join('');
 
@@ -824,7 +822,7 @@
     if (!currentRows.length) return;
     const next = Math.min(currentRows.length - 1, Math.max(0, modalIndex + delta));
     if (next === modalIndex) return;
-    openModal(currentRows[next].work_key);
+    openModal(currentRows[next].book.work_key);
   }
 
   function closeModal() {
@@ -845,36 +843,14 @@
     else if (e.key === 'ArrowRight') { e.preventDefault(); stepModal(1); }
   });
 
-  // Per-work rank history (the old gv100_wide.json), pivoted from longData at
-  // load time instead of maintained as a separate generated file.
-  function buildWideByKey(rows) {
-    const byKey = {};
-    for (const r of rows) {
-      const w = byKey[r.work_key] || (byKey[r.work_key] = {
-        work_key: r.work_key, title: r.title, authors: r.authors, series: '', goodreads_id: '',
-      });
-      w[`rank_${r.year}`] = r.rank;
-      if (!w.series && r.series) w.series = r.series;
-      if (!w.goodreads_id && r.goodreads_id) w.goodreads_id = r.goodreads_id;
-    }
-    for (const w of Object.values(byKey)) {
-      w.best_rank = Math.min(...YEARS.map(y => w[`rank_${y}`]).filter(rk => rk != null));
-    }
-    return byKey;
-  }
-
   Promise.all([
-    fetch('gv100_long.json').then(r => r.json()),
-    fetch('gv100_editions.json').then(r => r.json()),
-    fetch('covers.json').then(r => r.ok ? r.json() : {}).catch(() => ({})),
-    fetch('jaapleest.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))
-  ]).then(([longJson, editionsJson, coversJson, jaapleestJson]) => {
-    longData = longJson;
+    fetch('gv100_books.json').then(r => r.json()),
+    fetch('gv100_editions.json').then(r => r.json())
+  ]).then(([booksJson, editionsJson]) => {
+    books = booksJson;
+    booksByKey = Object.fromEntries(books.map(b => [b.work_key, b]));
     editionsData = editionsJson;
-    YEARS = [...new Set(longData.map(r => r.year))].sort((a, b) => a - b);
-    wideByKey = buildWideByKey(longData);
-    coversByKey = coversJson;
-    jaapleestByKey = jaapleestJson;
+    YEARS = [...new Set(books.flatMap(b => b.editions.map(e => e.year)))].sort((a, b) => a - b);
     currentYear = Math.max(...YEARS);
     renderYearBar();
     renderMeta();

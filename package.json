@@ -3,7 +3,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "node scripts/build_site.mjs",
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/validate.mjs && node scripts/build_site.mjs",
     "serve": "pnpm run build && serve dist -p 5173"
   },
   "devDependencies": {
