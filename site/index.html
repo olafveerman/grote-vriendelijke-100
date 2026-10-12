@@ -270,6 +270,15 @@
     font-size: 0.95rem;
   }
 
+  .rank-delta {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.64rem;
+    color: var(--ink-muted);
+    margin-top: 0.1rem;
+  }
+
   .title-cell { max-width: 26rem; }
 
   .book-title {
@@ -772,6 +781,7 @@
       rankSpan.className = 'rank-num';
       rankSpan.textContent = String(rank).padStart(3, '0');
       tdRank.appendChild(rankSpan);
+      tdRank.insertAdjacentHTML('beforeend', rankDeltaHtml(b, currentYear, rank));
 
       const tdTitle = document.createElement('td');
       tdTitle.className = 'title-cell';
@@ -825,6 +835,16 @@
   }
   function noIdChipHtml() {
     return `<span class="no-id-chip">no Goodreads ID</span>`;
+  }
+
+  // Quiet, same colour either way — direction is carried by the arrow glyph,
+  // not a loud up/down colour, per the "small hint, not a badge" ask.
+  function rankDeltaHtml(book, year, rank) {
+    const prior = book.editions.find(e => e.year === year - 1)?.rank;
+    if (prior == null || prior === rank) return '';
+    return prior > rank
+      ? `<span class="rank-delta">&#9650;${prior - rank}</span>`
+      : `<span class="rank-delta">&#9660;${rank - prior}</span>`;
   }
 
   function openModal(workKey) {
