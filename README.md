@@ -64,6 +64,7 @@ Every one of the 189 distinct works has a cover now: the 2022 edition's 100 titl
 - [ ] Enrich with publication year and original language — confirmed absent on jaapleest.nl; Goodreads pages often show a "first published" date, worth checking there instead (not yet attempted)
 - [ ] Enrich with author nationality — not on jaapleest.nl; a per-author lookup (e.g. Wikipedia), not per-book
 - [ ] Re-check jaapleest.nl for the 86 works it hadn't reviewed as of the October 2026 sweep — it skews toward newer releases, so some gaps may close as it reviews more of the backlist
+- [ ] Show whether a book rose or fell vs. the previous edition in the Editions table (compare its rank to the same `work_key` in the prior year, when present in both) — a small, non-dominating hint next to the row, not a loud badge
 - [ ] Backfill co-authors for the 185 of 189 books still recording only a single author (schema already supports it; see `authors` in `data/gv100_books.json`)
 
 ## License
