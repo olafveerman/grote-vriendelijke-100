@@ -53,9 +53,13 @@ Covers only exist for the 2022 edition's 100 titles (`scripts/sync_covers.mjs`, 
 ## TODO
 
 - [ ] Add 2026 once it is announced (November 2026)
-- [ ] Look up `goodreads_id` for the 11 titles unique to 2022 that are still blank in `D[2022]` (ranks 32, 33, 44, 68, 78, 82, 90, 93, 94, 97, 98 in `scripts/build_gv100.mjs`)
+- [ ] Look up `goodreads_id` for the 11 titles unique to 2022 that are still blank in `EDITIONS[2022]` (ranks 32, 33, 44, 68, 78, 82, 90, 93, 94, 97, 98 in `scripts/build_gv100.mjs`)
 - [ ] Enrich with publication year and original language
 - [ ] Enrich with author nationality and age rating (likely from jaapleest.nl — see Sources)
 - [ ] Add a jaapleest.nl link per book, next to the Goodreads one, where available
 - [ ] Source covers for the 89 works outside the 2022 edition that don't have one yet
 - [ ] Backfill co-authors for the 2021/2023/2024/2025 editions (schema already supports it; see `authors` in `data/gv100_long.json`)
+
+## License
+
+MIT for the code. See [LICENSE](LICENSE) — the data and cover images are handled differently than the code; that file explains how.

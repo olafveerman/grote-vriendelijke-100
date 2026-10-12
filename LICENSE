@@ -1,0 +1,41 @@
+This license applies to the code in this repository (scripts, the site's
+HTML/CSS/JS, and configuration) and to any written analysis or commentary
+("insights") this project produces.
+
+It does not apply to:
+
+- `data/` and `site/covers.json` — the compiled GV100 rankings themselves.
+  No copyright or license is claimed over this data; it is a factual record
+  of a public reader vote, used here as-is.
+- `site/covers/` — book cover images. These are copyrighted by their
+  respective publishers and illustrators, not by this project. They are
+  included for identification purposes in a non-commercial, informational
+  companion site, not relicensed.
+
+Sources: this project's data and cover images draw on information published
+by hebban.nl, jaapleest.nl, and goodreads.com. None of these sites endorse
+or are affiliated with this project.
+
+---
+
+MIT License
+
+Copyright (c) 2026 Olaf Veerman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

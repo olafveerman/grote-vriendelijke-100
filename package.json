@@ -1,6 +1,7 @@
 {
   "name": "gv100-analysis",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "node scripts/build_site.mjs",
     "serve": "pnpm run build && serve dist -p 5173"
