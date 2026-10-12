@@ -1,13 +1,18 @@
-import csv, re, unicodedata
-from pathlib import Path
+// Data behind the GV100 dataset. To correct or add a year, edit the matching
+// EDITIONS[year] block below and rerun `node scripts/build_gv100.mjs`.
+// src and rows live together so a new year can't end up with one but not the
+// other (they used to be two separately-keyed objects).
+import { writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { ROOT, splitSeries, workKey } from "./_lib.mjs";
 
-OUT = Path(__file__).resolve().parent.parent / "data"
-OUT.mkdir(exist_ok=True)
+const OUT = join(ROOT, "data");
 
-# (rank, title as listed, author, goodreads_book_id)
-D = {}
-
-D[2021] = """1|Lampje|Annet Schaap|34684344
+// rows: pipe-delimited `rank|title|author(s)|goodreads_book_id`, one book per line
+const EDITIONS = {
+  2021: {
+    src: "https://www.goodreads.com/list/show/169403.De_Grote_Vriendelijke_100_2021",
+    rows: `1|Lampje|Annet Schaap|34684344
 2|De brief voor de koning (De brief voor de koning, #1)|Tonke Dragt|1835829
 3|Kruistocht in spijkerbroek|Thea Beckman|3114666
 4|Pluk van de Petteflet|Annie M.G. Schmidt|2854614
@@ -106,24 +111,114 @@ D[2021] = """1|Lampje|Annet Schaap|34684344
 97|Gips|Anna Woltz|25389557
 98|Zeb.|Gideon Samson|38331882
 99|Wonderbos|Jan Paul Schutten|55587367
-100|Monkie|Dieter Schubert|4345257"""
-
-# 2022: Goodreads mirror is incomplete and mis-ordered. Only verified positions included.
-D[2022] = """1|Lampje|Annet Schaap|
-2|Films die nergens draaien|Yorick Goldewijk|
-3|Gozert|Pieter Koolwijk|
-4|De brief voor de koning|Tonke Dragt|
-5|Harry Potter en de Steen der Wijzen|J.K. Rowling|
-6|Kruistocht in spijkerbroek|Thea Beckman|
-7|Matilda|Roald Dahl|
-8|Pluk van de Petteflet|Annie M.G. Schmidt|
-9|Mot en de metaalvissers|Sanne Rooseboom|
-10|Koning van Katoren|Jan Terlouw|
-12|De gebroeders Leeuwenhart|Astrid Lindgren|
-14|Ronja de roversdochter|Astrid Lindgren|
-15|Hier is de boze heks|Hanna Kraan|"""
-
-D[2023] = """1|Lampje|Annet Schaap|34684344
+100|Monkie|Dieter Schubert|4345257`,
+  },
+  2022: {
+    src: "https://www.hebban.nl/actie/de-grote-vriendelijke-100-van-2022",
+    rows: `1|Lampje|Annet Schaap|34684344
+2|Films die nergens draaien|Yorick Goldewijk|63005893
+3|Gozert (De wereld van Gozert, #1)|Pieter Koolwijk|50361357
+4|De brief voor de koning (De brief voor de koning, #1)|Tonke Dragt|1835829
+5|Harry Potter en de Steen der Wijzen (Harry Potter, #1)|J.K. Rowling|1033918
+6|Kruistocht in spijkerbroek|Thea Beckman|3114666
+7|Matilda|Roald Dahl|5037376
+8|Pluk van de Petteflet|Annie M.G. Schmidt|2854614
+9|Mot en de metaalvissers|Sanne Rooseboom|60772880
+10|Koning van Katoren (Katoren, #1)|Jan Terlouw|1165759
+11|De GVR|Roald Dahl|5094631
+12|De gebroeders Leeuwenhart|Astrid Lindgren|6262236
+13|Briefjes voor Pelle|Marlies Slegers|55210688
+14|Ronja de roversdochter|Astrid Lindgren|6891198
+15|Hier is de boze heks (De boze Heks #8)|Hanna Kraan|8192274
+16|Dodo|Mohana van den Kroonenberg|61180820
+17|Kinderen van Moeder Aarde (De Toekomsttrilogie, #1)|Thea Beckman|3418598
+18|Alleen op de wereld|Hector Malot|2977918
+19|Luna (De wereld van Gozert, #2)|Pieter Koolwijk|58246250
+20|Sjakie en de chocoladefabriek|Roald Dahl|4821094
+21|De tunnel|Anna Woltz|54714008
+22|De kleine kapitein|Paul Biegel|634518
+23|Meester van de zwarte molen|Otfried Preußler|6034016
+24|Jij mag alles zijn|Griet Op de Beeck|58910636
+25|De Gruffalo|Julia Donaldson|20761304
+26|Het oneindige verhaal|Michael Ende|3153563
+27|Hasse Simonsdochter|Thea Beckman|1551211
+28|Oorlogswinter|Jan Terlouw|4812236
+29|Het grote boek van Madelief|Guus Kuijer|6351760
+30|Alfabet|Charlotte Dematons|53557513
+31|De Zevensprong|Tonke Dragt|2594251
+32|De NEEhoorn|Marc-Uwe Kling|
+33|Het meisje met de vlechtjes|Wilma Geldof|
+34|Allemaal willen we de hemel|Els Beerten|3836891
+35|Het weeshuis in de azuurblauwe zee (Cerulean Chronicles, #1)|T.J. Klune|60145242
+36|Misjka|Edward van de Vendel|62096324
+37|Een zee van liefde|Pieter Gaudesaboos|59479437
+38|Achtste-groepers huilen niet|Jacques Vriens|8050771
+39|De geheime tuin|Frances Hodgson Burnett|44297948
+40|Terra ultima: De ontdekkingsreis van een onbekend continent|Raoul Deleo|58202355
+41|Heel de wereld wordt wakker|Jaap Robben|62989111
+42|Alaska|Anna Woltz|32506287
+43|Over een kleine mol die wil weten wie er op zijn kop gepoept heeft|Werner Holzwarth|2854757
+44|Dwars & Co|Rico Hop|
+45|De Gorgels|Jochem Myjer|26258898
+46|Harry Potter en de Gevangene van Azkaban (Harry Potter, #3)|J.K. Rowling|871319
+47|Pippi Langkous (Pippi Langkous, #1)|Astrid Lindgren|13446134
+48|Torenhoog en mijlen breed: een toekomstverhaal|Tonke Dragt|254103
+49|De Heksen|Roald Dahl|5037819
+50|De jongen, de mol, de vos en het paard|Charlie Mackesy|51522027
+51|Mus & kapitein Kwaadbaard en De 5 slangen (Mus en kapitein Kwaadbaard, #1)|Kevin Hassing|55790993
+52|Ik ben Krik, Krik ben ik|Hanna Kraan|28396692
+53|Spinder|Simon van der Geest|16025508
+54|Geef me de ruimte! (Trilogie over de 100 jarige oorlog, #1)|Thea Beckman|4951108
+55|Wat je moet doen als je over een nijlpaard struikelt|Edward van de Vendel|46040367
+56|Heksenkind|Monica Furlong|8050857
+57|Het sleutelkruid|Paul Biegel|5943825
+58|Honderd uur nacht|Anna Woltz|21903699
+59|Harry Potter en de Geheime Kamer (Harry Potter, #2)|J.K. Rowling|2954426
+60|De zweetvoetenman: Over rechtszaken & regels [en een hoop gedoe]|Annet Huizing|36180421
+61|Ik geef je de zon|Jandy Nelson|25146347
+62|Morrigan Crow en het Wondergenootschap (Nevermoor, #1)|Jessica Townsend|36628833
+63|Minoes|Annie M.G. Schmidt|1795353
+64|Lepelsnijder|Marjolijn Hof|43187703
+65|Gips|Anna Woltz|25389557
+66|Quotum: Project Z|Marloes Morshuis|121167206
+67|Avonturen van de dappere ridster|Janneke Schotveld|53972382
+68|Rekenen voor je leven|Edward van de Vendel, Ionica Smeets|
+69|Harry Potter en de Vuurbeker (Harry Potter, #4)|J.K. Rowling|1079278
+70|Zonder titel|Erna Sassen|57597009
+71|Hele verhalen voor een halve soldaat|Benny Lindelauf|55659338
+72|Prutje|Pieter Koolwijk|41968643
+73|De kinderen van Bolderburen|Astrid Lindgren|6891221
+74|Patroon|Marco Kunst|61092730
+75|Geheimen van het Wilde Woud (De brief voor de koning, #2)|Tonke Dragt|254108
+76|Bob Popcorn|Maranke Rinck|50223074
+77|De Veger|Jonathan Auxier|45014592
+78|Het tegendeel van zorgen|Benny Lindelauf|
+79|De tuinen van Dorr|Paul Biegel|3216174
+80|Het Ministerie van Oplossingen (Het Ministerie van Oplossingen, #1)|Sanne Rooseboom|30625199
+81|Blauwe plekken|Anke de Vries|5505028
+82|Ik praat als een rivier|Jordan Scott|
+83|Daantje de Wereldkampioen|Roald Dahl|4914286
+84|Koningskind|Selma Noort|55434569
+85|Spijt|Carry Slee|1699435
+86|Momo en de tijdspaarders|Michael Ende|5592552
+87|Robin: alle verhalen|Sjoerd Kuyper|61227889
+88|Een groene bloem trilogie|Floortje Zwigtman|25675755
+89|Floddertje|Annie M.G. Schmidt|1466832
+90|Een jaar bij Kikker en Pad|A. Lobel, A.G. van Melle|
+91|Monkie|Dieter Schubert|4345257
+92|Lennox en de gouden sikkel|Zindzi Zevenbergen|58372819
+93|Alice in Wonderland|Lewis Carroll|
+94|Egalus|Marije Tolman|
+95|Wiplala en Wiplala weer (Wiplala #1-2)|Annie M.G. Schmidt|1758589
+96|Morris|Bart Moeyaert|62344373
+97|Gebr.|Ted van Lieshout|
+98|Het boek zonder tekeningen|B.J. Novak|
+99|IJzerkop|Jean-Claude van Rijckeghem|45731329
+100|Zeb.|Gideon Samson|38331882`,
+  },
+  2023: {
+    src: "https://www.goodreads.com/list/show/223552.De_Grote_Vriendelijke_100_2023",
+    rows: `1|Lampje|Annet Schaap|34684344
 2|Films die nergens draaien|Yorick Goldewijk|63005893
 3|Mot en de metaalvissers|Sanne Rooseboom|60772880
 4|Misjka|Edward van de Vendel|62096324
@@ -222,9 +317,11 @@ D[2023] = """1|Lampje|Annet Schaap|34684344
 97|Een kleine geschiedenis van de mens door dierenogen|Joukje Akveld|75521022
 98|Het pad van de Roverkoning (De Zeven Sleutels, #1)|Tom Rijpert|180072082
 99|Morris|Bart Moeyaert|62344373
-100|Bob Popcorn|Maranke Rinck|50223074"""
-
-D[2024] = """1|Films die nergens draaien|Yorick Goldewijk|63005893
+100|Bob Popcorn|Maranke Rinck|50223074`,
+  },
+  2024: {
+    src: "https://www.goodreads.com/list/show/223554.De_Grote_Vriendelijke_100_2024",
+    rows: `1|Films die nergens draaien|Yorick Goldewijk|63005893
 2|Mot en de metaalvissers|Sanne Rooseboom|60772880
 3|Lampje|Annet Schaap|34684344
 4|Gozert (De wereld van Gozert, #1)|Pieter Koolwijk|50361357
@@ -323,9 +420,11 @@ D[2024] = """1|Films die nergens draaien|Yorick Goldewijk|63005893
 97|Minoes|Annie M.G. Schmidt|1795353
 98|Over een kleine mol die wil weten wie er op zijn kop gepoept heeft|Werner Holzwarth|2854757
 99|Allemaal willen we de hemel|Els Beerten|3836891
-100|Een slijmzoen voor je oma|Matthijs Meeuwsen|175319065"""
-
-D[2025] = """1|Films die nergens draaien|Yorick Goldewijk|63005893
+100|Een slijmzoen voor je oma|Matthijs Meeuwsen|175319065`,
+  },
+  2025: {
+    src: "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025",
+    rows: `1|Films die nergens draaien|Yorick Goldewijk|63005893
 2|Krekel|Annet Schaap|227898061
 3|Lampje|Annet Schaap|34684344
 4|Mot en de metaalvissers|Sanne Rooseboom|60772880
@@ -424,81 +523,53 @@ D[2025] = """1|Films die nergens draaien|Yorick Goldewijk|63005893
 97|De ruïnes van Gorlan (De Grijze Jager, #1)|John Flanagan|9437985
 98|Spinder|Simon van der Geest|16025508
 99|Complot: De spannendste samenzweringstheorieën (en zijn ze waar?)|Jan Paul Schutten|235371180
-100|Het laatste jaar|Matt Goodfellow|230094719"""
+100|Het laatste jaar|Matt Goodfellow|230094719`,
+  }
+};
 
-SRC = {
-    2021: "https://www.goodreads.com/list/show/169403.De_Grote_Vriendelijke_100_2021",
-    2022: "https://www.dekinderboekenwinkel.nl/de-grote-vriendelijke-100/",
-    2023: "https://www.goodreads.com/list/show/223552.De_Grote_Vriendelijke_100_2023",
-    2024: "https://www.goodreads.com/list/show/223554.De_Grote_Vriendelijke_100_2024",
-    2025: "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025",
+const rows = [];
+for (const [yearStr, { src, rows: block }] of Object.entries(EDITIONS)) {
+  const year = Number(yearStr);
+  for (const line of block.trim().split("\n")) {
+    const parts = line.split("|");
+    const rank = Number(parts[0]);
+    const gid = parts[parts.length - 1];
+    const authors = parts[parts.length - 2].split(",").map((a) => a.trim());
+    const raw = parts.slice(1, -2).join("|"); // handles '19|91'
+    const [title, series] = splitSeries(raw);
+    rows.push({
+      year, rank, title, series, authors,
+      work_key: workKey(title, authors),
+      goodreads_id: gid,
+      source: src,
+    });
+  }
 }
 
-def split_series(t):
-    m = re.match(r"^(.*?)\s*\(([^()]*#[^()]*)\)\s*$", t)
-    return (m.group(1), m.group(2)) if m else (t, "")
+// sanity checks
+for (const yearStr of Object.keys(EDITIONS)) {
+  const year = Number(yearStr);
+  const yearRows = rows.filter((r) => r.year === year);
+  const ranks = yearRows.map((r) => r.rank).sort((a, b) => a - b);
+  if (new Set(ranks).size !== ranks.length) throw new Error(`duplicate rank in ${year}`);
+  const expected = Array.from({ length: 100 }, (_, i) => i + 1);
+  if (JSON.stringify(ranks) !== JSON.stringify(expected)) {
+    throw new Error(`${year} does not have exactly ranks 1..100 (got ${ranks.length})`);
+  }
+  const keys = yearRows.map((r) => r.work_key);
+  const dup = keys.filter((k, i) => keys.indexOf(k) !== i);
+  if (dup.length) throw new Error(`duplicate work_key in ${year}: ${dup.join(", ")}`);
+}
 
-def norm(s):
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
-    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+writeFileSync(join(OUT, "gv100_long.json"), JSON.stringify(rows, null, 2));
 
-def work_key(title, author):
-    return norm(title) + " | " + norm(author.split()[-1])
+const editions = [
+  { year: 2021, entries: 100, complete: "yes", voters: "~2500", voting_closed: "2021-11-07", announced: "2021-11-24", source: EDITIONS[2021].src },
+  { year: 2022, entries: 100, complete: "yes", voters: "3000+", voting_closed: "2022-11-06", announced: "2022-11-23", source: EDITIONS[2022].src },
+  { year: 2023, entries: 100, complete: "yes", voters: "", voting_closed: "2023-11-05", announced: "", source: EDITIONS[2023].src },
+  { year: 2024, entries: 100, complete: "yes", voters: "~4000", voting_closed: "2024-11-03", announced: "2024-11-23", source: EDITIONS[2024].src },
+  { year: 2025, entries: 100, complete: "yes", voters: "5500", voting_closed: "", announced: "2025-11-23", source: EDITIONS[2025].src },
+];
+writeFileSync(join(OUT, "gv100_editions.json"), JSON.stringify(editions, null, 2));
 
-rows = []
-for year, block in D.items():
-    for line in block.strip().splitlines():
-        parts = line.split("|")
-        rank, gid = int(parts[0]), parts[-1]
-        author = parts[-2]
-        raw = "|".join(parts[1:-2])  # handles '19|91'
-        title, series = split_series(raw)
-        rows.append(dict(year=year, rank=rank, title=title, series=series, author=author,
-                         work_key=work_key(title, author),
-                         goodreads_id=gid, source=SRC[year]))
-
-# sanity checks
-for y in D:
-    rs = sorted(r["rank"] for r in rows if r["year"] == y)
-    assert len(rs) == len(set(rs)), y
-    if y != 2022:
-        assert rs == list(range(1, 101)), (y, len(rs))
-    keys = [r["work_key"] for r in rows if r["year"] == y]
-    dup = {k for k in keys if keys.count(k) > 1}
-    assert not dup, (y, dup)
-
-with open(OUT / "gv100_long.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-    w.writeheader(); w.writerows(rows)
-
-# wide: one row per work
-years = sorted(D)
-works = {}
-for r in rows:
-    w_ = works.setdefault(r["work_key"], {"work_key": r["work_key"], "title": r["title"], "author": r["author"]})
-    w_[f"rank_{r['year']}"] = r["rank"]
-wide = []
-for w_ in works.values():
-    full = [y for y in years if y != 2022]
-    w_["editions_present"] = sum(1 for y in years if f"rank_{y}" in w_)
-    ranks = [w_[f"rank_{y}"] for y in full if f"rank_{y}" in w_]
-    w_["best_rank"] = min(ranks) if ranks else ""
-    wide.append(w_)
-wide.sort(key=lambda w_: (-w_["editions_present"], w_.get("rank_2025", 999)))
-fields = ["work_key", "title", "author"] + [f"rank_{y}" for y in years] + ["editions_present", "best_rank"]
-with open(OUT / "gv100_wide.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=fields, restval="")
-    w.writeheader(); w.writerows(wide)
-
-ed = [
-    dict(year=2021, entries=100, complete="yes", voters="~2500", voting_closed="2021-11-07", announced="2021-11-24", source=SRC[2021]),
-    dict(year=2022, entries=13, complete="no (top 10 + ranks 12, 14, 15 only)", voters="3000+", voting_closed="2022-11-06", announced="2022-11-23", source=SRC[2022]),
-    dict(year=2023, entries=100, complete="yes", voters="", voting_closed="2023-11-05", announced="", source=SRC[2023]),
-    dict(year=2024, entries=100, complete="yes", voters="~4000", voting_closed="2024-11-03", announced="2024-11-23", source=SRC[2024]),
-    dict(year=2025, entries=100, complete="yes", voters="5500", voting_closed="", announced="2025-11-23", source=SRC[2025]),
-]
-with open(OUT / "gv100_editions.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=list(ed[0].keys()))
-    w.writeheader(); w.writerows(ed)
-
-print(len(rows), "rows;", len(wide), "distinct works")
+console.log(`${rows.length} rows; ${new Set(rows.map((r) => r.work_key)).size} distinct works`);
