@@ -464,6 +464,24 @@
 
   .history-list .hy-rank.absent { color: var(--ink-muted); font-weight: 400; }
 
+  .kbd-hint {
+    margin: 1.1rem 0 0;
+    text-align: center;
+    color: var(--ink-muted);
+    font-size: 0.78rem;
+  }
+
+  .kbd-hint kbd {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    border: 1px solid var(--border);
+    border-bottom-width: 2px;
+    border-radius: 0.3rem;
+    padding: 0.05rem 0.4rem;
+    background: var(--surface-alt);
+    color: var(--ink);
+  }
+
   @media (max-width: 30rem) {
     .modal-body { flex-direction: column; }
     .modal-cover, .modal-cover img, .cover-placeholder { width: 100%; max-width: 11rem; }
@@ -603,6 +621,7 @@
         <ul class="history-list" id="modal-history"></ul>
       </div>
     </div>
+    <p class="kbd-hint"><kbd>&larr;</kbd> <kbd>&rarr;</kbd> previous / next &middot; <kbd>Esc</kbd> close</p>
   </div>
 </div>
 
@@ -630,6 +649,7 @@
   let longData = [];
   let editionsData = [];
   let currentYear = null;
+  let currentRows = []; // the rows currently rendered in the table (post-filter), for modal ←/→ nav
 
   function renderYearBar() {
     yearBar.innerHTML = '';
@@ -666,6 +686,7 @@
       .filter(r => r.year === currentYear)
       .filter(r => !q || r.title.toLowerCase().includes(q) || r.authors.join(' ').toLowerCase().includes(q))
       .sort((a, b) => a.rank - b.rank);
+    currentRows = rows;
 
     rowsBody.innerHTML = '';
     if (rows.length === 0) {
@@ -730,6 +751,7 @@
   let wideByKey = {};
   let coversByKey = {};
   let lastFocused = null;
+  let modalIndex = -1; // position of the open book within currentRows, for ←/→ nav
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -746,6 +768,7 @@
   function openModal(workKey) {
     const w = wideByKey[workKey];
     if (!w) return;
+    modalIndex = currentRows.findIndex(r => r.work_key === workKey);
 
     modalTitleEl.textContent = w.title;
     modalAuthorEl.textContent = w.authors.join(', ');
@@ -768,9 +791,19 @@
       return `<li class="${isBest ? 'best' : ''}"><span class="hy-year">${y}</span><span class="hy-rank${rk == null ? ' absent' : ''}">${rk != null ? '#' + rk : '&mdash;'}</span></li>`;
     }).join('');
 
-    lastFocused = document.activeElement;
+    // Only capture the triggering element on a fresh open — stepModal() calls
+    // openModal() again while already open, and by then activeElement is just
+    // the close button, not whatever row started the whole thing.
+    if (modalBackdrop.classList.contains('hidden')) lastFocused = document.activeElement;
     modalBackdrop.classList.remove('hidden');
     document.getElementById('modal-close').focus();
+  }
+
+  function stepModal(delta) {
+    if (!currentRows.length) return;
+    const next = Math.min(currentRows.length - 1, Math.max(0, modalIndex + delta));
+    if (next === modalIndex) return;
+    openModal(currentRows[next].work_key);
   }
 
   function closeModal() {
@@ -783,7 +816,12 @@
     if (e.target === modalBackdrop) closeModal();
   });
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !modalBackdrop.classList.contains('hidden')) closeModal();
+    if (modalBackdrop.classList.contains('hidden')) return;
+    if (e.key === 'Escape') { closeModal(); return; }
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    if (e.target instanceof Element && e.target.closest('input, textarea, select, [contenteditable]')) return;
+    if (e.key === 'ArrowLeft') { e.preventDefault(); stepModal(-1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); stepModal(1); }
   });
 
   // Per-work rank history (the old gv100_wide.json), pivoted from longData at
