@@ -14,6 +14,7 @@
     --red: #D22730;
     --red-ink: #FFFFFF;
     --blue: #1A44B8;
+    --green: #1C7A43;
     --yellow: #F2C100;
     --yellow-ink: #15161A;
     --shadow: rgba(21, 22, 26, 0.16);
@@ -30,6 +31,7 @@
       --red: #FF5B5F;
       --red-ink: #15161A;
       --blue: #6C93F5;
+      --green: #3DD17A;
       --yellow: #F5D033;
       --yellow-ink: #15161A;
       --shadow: rgba(0, 0, 0, 0.5);
@@ -46,6 +48,7 @@
     --red: #FF5B5F;
     --red-ink: #15161A;
     --blue: #6C93F5;
+    --green: #3DD17A;
     --yellow: #F5D033;
     --yellow-ink: #15161A;
     --shadow: rgba(0, 0, 0, 0.5);
@@ -242,8 +245,9 @@
 
   th.col-rank, td.col-rank {
     text-align: right;
-    width: 3.5rem;
+    width: 5rem;
     border-right: 1px solid var(--border);
+    white-space: nowrap;
   }
 
   tbody tr:nth-child(even) { background: var(--surface-alt); }
@@ -271,13 +275,16 @@
   }
 
   .rank-delta {
-    display: block;
+    display: inline-block;
     font-family: 'IBM Plex Mono', monospace;
     font-variant-numeric: tabular-nums;
-    font-size: 0.64rem;
-    color: var(--ink-muted);
-    margin-top: 0.1rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    margin-left: 0.35rem;
   }
+
+  .rank-delta--up { color: var(--green); }
+  .rank-delta--down { color: var(--red); }
 
   .title-cell { max-width: 26rem; }
 
@@ -837,14 +844,14 @@
     return `<span class="no-id-chip">no Goodreads ID</span>`;
   }
 
-  // Quiet, same colour either way — direction is carried by the arrow glyph,
-  // not a loud up/down colour, per the "small hint, not a badge" ask.
+  // Small inline hint next to the rank, not a badge — sits on the same line
+  // so rows with a change don't grow taller than their neighbours.
   function rankDeltaHtml(book, year, rank) {
     const prior = book.editions.find(e => e.year === year - 1)?.rank;
     if (prior == null || prior === rank) return '';
     return prior > rank
-      ? `<span class="rank-delta">&#9650;${prior - rank}</span>`
-      : `<span class="rank-delta">&#9660;${rank - prior}</span>`;
+      ? `<span class="rank-delta rank-delta--up">&#9650;${prior - rank}</span>`
+      : `<span class="rank-delta rank-delta--down">&#9660;${rank - prior}</span>`;
   }
 
   function openModal(workKey) {
