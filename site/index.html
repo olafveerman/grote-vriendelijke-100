@@ -861,6 +861,8 @@
     const metaRows = [];
     if (b.publisher) metaRows.push(['Publisher', b.publisher]);
     if (b.age_rating) metaRows.push(['Age rating', b.age_rating]);
+    if (b.publication_year) metaRows.push(['First published', String(b.publication_year)]);
+    if (b.original_language) metaRows.push(['Original language', b.original_language]);
     if (b.illustrator) metaRows.push(['Illustrator', b.illustrator]);
     modalMetaEl.style.display = metaRows.length ? '' : 'none';
     modalMetaEl.innerHTML = metaRows.map(([k, v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd>`).join('');
