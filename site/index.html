@@ -690,7 +690,7 @@
 
   .insight-card h3 {
     font-family: 'Archivo', sans-serif;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: 700;
     margin: 0 0 0.15rem;
   }
@@ -834,6 +834,7 @@
 
 <div id="bubble-tooltip" class="hover-tooltip"></div>
 <div id="age-tooltip" class="hover-tooltip"></div>
+<div id="insight-tooltip" class="hover-tooltip"></div>
 
 <div class="modal-backdrop hidden" id="modal-backdrop">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -1632,6 +1633,8 @@
 
   // ---- small-multiple insight cards ----
 
+  const insightTooltip = document.getElementById('insight-tooltip');
+
   function parseAgeNum(ageRating) {
     if (!ageRating) return null;
     const n = parseInt(ageRating, 10);
@@ -1651,6 +1654,25 @@
     el.className = 'insight-card' + (wide ? ' wide' : '');
     el.innerHTML = html;
     grid.appendChild(el);
+    return el;
+  }
+
+  // Wires a hover tooltip (comma-separated book titles) onto each .bar-row
+  // of a just-rendered bar-chart card. rowEls and titleLists are parallel
+  // arrays — row i's tooltip shows titleLists[i].
+  function wireBarRowTooltips(rowEls, titleLists) {
+    rowEls.forEach((rowEl, i) => {
+      const text = titleLists[i].join(', ');
+      rowEl.addEventListener('mousemove', e => {
+        insightTooltip.style.display = 'block';
+        insightTooltip.style.left = (e.clientX + 12) + 'px';
+        insightTooltip.style.top = (e.clientY + 12) + 'px';
+        insightTooltip.textContent = text;
+      });
+      rowEl.addEventListener('mouseleave', () => {
+        insightTooltip.style.display = 'none';
+      });
+    });
   }
 
   function renderInsights() {
@@ -1670,11 +1692,40 @@
           <span class="bar-val">${c}</span>
         </div>
       `).join('');
-      insightCard(grid, false, `
+      const card = insightCard(grid, false, `
         <h3>Meest genoemde auteurs</h3>
-        <p class="sub">Unieke boeken in de GV100-geschiedenis, per auteur.</p>
+        <p class="sub">Van de ${Object.keys(counts).length} auteurs in de GV100-geschiedenis, zijn er een aantal die veel voorkomen.</p>
         ${rows}
       `);
+      wireBarRowTooltips(
+        card.querySelectorAll('.bar-row'),
+        top.map(([name]) => books.filter(b => b.authors.includes(name)).map(b => b.title))
+      );
+    })();
+
+    // Most-illustrated-by
+    (function () {
+      const withIllustrator = books.filter(b => b.illustrator);
+      const counts = {};
+      withIllustrator.forEach(b => { counts[b.illustrator] = (counts[b.illustrator] || 0) + 1; });
+      const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
+      const max = Math.max(...top.map(([, c]) => c));
+      const rows = top.map(([name, c]) => `
+        <div class="bar-row">
+          <span class="name">${escapeHtml(name)}</span>
+          <div class="bar-track"><div class="bar-fill" style="width:${(c / max * 100)}%"></div></div>
+          <span class="bar-val">${c}</span>
+        </div>
+      `).join('');
+      const card = insightCard(grid, false, `
+        <h3>Meest geïllustreerd door</h3>
+        <p class="sub">Van ${withIllustrator.length} van de ${books.length} boeken met een illustrator vermeld.</p>
+        ${rows}
+      `);
+      wireBarRowTooltips(
+        card.querySelectorAll('.bar-row'),
+        top.map(([name]) => withIllustrator.filter(b => b.illustrator === name).map(b => b.title))
+      );
     })();
 
     // Age rating histogram — bucketed onto jaapleest.nl's own age-indication
@@ -1696,11 +1747,25 @@
           <span class="hist-label">${k}</span>
         </div>
       `).join('');
-      insightCard(grid, false, `
+      const card = insightCard(grid, false, `
         <h3>Leeftijdsadvies</h3>
         <p class="sub">Van ${withRating} boeken met een leeftijdsadvies van jaapleest.nl.</p>
         <div class="hist">${cols}</div>
       `);
+      // No y-axis on this chart, so the bar heights alone don't give an exact
+      // count — the hover tooltip is the only place that number shows up.
+      card.querySelectorAll('.hist-col').forEach((colEl, i) => {
+        const k = order[i];
+        colEl.addEventListener('mousemove', e => {
+          insightTooltip.style.display = 'block';
+          insightTooltip.style.left = (e.clientX + 12) + 'px';
+          insightTooltip.style.top = (e.clientY + 12) + 'px';
+          insightTooltip.textContent = `${k}: ${counts[k]} boeken`;
+        });
+        colEl.addEventListener('mouseleave', () => {
+          insightTooltip.style.display = 'none';
+        });
+      });
     })();
 
     // Translated into Dutch
@@ -1717,11 +1782,15 @@
           <span class="bar-val">${c}</span>
         </div>
       `).join('');
-      insightCard(grid, false, `
+      const card = insightCard(grid, false, `
         <h3>Vertaald naar het Nederlands</h3>
         <div class="stat-value">${translated.length}<span style="font-size:1.2rem; color:var(--ink-muted);"> / ${books.length}</span></div>
         <div class="lang-bars" style="margin-top:1rem;">${rows}</div>
       `);
+      wireBarRowTooltips(
+        card.querySelectorAll('.bar-row'),
+        breakdown.map(([lang]) => translated.filter(b => b.original_language === lang).map(b => b.title))
+      );
     })();
 
     // How old are the books — one grey line per edition (how its 100 books'
