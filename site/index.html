@@ -1583,35 +1583,33 @@
     });
 
     bubbleLabelsG.innerHTML = '';
-    if (!lens.noLabels) {
-      // Narrow adjacent clusters (e.g. "Lemniscaat" next to "Blossom Books")
-      // can't both fit a label on the same row at this font size — stagger
-      // onto a second row wherever two neighbours would otherwise collide.
-      const rowRightEdge = [-Infinity, -Infinity];
-      orderedKeys.forEach((k, idx) => {
-        const cl = clusters.get(k);
-        const anchorX = anchorXs[idx];
-        const labelW = cl.label.length * 23 * 0.56;
-        const left = anchorX - labelW / 2, right = anchorX + labelW / 2;
-        const row = left > rowRightEdge[0] + 10 ? 0 : 1;
-        rowRightEdge[row] = right;
+    // Narrow adjacent clusters (e.g. "Lemniscaat" next to "Blossom Books")
+    // can't both fit a label on the same row at this font size — stagger
+    // onto a second row wherever two neighbours would otherwise collide.
+    const rowRightEdge = [-Infinity, -Infinity];
+    orderedKeys.forEach((k, idx) => {
+      const cl = clusters.get(k);
+      const anchorX = anchorXs[idx];
+      const labelW = cl.label.length * 23 * 0.56;
+      const left = anchorX - labelW / 2, right = anchorX + labelW / 2;
+      const row = left > rowRightEdge[0] + 10 ? 0 : 1;
+      rowRightEdge[row] = right;
 
-        const nameY = row === 0 ? BUBBLE_H - 54 : BUBBLE_H - 30;
-        const countY = row === 0 ? BUBBLE_H - 38 : BUBBLE_H - 14;
+      const nameY = row === 0 ? BUBBLE_H - 54 : BUBBLE_H - 30;
+      const countY = row === 0 ? BUBBLE_H - 38 : BUBBLE_H - 14;
 
-        const nameLabel = document.createElementNS(bns, 'text');
-        nameLabel.setAttribute('x', anchorX); nameLabel.setAttribute('y', nameY);
-        nameLabel.setAttribute('class', 'bubble-cluster-name');
-        nameLabel.textContent = cl.label;
-        bubbleLabelsG.appendChild(nameLabel);
+      const nameLabel = document.createElementNS(bns, 'text');
+      nameLabel.setAttribute('x', anchorX); nameLabel.setAttribute('y', nameY);
+      nameLabel.setAttribute('class', 'bubble-cluster-name');
+      nameLabel.textContent = cl.label;
+      bubbleLabelsG.appendChild(nameLabel);
 
-        const countLabel = document.createElementNS(bns, 'text');
-        countLabel.setAttribute('x', anchorX); countLabel.setAttribute('y', countY);
-        countLabel.setAttribute('class', 'bubble-cluster-count');
-        countLabel.textContent = cl.items.length + ' boeken';
-        bubbleLabelsG.appendChild(countLabel);
-      });
-    }
+      const countLabel = document.createElementNS(bns, 'text');
+      countLabel.setAttribute('x', anchorX); countLabel.setAttribute('y', countY);
+      countLabel.setAttribute('class', 'bubble-cluster-count');
+      countLabel.textContent = cl.items.length + ' boeken';
+      bubbleLabelsG.appendChild(countLabel);
+    });
   }
 
   // ---- small-multiple insight cards ----
@@ -1723,9 +1721,7 @@
           .forEach(b => allDecades.add(Math.floor(b.publication_year / 10) * 10));
       });
       const decades = [...allDecades].sort((a, b) => a - b);
-      const buckets = decades.some(d => d < 1960)
-        ? ["≤1950's", ...decades.filter(d => d >= 1960).map(d => d + "'s")]
-        : decades.map(d => d + "'s");
+      const buckets = [...new Set(decades.map(bucketOf))];
 
       const perYear = YEARS.map(y => {
         const yearBooks = books.filter(b => b.editions.some(e => e.year === y) && b.publication_year);
