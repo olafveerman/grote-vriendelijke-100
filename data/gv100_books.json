@@ -5,7 +5,6 @@
     "authors": [
       "Tom Rijpert"
     ],
-    "series": "",
     "goodreads_id": "222207570",
     "editions": [
       {
@@ -17,10 +16,11 @@
     "cover": "covers/19-91-rijpert.jpg",
     "jaapleest": "https://jaapleest.nl/1991-van-tom-rijpert/",
     "age_rating": "12+",
-    "publisher": null,
+    "publisher": "Pelckmans",
     "illustrator": null,
     "publication_year": 2025,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "achtste groepers huilen niet | vriens",
@@ -28,7 +28,6 @@
     "authors": [
       "Jacques Vriens"
     ],
-    "series": "",
     "goodreads_id": "8050771",
     "editions": [
       {
@@ -59,11 +58,12 @@
     ],
     "cover": "covers/achtste-groepers-huilen-niet-vriens.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Van Holkema & Warendorf",
     "illustrator": null,
     "publication_year": 1999,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "alaska | woltz",
@@ -71,7 +71,6 @@
     "authors": [
       "Anna Woltz"
     ],
-    "series": "",
     "goodreads_id": "32506287",
     "editions": [
       {
@@ -106,7 +105,8 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2016,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "albatros | goldewijk",
@@ -114,7 +114,6 @@
     "authors": [
       "Yorick Goldewijk"
     ],
-    "series": "",
     "goodreads_id": "241646754",
     "editions": [
       {
@@ -129,7 +128,8 @@
     "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 2025,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "alfabet | dematons",
@@ -137,7 +137,6 @@
     "authors": [
       "Charlotte Dematons"
     ],
-    "series": "",
     "goodreads_id": "53557513",
     "editions": [
       {
@@ -172,7 +171,8 @@
     "publisher": "Hoogland & van Klaveren",
     "illustrator": "Charlotte Dematons",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "alice in wonderland | carroll",
@@ -180,7 +180,6 @@
     "authors": [
       "Lewis Carroll"
     ],
-    "series": "",
     "goodreads_id": "2928479",
     "editions": [
       {
@@ -190,12 +189,13 @@
       }
     ],
     "cover": "covers/alice-in-wonderland-carroll.jpg",
-    "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "jaapleest": "https://jaapleest.nl/fraai-nieuw-wonderland-van-floor-rieder/",
+    "age_rating": "8+",
+    "publisher": "Gottmer",
+    "illustrator": "Floor Rieder",
     "publication_year": 1865,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Sofia Engelsman"
   },
   {
     "work_key": "alle verhalen van kikker en pad | lobel",
@@ -203,7 +203,6 @@
     "authors": [
       "Arnold Lobel"
     ],
-    "series": "",
     "goodreads_id": "11449132",
     "editions": [
       {
@@ -229,11 +228,12 @@
     ],
     "cover": "covers/alle-verhalen-van-kikker-en-pad-lobel.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "4+",
+    "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 1987,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": null
   },
   {
     "work_key": "alleen op de wereld | malot",
@@ -241,7 +241,6 @@
     "authors": [
       "Hector Malot"
     ],
-    "series": "",
     "goodreads_id": "2977918",
     "editions": [
       {
@@ -273,10 +272,11 @@
     "cover": "covers/alleen-op-de-wereld-malot.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "publisher": "Gottmer",
+    "illustrator": "Charlotte Dematons",
     "publication_year": 1878,
-    "original_language": "French"
+    "original_language": "French",
+    "translator": null
   },
   {
     "work_key": "allemaal willen we de hemel | beerten",
@@ -284,7 +284,6 @@
     "authors": [
       "Els Beerten"
     ],
-    "series": "",
     "goodreads_id": "3836891",
     "editions": [
       {
@@ -316,10 +315,11 @@
     "cover": "covers/allemaal-willen-we-de-hemel-beerten.jpg",
     "jaapleest": "https://jaapleest.nl/een-volwassen-jeugdroman/",
     "age_rating": "15+",
-    "publisher": null,
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2008,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "als de wereld wankelt | nelson",
@@ -327,7 +327,6 @@
     "authors": [
       "Jandy Nelson"
     ],
-    "series": "",
     "goodreads_id": "215035331",
     "editions": [
       {
@@ -347,7 +346,8 @@
     "publisher": "Blossom Books",
     "illustrator": null,
     "publication_year": 2024,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Aimée Warmerdam en Merel Leene"
   },
   {
     "work_key": "avonturen van de dappere ridster | schotveld",
@@ -355,7 +355,6 @@
     "authors": [
       "Janneke Schotveld"
     ],
-    "series": "",
     "goodreads_id": "53972382",
     "editions": [
       {
@@ -380,7 +379,8 @@
     "publisher": "Van Holkema & Warendorf",
     "illustrator": "Milja Praagman",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "blauwe plekken | vries",
@@ -388,7 +388,6 @@
     "authors": [
       "Anke de Vries"
     ],
-    "series": "",
     "goodreads_id": "5505028",
     "editions": [
       {
@@ -414,11 +413,12 @@
     ],
     "cover": "covers/blauwe-plekken-vries.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1992,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "bob popcorn | rinck",
@@ -426,7 +426,6 @@
     "authors": [
       "Maranke Rinck"
     ],
-    "series": "",
     "goodreads_id": "50223074",
     "editions": [
       {
@@ -446,7 +445,8 @@
     "publisher": "Querido",
     "illustrator": "Martijn van der Linden",
     "publication_year": 2019,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "briefjes voor pelle | slegers",
@@ -454,7 +454,6 @@
     "authors": [
       "Marlies Slegers"
     ],
-    "series": "",
     "goodreads_id": "55210688",
     "editions": [
       {
@@ -489,7 +488,8 @@
     "publisher": "Luitingh-Sijthoff",
     "illustrator": "Linde Faas",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "complot de spannendste samenzweringstheorieen en zijn ze waar | schutten",
@@ -497,7 +497,6 @@
     "authors": [
       "Jan Paul Schutten"
     ],
-    "series": "",
     "goodreads_id": "235371180",
     "editions": [
       {
@@ -512,7 +511,8 @@
     "publisher": "Blauw Gras",
     "illustrator": "Koen Aelterman",
     "publication_year": 2025,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "daantje de wereldkampioen | dahl",
@@ -520,7 +520,6 @@
     "authors": [
       "Roald Dahl"
     ],
-    "series": "",
     "goodreads_id": "4914286",
     "editions": [
       {
@@ -541,11 +540,12 @@
     ],
     "cover": "covers/daantje-de-wereldkampioen-dahl.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "8+",
+    "publisher": "De Fontein Jeugd",
     "illustrator": null,
     "publication_year": 1975,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Harriët Freezer"
   },
   {
     "work_key": "de allergrootste | morosinotto",
@@ -553,7 +553,6 @@
     "authors": [
       "Davide Morosinotto"
     ],
-    "series": "",
     "goodreads_id": "61855794",
     "editions": [
       {
@@ -578,7 +577,8 @@
     "publisher": "Pelckmans",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": null
+    "original_language": "Italian",
+    "translator": "Pieter van der Drift en Manon Smits"
   },
   {
     "work_key": "de boom die een wereld was | goldewijk",
@@ -586,7 +586,6 @@
     "authors": [
       "Yorick Goldewijk"
     ],
-    "series": "",
     "goodreads_id": "205786873",
     "editions": [
       {
@@ -601,7 +600,8 @@
     "publisher": "Ploegsma",
     "illustrator": "Jeska Verstegen",
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de brief voor de koning | dragt",
@@ -609,7 +609,6 @@
     "authors": [
       "Tonke Dragt"
     ],
-    "series": "De brief voor de koning, #1",
     "goodreads_id": "1835829",
     "editions": [
       {
@@ -640,11 +639,12 @@
     ],
     "cover": "covers/de-brief-voor-de-koning-dragt.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "9+",
+    "publisher": "Leopold",
     "illustrator": null,
     "publication_year": 1962,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de gebroeders leeuwenhart | lindgren",
@@ -652,7 +652,6 @@
     "authors": [
       "Astrid Lindgren"
     ],
-    "series": "",
     "goodreads_id": "6262236",
     "editions": [
       {
@@ -683,11 +682,12 @@
     ],
     "cover": "covers/de-gebroeders-leeuwenhart-lindgren.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 1973,
-    "original_language": "Swedish"
+    "original_language": "Swedish",
+    "translator": "Rita Törnqvist-Verschuur"
   },
   {
     "work_key": "de geheime tuin | burnett",
@@ -695,7 +695,6 @@
     "authors": [
       "Frances Hodgson Burnett"
     ],
-    "series": "",
     "goodreads_id": "44297948",
     "editions": [
       {
@@ -730,7 +729,8 @@
     "publisher": "Leopold",
     "illustrator": "Linde Faas",
     "publication_year": 1911,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Imme Dros"
   },
   {
     "work_key": "de glazenwasser van het rijksmuseum | sy",
@@ -738,7 +738,6 @@
     "authors": [
       "Astrid Sy"
     ],
-    "series": "",
     "goodreads_id": "218129911",
     "editions": [
       {
@@ -753,7 +752,8 @@
     "publisher": "Luitingh Sijthoff",
     "illustrator": "Marieke Nelissen",
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de gorgels | myjer",
@@ -761,7 +761,6 @@
     "authors": [
       "Jochem Myjer"
     ],
-    "series": "",
     "goodreads_id": "26258898",
     "editions": [
       {
@@ -791,12 +790,13 @@
       }
     ],
     "cover": "covers/de-gorgels-myjer.jpg",
-    "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "jaapleest": "https://jaapleest.nl/klassiek-kinderboek-jochem-myjer-over-fantasiewezentjes/",
+    "age_rating": "4+",
+    "publisher": "Leopold",
+    "illustrator": "Rick de Haas",
     "publication_year": 2015,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de griezels | dahl",
@@ -804,7 +804,6 @@
     "authors": [
       "Roald Dahl"
     ],
-    "series": "",
     "goodreads_id": "13047146",
     "editions": [
       {
@@ -815,11 +814,12 @@
     ],
     "cover": "covers/de-griezels-dahl.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "7+",
+    "publisher": "De Fontein Jeugd",
     "illustrator": null,
     "publication_year": 1980,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Huberte Vriesendorp"
   },
   {
     "work_key": "de grote boze heks | kraan",
@@ -827,7 +827,6 @@
     "authors": [
       "Hanna Kraan"
     ],
-    "series": "",
     "goodreads_id": "184768371",
     "editions": [
       {
@@ -848,11 +847,12 @@
     ],
     "cover": "covers/de-grote-boze-heks-kraan.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "8+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de gruffalo | donaldson",
@@ -860,7 +860,6 @@
     "authors": [
       "Julia Donaldson"
     ],
-    "series": "",
     "goodreads_id": "20761304",
     "editions": [
       {
@@ -891,11 +890,12 @@
     ],
     "cover": "covers/de-gruffalo-donaldson.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "4+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1999,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de gvr | dahl",
@@ -903,7 +903,6 @@
     "authors": [
       "Roald Dahl"
     ],
-    "series": "",
     "goodreads_id": "5094631",
     "editions": [
       {
@@ -934,11 +933,12 @@
     ],
     "cover": "covers/de-gvr-dahl.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "7+",
+    "publisher": "De Fontein Jeugd",
     "illustrator": null,
     "publication_year": 1982,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Huberte Vriesendorp"
   },
   {
     "work_key": "de heksen | dahl",
@@ -946,7 +946,6 @@
     "authors": [
       "Roald Dahl"
     ],
-    "series": "",
     "goodreads_id": "5037819",
     "editions": [
       {
@@ -967,11 +966,12 @@
     ],
     "cover": "covers/de-heksen-dahl.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "8+",
+    "publisher": "De Fontein Jeugd",
     "illustrator": null,
     "publication_year": 1983,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Huberte Vriesendorp"
   },
   {
     "work_key": "de heksenkind trilogie | furlong",
@@ -979,7 +979,6 @@
     "authors": [
       "Monica Furlong"
     ],
-    "series": "",
     "goodreads_id": "216501307",
     "editions": [
       {
@@ -994,7 +993,8 @@
     "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1987,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de jongen de mol de vos en het paard | mackesy",
@@ -1002,7 +1002,6 @@
     "authors": [
       "Charlie Mackesy"
     ],
-    "series": "",
     "goodreads_id": "51522027",
     "editions": [
       {
@@ -1027,7 +1026,8 @@
     "publisher": "Kok Boekencentrum",
     "illustrator": "Charlie Mackesy",
     "publication_year": 2019,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Arthur Japin"
   },
   {
     "work_key": "de jongen die van de wereld hield | veldkamp",
@@ -1035,7 +1035,6 @@
     "authors": [
       "Tjibbe Veldkamp"
     ],
-    "series": "",
     "goodreads_id": "197502517",
     "editions": [
       {
@@ -1060,7 +1059,8 @@
     "publisher": "Querido",
     "illustrator": "Mark Janssen",
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de kinderen van bolderburen | lindgren",
@@ -1068,7 +1068,6 @@
     "authors": [
       "Astrid Lindgren"
     ],
-    "series": "",
     "goodreads_id": "6891221",
     "editions": [
       {
@@ -1099,11 +1098,12 @@
     ],
     "cover": "covers/de-kinderen-van-bolderburen-lindgren.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "6+",
+    "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 1946,
-    "original_language": "Swedish"
+    "original_language": "Swedish",
+    "translator": "Sydia Clark"
   },
   {
     "work_key": "de kinderkaravaan | loeff",
@@ -1111,7 +1111,6 @@
     "authors": [
       "An Rutgers van der Loeff"
     ],
-    "series": "",
     "goodreads_id": "8061173",
     "editions": [
       {
@@ -1122,11 +1121,12 @@
     ],
     "cover": "covers/de-kinderkaravaan-loeff.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "9+",
+    "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 1949,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de kleine kapitein | biegel",
@@ -1134,7 +1134,6 @@
     "authors": [
       "Paul Biegel"
     ],
-    "series": "",
     "goodreads_id": "634518",
     "editions": [
       {
@@ -1166,10 +1165,11 @@
     "cover": "covers/de-kleine-kapitein-biegel.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 1970,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de kronieken van narnia | lewis",
@@ -1177,7 +1177,6 @@
     "authors": [
       "C.S. Lewis"
     ],
-    "series": "",
     "goodreads_id": "2962328",
     "editions": [
       {
@@ -1188,11 +1187,12 @@
     ],
     "cover": "covers/de-kronieken-van-narnia-lewis.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Kok Boekencentrum",
     "illustrator": null,
     "publication_year": 1956,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Imme Dros"
   },
   {
     "work_key": "de lijst van violet sopjes | vlietstra",
@@ -1200,7 +1200,6 @@
     "authors": [
       "David Vlietstra"
     ],
-    "series": "",
     "goodreads_id": "202580313",
     "editions": [
       {
@@ -1220,7 +1219,8 @@
     "publisher": "Gottmer",
     "illustrator": "Yoko Heiligers",
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de meisjes zeven sprookjes | schaap",
@@ -1228,7 +1228,6 @@
     "authors": [
       "Annet Schaap"
     ],
-    "series": "",
     "goodreads_id": "58765674",
     "editions": [
       {
@@ -1243,7 +1242,8 @@
     "publisher": "Querido",
     "illustrator": "Annet Schaap",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de neehoorn | kling",
@@ -1251,7 +1251,6 @@
     "authors": [
       "Marc-Uwe Kling"
     ],
-    "series": "",
     "goodreads_id": "56058705",
     "editions": [
       {
@@ -1262,11 +1261,12 @@
     ],
     "cover": "covers/de-neehoorn-kling.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "5+",
+    "publisher": "Volt",
     "illustrator": null,
     "publication_year": 2019,
-    "original_language": "German"
+    "original_language": "German",
+    "translator": "Jaap Robben"
   },
   {
     "work_key": "de raadselbreker | koops",
@@ -1274,7 +1274,6 @@
     "authors": [
       "Rob Koops"
     ],
-    "series": "Oerbloed #1",
     "goodreads_id": "192564474",
     "editions": [
       {
@@ -1285,11 +1284,12 @@
     ],
     "cover": "covers/de-raadselbreker-koops.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "HarperCollins Holland",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de reis van manie schaafijs | zevenbergen",
@@ -1297,7 +1297,6 @@
     "authors": [
       "Zindzi Zevenbergen"
     ],
-    "series": "",
     "goodreads_id": "195802877",
     "editions": [
       {
@@ -1322,7 +1321,8 @@
     "publisher": "De Harmonie",
     "illustrator": "Hedi Tjin",
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de ruines van gorlan | flanagan",
@@ -1330,7 +1330,6 @@
     "authors": [
       "John Flanagan"
     ],
-    "series": "De Grijze Jager, #1",
     "goodreads_id": "9437985",
     "editions": [
       {
@@ -1341,11 +1340,12 @@
     ],
     "cover": "covers/de-ruines-van-gorlan-flanagan.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "9+",
+    "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 2004,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de spin en de sleutel | woltz",
@@ -1353,7 +1353,6 @@
     "authors": [
       "Anna Woltz"
     ],
-    "series": "",
     "goodreads_id": "199061267",
     "editions": [
       {
@@ -1368,7 +1367,8 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de tillermans de zwerftocht van vier kinderen op zoek naar een thuis | voigt",
@@ -1376,7 +1376,6 @@
     "authors": [
       "Cynthia Voigt"
     ],
-    "series": "",
     "goodreads_id": "9738710",
     "editions": [
       {
@@ -1387,11 +1386,12 @@
     ],
     "cover": "covers/de-tillermans-de-zwerftocht-van-vier-kinderen-op-zoek-naar-een-thuis-voigt.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "13+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1997,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "M. Slagt"
   },
   {
     "work_key": "de toch niet zo eenzame tocht van torre | overduin",
@@ -1399,7 +1399,6 @@
     "authors": [
       "Annekarijn Overduin"
     ],
-    "series": "",
     "goodreads_id": "57881872",
     "editions": [
       {
@@ -1419,7 +1418,8 @@
     "publisher": "Gottmer",
     "illustrator": "Sophie Pluim",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de torens van februari | dragt",
@@ -1427,7 +1427,6 @@
     "authors": [
       "Tonke Dragt"
     ],
-    "series": "",
     "goodreads_id": "6660038",
     "editions": [
       {
@@ -1443,11 +1442,12 @@
     ],
     "cover": "covers/de-torens-van-februari-dragt.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Leopold",
     "illustrator": null,
     "publication_year": 1973,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de trein van vier over twaalf | palmkvist",
@@ -1455,7 +1455,6 @@
     "authors": [
       "Conny Palmkvist"
     ],
-    "series": "",
     "goodreads_id": "205530850",
     "editions": [
       {
@@ -1470,7 +1469,8 @@
     "publisher": "Kluitman",
     "illustrator": null,
     "publication_year": 2024,
-    "original_language": "Swedish"
+    "original_language": "Swedish",
+    "translator": "Lammie Post-Oostenbrink"
   },
   {
     "work_key": "de tuinen van dorr | biegel",
@@ -1478,7 +1478,6 @@
     "authors": [
       "Paul Biegel"
     ],
-    "series": "",
     "goodreads_id": "3216174",
     "editions": [
       {
@@ -1503,7 +1502,8 @@
     "publisher": "Holland / Lemniscaat (Paul Biegel Bibliotheek)",
     "illustrator": "Charlotte Dematons",
     "publication_year": 1969,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de tunnel | woltz",
@@ -1511,7 +1511,6 @@
     "authors": [
       "Anna Woltz"
     ],
-    "series": "",
     "goodreads_id": "54714008",
     "editions": [
       {
@@ -1546,7 +1545,8 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de veger | auxier",
@@ -1554,7 +1554,6 @@
     "authors": [
       "Jonathan Auxier"
     ],
-    "series": "",
     "goodreads_id": "45014592",
     "editions": [
       {
@@ -1584,7 +1583,8 @@
     "publisher": "Billy Bones",
     "illustrator": null,
     "publication_year": 2018,
-    "original_language": null
+    "original_language": "English",
+    "translator": "Esther Ottens"
   },
   {
     "work_key": "de weg naar terug | stein",
@@ -1592,7 +1592,6 @@
     "authors": [
       "Mathilde Stein"
     ],
-    "series": "Pluk en Pluis #1",
     "goodreads_id": "62847777",
     "editions": [
       {
@@ -1613,11 +1612,12 @@
     ],
     "cover": "covers/de-weg-naar-terug-stein.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "7+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de wonderverteller | dijkstra",
@@ -1625,7 +1625,6 @@
     "authors": [
       "Lida Dijkstra"
     ],
-    "series": "",
     "goodreads_id": "216836755",
     "editions": [
       {
@@ -1640,7 +1639,8 @@
     "publisher": "Luitingh Sijthoff",
     "illustrator": "Djenné Fila",
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de zevensprong | dragt",
@@ -1648,7 +1648,6 @@
     "authors": [
       "Tonke Dragt"
     ],
-    "series": "",
     "goodreads_id": "2594251",
     "editions": [
       {
@@ -1679,11 +1678,12 @@
     ],
     "cover": "covers/de-zevensprong-dragt.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Leopold",
     "illustrator": null,
     "publication_year": 1966,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de zomer die alles was | overman",
@@ -1691,7 +1691,6 @@
     "authors": [
       "Mariska Overman"
     ],
-    "series": "",
     "goodreads_id": "211171082",
     "editions": [
       {
@@ -1711,7 +1710,8 @@
     "publisher": "Kluitman",
     "illustrator": null,
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "de zoon van de berentemmer | petit",
@@ -1719,7 +1719,6 @@
     "authors": [
       "Xavier-Laurent Petit"
     ],
-    "series": "",
     "goodreads_id": "114195099",
     "editions": [
       {
@@ -1734,7 +1733,8 @@
     "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": null
+    "original_language": "French",
+    "translator": "Leny van Grootel"
   },
   {
     "work_key": "de zweetvoetenman over rechtszaken regels en een hoop gedoe | huizing",
@@ -1742,7 +1742,6 @@
     "authors": [
       "Annet Huizing"
     ],
-    "series": "",
     "goodreads_id": "36180421",
     "editions": [
       {
@@ -1762,7 +1761,8 @@
     "publisher": "Lemniscaat",
     "illustrator": "Margot Westermann",
     "publication_year": 2017,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "dit is geen dagboek | sassen",
@@ -1770,7 +1770,6 @@
     "authors": [
       "Erna Sassen"
     ],
-    "series": "",
     "goodreads_id": "10416398",
     "editions": [
       {
@@ -1782,10 +1781,11 @@
     "cover": "covers/dit-is-geen-dagboek-sassen.jpg",
     "jaapleest": "https://jaapleest.nl/erna-sassen-overtuigt/",
     "age_rating": "15+",
-    "publisher": null,
+    "publisher": "Leopold",
     "illustrator": null,
     "publication_year": 2009,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "dodo | kroonenberg",
@@ -1793,7 +1793,6 @@
     "authors": [
       "Mohana van den Kroonenberg"
     ],
-    "series": "",
     "goodreads_id": "61180820",
     "editions": [
       {
@@ -1818,7 +1817,8 @@
     "publisher": "De Vier Windstreken",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "doodgewoon | westera",
@@ -1826,7 +1826,6 @@
     "authors": [
       "Bette Westera"
     ],
-    "series": "",
     "goodreads_id": "24035558",
     "editions": [
       {
@@ -1837,11 +1836,12 @@
     ],
     "cover": "covers/doodgewoon-westera.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "7+",
+    "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 2014,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "dromer | janssen",
@@ -1849,7 +1849,6 @@
     "authors": [
       "Mark Janssen"
     ],
-    "series": "",
     "goodreads_id": "59144707",
     "editions": [
       {
@@ -1864,7 +1863,8 @@
     "publisher": "CPNB/Lemniscaat",
     "illustrator": "Mark Janssen",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "duizend stukjes overal | overman",
@@ -1872,7 +1872,6 @@
     "authors": [
       "Mariska Overman"
     ],
-    "series": "",
     "goodreads_id": "223461349",
     "editions": [
       {
@@ -1887,7 +1886,8 @@
     "publisher": "Kluitman",
     "illustrator": null,
     "publication_year": 2025,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "dwars co | hop",
@@ -1895,7 +1895,6 @@
     "authors": [
       "Rico Hop"
     ],
-    "series": "",
     "goodreads_id": "57736078",
     "editions": [
       {
@@ -1907,10 +1906,11 @@
     "cover": "covers/dwars-co-hop.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Lannoo",
     "illustrator": null,
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "een groene bloem trilogie | zwigtman",
@@ -1918,7 +1918,6 @@
     "authors": [
       "Floortje Zwigtman"
     ],
-    "series": "",
     "goodreads_id": "25675755",
     "editions": [
       {
@@ -1933,12 +1932,13 @@
       }
     ],
     "cover": "covers/een-groene-bloem-trilogie-zwigtman.jpg",
-    "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "jaapleest": "https://jaapleest.nl/een-omnibus-van-trops-formaat/",
+    "age_rating": "15+",
+    "publisher": "Luitingh-Sijthoff",
     "illustrator": null,
     "publication_year": 2010,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "een jaar bij kikker en pad | lobel",
@@ -1947,7 +1947,6 @@
       "A. Lobel",
       "A.G. van Melle"
     ],
-    "series": "",
     "goodreads_id": "",
     "editions": [
       {
@@ -1958,11 +1957,12 @@
     ],
     "cover": "covers/een-jaar-bij-kikker-en-pad-lobel.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "3+",
+    "publisher": "Ploegsma",
     "illustrator": null,
-    "publication_year": null,
-    "original_language": null
+    "publication_year": 1995,
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "een kleine geschiedenis van de mens door dierenogen | akveld",
@@ -1970,7 +1970,6 @@
     "authors": [
       "Joukje Akveld"
     ],
-    "series": "",
     "goodreads_id": "75521022",
     "editions": [
       {
@@ -1985,7 +1984,8 @@
     "publisher": "Lannoo",
     "illustrator": "Djenné Fila",
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "een rugzak vol | koolwijk",
@@ -1993,7 +1993,6 @@
     "authors": [
       "Pieter Koolwijk"
     ],
-    "series": "",
     "goodreads_id": "227781613",
     "editions": [
       {
@@ -2008,7 +2007,8 @@
     "publisher": "Lemniscaat",
     "illustrator": "Linde Faas",
     "publication_year": 2025,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "een slijmzoen voor je oma | meeuwsen",
@@ -2016,7 +2016,6 @@
     "authors": [
       "Matthijs Meeuwsen"
     ],
-    "series": "",
     "goodreads_id": "175319065",
     "editions": [
       {
@@ -2031,7 +2030,8 @@
     "publisher": "Querido",
     "illustrator": "Paco Vink",
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "een zee van liefde | gaudesaboos",
@@ -2039,7 +2039,6 @@
     "authors": [
       "Pieter Gaudesaboos"
     ],
-    "series": "",
     "goodreads_id": "59479437",
     "editions": [
       {
@@ -2069,7 +2068,8 @@
     "publisher": "Lannoo",
     "illustrator": "Pieter Gaudesaboos",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "egalus | tolman",
@@ -2077,7 +2077,6 @@
     "authors": [
       "Marije Tolman"
     ],
-    "series": "",
     "goodreads_id": "62635825",
     "editions": [
       {
@@ -2088,11 +2087,12 @@
     ],
     "cover": "covers/egalus-tolman.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "6+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "films die nergens draaien | goldewijk",
@@ -2100,7 +2100,6 @@
     "authors": [
       "Yorick Goldewijk"
     ],
-    "series": "",
     "goodreads_id": "59007349",
     "editions": [
       {
@@ -2135,7 +2134,8 @@
     "publisher": "Ploegsma",
     "illustrator": "Yvonne Lacet",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "floddertje | schmidt",
@@ -2143,7 +2143,6 @@
     "authors": [
       "Annie M.G. Schmidt"
     ],
-    "series": "",
     "goodreads_id": "1466832",
     "editions": [
       {
@@ -2164,11 +2163,12 @@
     ],
     "cover": "covers/floddertje-schmidt.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "4+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1973,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "gebr | lieshout",
@@ -2176,7 +2176,6 @@
     "authors": [
       "Ted van Lieshout"
     ],
-    "series": "",
     "goodreads_id": "8493143",
     "editions": [
       {
@@ -2188,10 +2187,11 @@
     "cover": "covers/gebr-lieshout.jpg",
     "jaapleest": "https://jaapleest.nl/gebr-nog-steeds-adembenemend/",
     "age_rating": "12+",
-    "publisher": null,
+    "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 1996,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "geef me de ruimte | beckman",
@@ -2199,7 +2199,6 @@
     "authors": [
       "Thea Beckman"
     ],
-    "series": "Trilogie over de 100 jarige oorlog, #1",
     "goodreads_id": "4951108",
     "editions": [
       {
@@ -2225,11 +2224,12 @@
     ],
     "cover": "covers/geef-me-de-ruimte-beckman.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "12+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1976,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "geheimen van het wilde woud | dragt",
@@ -2237,7 +2237,6 @@
     "authors": [
       "Tonke Dragt"
     ],
-    "series": "De brief voor de koning, #2",
     "goodreads_id": "254108",
     "editions": [
       {
@@ -2253,11 +2252,12 @@
     ],
     "cover": "covers/geheimen-van-het-wilde-woud-dragt.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Leopold",
     "illustrator": null,
     "publication_year": 1965,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "gelukkig en blij | vendel",
@@ -2265,7 +2265,6 @@
     "authors": [
       "Edward van de Vendel"
     ],
-    "series": "",
     "goodreads_id": "179103167",
     "editions": [
       {
@@ -2285,7 +2284,8 @@
     "publisher": "Querido",
     "illustrator": "Martijn van der Linden",
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "ghost | reynolds",
@@ -2293,7 +2293,6 @@
     "authors": [
       "Jason Reynolds"
     ],
-    "series": "Track, #1",
     "goodreads_id": "102191279",
     "editions": [
       {
@@ -2305,10 +2304,11 @@
     "cover": "covers/ghost-reynolds.jpg",
     "jaapleest": "https://jaapleest.nl/ghost/",
     "age_rating": "10+",
-    "publisher": null,
+    "publisher": "Condor",
     "illustrator": null,
     "publication_year": 2016,
-    "original_language": null
+    "original_language": "English",
+    "translator": "Maria Postema"
   },
   {
     "work_key": "gips | woltz",
@@ -2316,7 +2316,6 @@
     "authors": [
       "Anna Woltz"
     ],
-    "series": "",
     "goodreads_id": "25389557",
     "editions": [
       {
@@ -2336,7 +2335,8 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2015,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "gozert | koolwijk",
@@ -2344,7 +2344,6 @@
     "authors": [
       "Pieter Koolwijk"
     ],
-    "series": "De wereld van Gozert, #1",
     "goodreads_id": "50361357",
     "editions": [
       {
@@ -2379,7 +2378,8 @@
     "publisher": "Lemniscaat",
     "illustrator": "Linde Faas",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "harry potter en de geheime kamer | rowling",
@@ -2387,7 +2387,6 @@
     "authors": [
       "J.K. Rowling"
     ],
-    "series": "Harry Potter, #2",
     "goodreads_id": "2954426",
     "editions": [
       {
@@ -2403,11 +2402,12 @@
     ],
     "cover": "covers/harry-potter-en-de-geheime-kamer-rowling.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "11+",
+    "publisher": "De Harmonie",
     "illustrator": null,
     "publication_year": 1998,
-    "original_language": null
+    "original_language": "English",
+    "translator": "Wiebe Buddingh'"
   },
   {
     "work_key": "harry potter en de gevangene van azkaban | rowling",
@@ -2415,7 +2415,6 @@
     "authors": [
       "J.K. Rowling"
     ],
-    "series": "Harry Potter, #3",
     "goodreads_id": "871319",
     "editions": [
       {
@@ -2446,11 +2445,12 @@
     ],
     "cover": "covers/harry-potter-en-de-gevangene-van-azkaban-rowling.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "11+",
+    "publisher": "De Harmonie",
     "illustrator": null,
     "publication_year": 1999,
-    "original_language": null
+    "original_language": "English",
+    "translator": "Wiebe Buddingh'"
   },
   {
     "work_key": "harry potter en de steen der wijzen | rowling",
@@ -2458,7 +2458,6 @@
     "authors": [
       "J.K. Rowling"
     ],
-    "series": "Harry Potter, #1",
     "goodreads_id": "1033918",
     "editions": [
       {
@@ -2489,11 +2488,12 @@
     ],
     "cover": "covers/harry-potter-en-de-steen-der-wijzen-rowling.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "11+",
+    "publisher": "De Harmonie",
     "illustrator": null,
     "publication_year": 1997,
-    "original_language": null
+    "original_language": "English",
+    "translator": "Wiebe Buddingh'"
   },
   {
     "work_key": "harry potter en de vuurbeker | rowling",
@@ -2501,7 +2501,6 @@
     "authors": [
       "J.K. Rowling"
     ],
-    "series": "Harry Potter, #4",
     "goodreads_id": "1079278",
     "editions": [
       {
@@ -2517,11 +2516,12 @@
     ],
     "cover": "covers/harry-potter-en-de-vuurbeker-rowling.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "12+",
+    "publisher": "De Harmonie",
     "illustrator": null,
     "publication_year": 2000,
-    "original_language": null
+    "original_language": "English",
+    "translator": "Wiebe Buddingh'"
   },
   {
     "work_key": "hart van inkt | funke",
@@ -2529,7 +2529,6 @@
     "authors": [
       "Cornelia Funke"
     ],
-    "series": "",
     "goodreads_id": "7556418",
     "editions": [
       {
@@ -2540,11 +2539,12 @@
     ],
     "cover": "covers/hart-van-inkt-funke.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "12+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2003,
-    "original_language": null
+    "original_language": "German",
+    "translator": "Hanneke Beneden en Ab Bertholet"
   },
   {
     "work_key": "hart van staal | geest",
@@ -2552,7 +2552,6 @@
     "authors": [
       "Simon van der Geest"
     ],
-    "series": "",
     "goodreads_id": "177142001",
     "editions": [
       {
@@ -2577,7 +2576,8 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "hasse simonsdochter | beckman",
@@ -2585,7 +2585,6 @@
     "authors": [
       "Thea Beckman"
     ],
-    "series": "",
     "goodreads_id": "1551211",
     "editions": [
       {
@@ -2616,11 +2615,12 @@
     ],
     "cover": "covers/hasse-simonsdochter-beckman.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "12+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1983,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "heel de wereld wordt wakker | robben",
@@ -2628,7 +2628,6 @@
     "authors": [
       "Jaap Robben"
     ],
-    "series": "",
     "goodreads_id": "62989111",
     "editions": [
       {
@@ -2653,7 +2652,8 @@
     "publisher": "Gottmer",
     "illustrator": "Sebastiaan Van Doninck",
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "heksenkind | furlong",
@@ -2661,7 +2661,6 @@
     "authors": [
       "Monica Furlong"
     ],
-    "series": "",
     "goodreads_id": "8050857",
     "editions": [
       {
@@ -2682,11 +2681,12 @@
     ],
     "cover": "covers/heksenkind-furlong.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "12+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1987,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "hele verhalen voor een halve soldaat | lindelauf",
@@ -2694,7 +2694,6 @@
     "authors": [
       "Benny Lindelauf"
     ],
-    "series": "",
     "goodreads_id": "55659338",
     "editions": [
       {
@@ -2724,7 +2723,8 @@
     "publisher": "Querido",
     "illustrator": "Ludwig Volbeda",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het boek zonder tekeningen | novak",
@@ -2732,7 +2732,6 @@
     "authors": [
       "B.J. Novak"
     ],
-    "series": "",
     "goodreads_id": "25011531",
     "editions": [
       {
@@ -2747,7 +2746,8 @@
     "publisher": "Lannoo",
     "illustrator": null,
     "publication_year": 2014,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het boomhuis in het bos | klune",
@@ -2755,7 +2755,6 @@
     "authors": [
       "T.J. Klune"
     ],
-    "series": "",
     "goodreads_id": "194070072",
     "editions": [
       {
@@ -2770,7 +2769,8 @@
     "publisher": "Volt",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": "English",
+    "translator": "Anneke Bok"
   },
   {
     "work_key": "het grote boek van madelief | kuijer",
@@ -2778,7 +2778,6 @@
     "authors": [
       "Guus Kuijer"
     ],
-    "series": "",
     "goodreads_id": "6351760",
     "editions": [
       {
@@ -2809,11 +2808,12 @@
     ],
     "cover": "covers/het-grote-boek-van-madelief-kuijer.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "8+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1983,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het gulden vlies van thule | beckman",
@@ -2821,7 +2821,6 @@
     "authors": [
       "Thea Beckman"
     ],
-    "series": "De Toekomsttrilogie, #3",
     "goodreads_id": "2282658",
     "editions": [
       {
@@ -2836,7 +2835,8 @@
     "publisher": "Lemniscaat",
     "illustrator": "Martijn van der Linden (new cover art)",
     "publication_year": 1989,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het kleine heelal | mieras",
@@ -2844,7 +2844,6 @@
     "authors": [
       "Annejan Mieras"
     ],
-    "series": "",
     "goodreads_id": "126110740",
     "editions": [
       {
@@ -2869,7 +2868,8 @@
     "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het laatste jaar | goodfellow",
@@ -2877,7 +2877,6 @@
     "authors": [
       "Matt Goodfellow"
     ],
-    "series": "",
     "goodreads_id": "230094719",
     "editions": [
       {
@@ -2892,7 +2891,8 @@
     "publisher": "Volt",
     "illustrator": "Joe Todd-Stanton",
     "publication_year": 2025,
-    "original_language": null
+    "original_language": "English",
+    "translator": "Willem Jan Kok"
   },
   {
     "work_key": "het meisje dat er niet mocht zijn | geldof",
@@ -2900,7 +2900,6 @@
     "authors": [
       "Wilma Geldof"
     ],
-    "series": "",
     "goodreads_id": "230317922",
     "editions": [
       {
@@ -2915,7 +2914,8 @@
     "publisher": "Luitingh Sijthoff",
     "illustrator": null,
     "publication_year": 2025,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het meisje met de vlechtjes | geldof",
@@ -2923,7 +2923,6 @@
     "authors": [
       "Wilma Geldof"
     ],
-    "series": "",
     "goodreads_id": "43162805",
     "editions": [
       {
@@ -2938,7 +2937,8 @@
     "publisher": "Luitingh-Sijthoff",
     "illustrator": null,
     "publication_year": 2018,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het ministerie van oplossingen | rooseboom",
@@ -2946,7 +2946,6 @@
     "authors": [
       "Sanne Rooseboom"
     ],
-    "series": "Het Ministerie van Oplossingen, #1",
     "goodreads_id": "30625199",
     "editions": [
       {
@@ -2977,11 +2976,12 @@
     ],
     "cover": "covers/het-ministerie-van-oplossingen-rooseboom.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "9+",
+    "publisher": "Van Goor",
     "illustrator": null,
     "publication_year": 2016,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het oneindige verhaal | ende",
@@ -2989,7 +2989,6 @@
     "authors": [
       "Michael Ende"
     ],
-    "series": "",
     "goodreads_id": "3153563",
     "editions": [
       {
@@ -3021,10 +3020,11 @@
     "cover": "covers/het-oneindige-verhaal-ende.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "De Fontein",
     "illustrator": null,
     "publication_year": 1979,
-    "original_language": "German"
+    "original_language": "German",
+    "translator": "Johan van Nieuwenhuizen"
   },
   {
     "work_key": "het pad van de roverkoning | rijpert",
@@ -3032,7 +3032,6 @@
     "authors": [
       "Tom Rijpert"
     ],
-    "series": "De Zeven Sleutels, #1",
     "goodreads_id": "180072082",
     "editions": [
       {
@@ -3057,7 +3056,8 @@
     "publisher": "Pelckmans",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het sleutelkruid | biegel",
@@ -3065,7 +3065,6 @@
     "authors": [
       "Paul Biegel"
     ],
-    "series": "",
     "goodreads_id": "5943825",
     "editions": [
       {
@@ -3096,11 +3095,12 @@
     ],
     "cover": "covers/het-sleutelkruid-biegel.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "9+",
+    "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 1964,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het tegendeel van zorgen | lindelauf",
@@ -3108,7 +3108,6 @@
     "authors": [
       "Benny Lindelauf"
     ],
-    "series": "",
     "goodreads_id": "",
     "editions": [
       {
@@ -3119,11 +3118,12 @@
     ],
     "cover": "covers/het-tegendeel-van-zorgen-lindelauf.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "13+",
+    "publisher": "Querido",
     "illustrator": null,
-    "publication_year": null,
-    "original_language": null
+    "publication_year": 2022,
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het verlangen van de prins | kunst",
@@ -3131,7 +3131,6 @@
     "authors": [
       "Marco Kunst"
     ],
-    "series": "",
     "goodreads_id": "54142013",
     "editions": [
       {
@@ -3146,7 +3145,8 @@
     "publisher": "Gottmer",
     "illustrator": "Marieke Nelissen",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "het weeshuis in de azuurblauwe zee | klune",
@@ -3154,7 +3154,6 @@
     "authors": [
       "T.J. Klune"
     ],
-    "series": "Cerulean Chronicles, #1",
     "goodreads_id": "60145242",
     "editions": [
       {
@@ -3184,7 +3183,8 @@
     "publisher": "Volt",
     "illustrator": null,
     "publication_year": 2020,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Anneke Bok en Claudia Poorter"
   },
   {
     "work_key": "hier is de boze heks | kraan",
@@ -3192,7 +3192,6 @@
     "authors": [
       "Hanna Kraan"
     ],
-    "series": "De boze Heks #8",
     "goodreads_id": "8192274",
     "editions": [
       {
@@ -3209,10 +3208,11 @@
     "cover": "covers/hier-is-de-boze-heks-kraan.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2005,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "honderd uur nacht | woltz",
@@ -3220,7 +3220,6 @@
     "authors": [
       "Anna Woltz"
     ],
-    "series": "",
     "goodreads_id": "21903699",
     "editions": [
       {
@@ -3240,7 +3239,8 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2014,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "iep | leeuwen",
@@ -3248,7 +3248,6 @@
     "authors": [
       "Joke van Leeuwen"
     ],
-    "series": "",
     "goodreads_id": "2493376",
     "editions": [
       {
@@ -3258,12 +3257,13 @@
       }
     ],
     "cover": "covers/iep-leeuwen.jpg",
-    "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "jaapleest": "https://www.jaapleest.nl/iep-gelukkig-hebben-we-het-boek-nog/",
+    "age_rating": "9+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1996,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "ijzerkop | rijckeghem",
@@ -3271,7 +3271,6 @@
     "authors": [
       "Jean-Claude van Rijckeghem"
     ],
-    "series": "",
     "goodreads_id": "45731329",
     "editions": [
       {
@@ -3296,7 +3295,8 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2019,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "ik ben krik krik ben ik | kraan",
@@ -3304,7 +3304,6 @@
     "authors": [
       "Hanna Kraan"
     ],
-    "series": "",
     "goodreads_id": "28396692",
     "editions": [
       {
@@ -3320,11 +3319,12 @@
     ],
     "cover": "covers/ik-ben-krik-krik-ben-ik-kraan.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "4+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2013,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "ik ben vincent en ik ben niet bang | koens",
@@ -3332,7 +3332,6 @@
     "authors": [
       "Enne Koens"
     ],
-    "series": "",
     "goodreads_id": "34928621",
     "editions": [
       {
@@ -3347,7 +3346,8 @@
     "publisher": "Luitingh-Sijthoff",
     "illustrator": null,
     "publication_year": 2017,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "ik denk dat ik ontvoerd ben en andere gedichten | lammers",
@@ -3355,7 +3355,6 @@
     "authors": [
       "Pim Lammers"
     ],
-    "series": "",
     "goodreads_id": "62677523",
     "editions": [
       {
@@ -3380,7 +3379,8 @@
     "publisher": "Querido",
     "illustrator": "Sarah van Dongen",
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "ik geef je de zon | nelson",
@@ -3388,7 +3388,6 @@
     "authors": [
       "Jandy Nelson"
     ],
-    "series": "",
     "goodreads_id": "25146347",
     "editions": [
       {
@@ -3423,7 +3422,8 @@
     "publisher": "Blossom Books",
     "illustrator": null,
     "publication_year": 2014,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Aimée Warmerdam"
   },
   {
     "work_key": "ik praat als een rivier | scott",
@@ -3431,7 +3431,6 @@
     "authors": [
       "Jordan Scott"
     ],
-    "series": "",
     "goodreads_id": "58787144",
     "editions": [
       {
@@ -3446,7 +3445,8 @@
     "publisher": "Querido",
     "illustrator": "Sydney Smith",
     "publication_year": 2020,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Edward van de Vendel"
   },
   {
     "work_key": "in het vervloekte hart | orie",
@@ -3454,7 +3454,6 @@
     "authors": [
       "Rima Orie"
     ],
-    "series": "Bloedmaan, #1",
     "goodreads_id": "61301265",
     "editions": [
       {
@@ -3469,7 +3468,8 @@
     "publisher": "Moon",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "je moet dansen op mijn graf | chambers",
@@ -3477,7 +3477,6 @@
     "authors": [
       "Aidan Chambers"
     ],
-    "series": "",
     "goodreads_id": "8214198",
     "editions": [
       {
@@ -3488,11 +3487,12 @@
     ],
     "cover": "covers/je-moet-dansen-op-mijn-graf-chambers.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "15+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1982,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Willem van Toorn"
   },
   {
     "work_key": "jefferson | mourlevat",
@@ -3500,7 +3500,6 @@
     "authors": [
       "Jean-Claude Mourlevat"
     ],
-    "series": "",
     "goodreads_id": "60778600",
     "editions": [
       {
@@ -3520,15 +3519,16 @@
     "publisher": "Lannoo",
     "illustrator": null,
     "publication_year": 2018,
-    "original_language": "French"
+    "original_language": "French",
+    "translator": "Lies Lavrijsen en Els Dumez-Blocken"
   },
   {
     "work_key": "jij bent de liefste | hagen",
     "title": "Jij bent de liefste",
     "authors": [
-      "Hans Hagen"
+      "Hans Hagen",
+      "Monique Hagen"
     ],
-    "series": "",
     "goodreads_id": "6709646",
     "editions": [
       {
@@ -3544,11 +3544,12 @@
     ],
     "cover": "covers/jij-bent-de-liefste-hagen.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "age_rating": "2+",
+    "publisher": "Querido",
+    "illustrator": "Marit Törnqvist",
     "publication_year": 2000,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "jij mag alles zijn | beeck",
@@ -3556,7 +3557,6 @@
     "authors": [
       "Griet Op de Beeck"
     ],
-    "series": "",
     "goodreads_id": "58910636",
     "editions": [
       {
@@ -3591,7 +3591,8 @@
     "publisher": "Prometheus",
     "illustrator": "Linde Faas",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "jip en janneke | schmidt",
@@ -3599,7 +3600,6 @@
     "authors": [
       "Annie M.G. Schmidt"
     ],
-    "series": "Jip en Janneke, #1-5",
     "goodreads_id": "1484848",
     "editions": [
       {
@@ -3620,11 +3620,12 @@
     ],
     "cover": "covers/jip-en-janneke-schmidt.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "4+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1963,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "jona | praag",
@@ -3632,7 +3633,6 @@
     "authors": [
       "Anna van Praag"
     ],
-    "series": "",
     "goodreads_id": "122850498",
     "editions": [
       {
@@ -3647,7 +3647,8 @@
     "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "kauw van jou | terwindt",
@@ -3655,7 +3656,6 @@
     "authors": [
       "Kris Terwindt"
     ],
-    "series": "",
     "goodreads_id": "220078478",
     "editions": [
       {
@@ -3675,7 +3675,8 @@
     "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "kinderen van moeder aarde | beckman",
@@ -3683,7 +3684,6 @@
     "authors": [
       "Thea Beckman"
     ],
-    "series": "De Toekomsttrilogie, #1",
     "goodreads_id": "3418598",
     "editions": [
       {
@@ -3714,11 +3714,12 @@
     ],
     "cover": "covers/kinderen-van-moeder-aarde-beckman.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "14+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1985,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "kleine sofie en lange wapper | pelgrom",
@@ -3726,7 +3727,6 @@
     "authors": [
       "Els Pelgrom"
     ],
-    "series": "",
     "goodreads_id": "675259",
     "editions": [
       {
@@ -3737,11 +3737,12 @@
     ],
     "cover": "covers/kleine-sofie-en-lange-wapper-pelgrom.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1984,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "koning van katoren | terlouw",
@@ -3749,7 +3750,6 @@
     "authors": [
       "Jan Terlouw"
     ],
-    "series": "Katoren, #1",
     "goodreads_id": "1165759",
     "editions": [
       {
@@ -3780,11 +3780,12 @@
     ],
     "cover": "covers/koning-van-katoren-terlouw.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "12+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1971,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "koningskind | noort",
@@ -3792,7 +3793,6 @@
     "authors": [
       "Selma Noort"
     ],
-    "series": "",
     "goodreads_id": "55434569",
     "editions": [
       {
@@ -3812,7 +3812,8 @@
     "publisher": "Leopold",
     "illustrator": null,
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "krekel | schaap",
@@ -3820,7 +3821,6 @@
     "authors": [
       "Annet Schaap"
     ],
-    "series": "",
     "goodreads_id": "227898061",
     "editions": [
       {
@@ -3832,10 +3832,11 @@
     "cover": "covers/krekel-schaap.jpg",
     "jaapleest": "https://jaapleest.nl/krekel-van-annet-schaap/",
     "age_rating": "10+",
-    "publisher": null,
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2025,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "kruimeltje | abkoude",
@@ -3843,7 +3844,6 @@
     "authors": [
       "Chris van Abkoude"
     ],
-    "series": "",
     "goodreads_id": "13040977",
     "editions": [
       {
@@ -3854,11 +3854,12 @@
     ],
     "cover": "covers/kruimeltje-abkoude.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Kluitman",
     "illustrator": null,
     "publication_year": 1922,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "kruistocht in spijkerbroek | beckman",
@@ -3866,7 +3867,6 @@
     "authors": [
       "Thea Beckman"
     ],
-    "series": "",
     "goodreads_id": "3114666",
     "editions": [
       {
@@ -3897,11 +3897,12 @@
     ],
     "cover": "covers/kruistocht-in-spijkerbroek-beckman.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "12+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1973,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "lampje | schaap",
@@ -3909,7 +3910,6 @@
     "authors": [
       "Annet Schaap"
     ],
-    "series": "",
     "goodreads_id": "34684344",
     "editions": [
       {
@@ -3944,7 +3944,8 @@
     "publisher": "Querido",
     "illustrator": "Annet Schaap",
     "publication_year": 2014,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "lennox en de gouden sikkel | zevenbergen",
@@ -3952,7 +3953,6 @@
     "authors": [
       "Zindzi Zevenbergen"
     ],
-    "series": "",
     "goodreads_id": "58372819",
     "editions": [
       {
@@ -3982,7 +3982,8 @@
     "publisher": "De Harmonie",
     "illustrator": "Hedy Tjin en Brian Elstak",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "lepelsnijder | hof",
@@ -3990,7 +3991,6 @@
     "authors": [
       "Marjolijn Hof"
     ],
-    "series": "",
     "goodreads_id": "43187703",
     "editions": [
       {
@@ -4020,7 +4020,8 @@
     "publisher": "Querido",
     "illustrator": "Annette Fienieg",
     "publication_year": 2018,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "levende bezems | tetzner",
@@ -4028,7 +4029,6 @@
     "authors": [
       "Lisa Tetzner"
     ],
-    "series": "",
     "goodreads_id": "8409660",
     "editions": [
       {
@@ -4039,11 +4039,12 @@
     ],
     "cover": "covers/levende-bezems-tetzner.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 1940,
-    "original_language": "German"
+    "original_language": "German",
+    "translator": "Annie Winkler-Vonk"
   },
   {
     "work_key": "luna | koolwijk",
@@ -4051,7 +4052,6 @@
     "authors": [
       "Pieter Koolwijk"
     ],
-    "series": "De wereld van Gozert, #2",
     "goodreads_id": "58246250",
     "editions": [
       {
@@ -4086,7 +4086,8 @@
     "publisher": "Lemniscaat",
     "illustrator": "Linde Faas",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "matilda | dahl",
@@ -4094,7 +4095,6 @@
     "authors": [
       "Roald Dahl"
     ],
-    "series": "",
     "goodreads_id": "39988",
     "editions": [
       {
@@ -4126,10 +4126,11 @@
     "cover": "covers/matilda-dahl.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "De Fontein Jeugd",
     "illustrator": null,
     "publication_year": 1988,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Huberte Vriesendorp"
   },
   {
     "work_key": "max en de maximonsters | sendak",
@@ -4137,7 +4138,6 @@
     "authors": [
       "Maurice Sendak"
     ],
-    "series": "",
     "goodreads_id": "6015198",
     "editions": [
       {
@@ -4148,11 +4148,12 @@
     ],
     "cover": "covers/max-en-de-maximonsters-sendak.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "4+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1963,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "L.M. Niskos"
   },
   {
     "work_key": "meester van de zwarte molen | preuler",
@@ -4160,7 +4161,6 @@
     "authors": [
       "Otfried Preußler"
     ],
-    "series": "",
     "goodreads_id": "6034016",
     "editions": [
       {
@@ -4191,11 +4191,12 @@
     ],
     "cover": "covers/meester-van-de-zwarte-molen-preuler.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "12+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1971,
-    "original_language": "German"
+    "original_language": "German",
+    "translator": "W.I.C. Royer-Bicker"
   },
   {
     "work_key": "minoes | schmidt",
@@ -4203,7 +4204,6 @@
     "authors": [
       "Annie M.G. Schmidt"
     ],
-    "series": "",
     "goodreads_id": "1795353",
     "editions": [
       {
@@ -4235,10 +4235,11 @@
     "cover": "covers/minoes-schmidt.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1970,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "misjka | vendel",
@@ -4247,7 +4248,6 @@
       "Edward van de Vendel",
       "Anoush Elman"
     ],
-    "series": "",
     "goodreads_id": "62096324",
     "editions": [
       {
@@ -4277,7 +4277,8 @@
     "publisher": "Querido",
     "illustrator": "Annet Schaap",
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "missie afbreken | koolwijk",
@@ -4285,7 +4286,6 @@
     "authors": [
       "Pieter Koolwijk"
     ],
-    "series": "De wereld van Gozert, #3",
     "goodreads_id": "153554520",
     "editions": [
       {
@@ -4305,12 +4305,13 @@
       }
     ],
     "cover": "covers/missie-afbreken-koolwijk.jpg",
-    "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "jaapleest": "https://www.jaapleest.nl/ontroerend-slotakkoord-van-gozert-trilogie/",
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Linde Faas",
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "momo en de tijdspaarders | ende",
@@ -4318,7 +4319,6 @@
     "authors": [
       "Michael Ende"
     ],
-    "series": "",
     "goodreads_id": "5592552",
     "editions": [
       {
@@ -4349,11 +4349,12 @@
     ],
     "cover": "covers/momo-en-de-tijdspaarders-ende.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1973,
-    "original_language": "German"
+    "original_language": "German",
+    "translator": "Robert Jan van Asch"
   },
   {
     "work_key": "monkie | schubert",
@@ -4361,7 +4362,6 @@
     "authors": [
       "Dieter Schubert"
     ],
-    "series": "",
     "goodreads_id": "4345257",
     "editions": [
       {
@@ -4382,11 +4382,12 @@
     ],
     "cover": "covers/monkie-schubert.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "2+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1986,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "morrigan crow en het wondergenootschap | townsend",
@@ -4394,7 +4395,6 @@
     "authors": [
       "Jessica Townsend"
     ],
-    "series": "Nevermoor, #1",
     "goodreads_id": "36628833",
     "editions": [
       {
@@ -4411,10 +4411,11 @@
     "cover": "covers/morrigan-crow-en-het-wondergenootschap-townsend.jpg",
     "jaapleest": "https://jaapleest.nl/nevermoore/",
     "age_rating": "12+",
-    "publisher": null,
+    "publisher": "Luitingh-Sijthoff",
     "illustrator": null,
     "publication_year": 2017,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Sabine Mutsaers"
   },
   {
     "work_key": "morris | moeyaert",
@@ -4422,7 +4423,6 @@
     "authors": [
       "Bart Moeyaert"
     ],
-    "series": "",
     "goodreads_id": "62344373",
     "editions": [
       {
@@ -4442,7 +4442,8 @@
     "publisher": "Querido",
     "illustrator": "Sebastiaan Van Doninck",
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "mot en de metaalvissers | rooseboom",
@@ -4450,7 +4451,6 @@
     "authors": [
       "Sanne Rooseboom"
     ],
-    "series": "",
     "goodreads_id": "60772880",
     "editions": [
       {
@@ -4480,7 +4480,8 @@
     "publisher": "Van Goor",
     "illustrator": "Sophie Pluim",
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "mus en kapitein kwaadbaard en de laatste sirene | hassing",
@@ -4488,7 +4489,6 @@
     "authors": [
       "Kevin Hassing"
     ],
-    "series": "Mus en kapitein Kwaadbaard #5",
     "goodreads_id": "213571695",
     "editions": [
       {
@@ -4504,11 +4504,12 @@
     ],
     "cover": "covers/mus-en-kapitein-kwaadbaard-en-de-laatste-sirene-hassing.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff",
     "illustrator": null,
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "mus kapitein kwaadbaard en de 5 slangen | hassing",
@@ -4516,7 +4517,6 @@
     "authors": [
       "Kevin Hassing"
     ],
-    "series": "Mus en kapitein Kwaadbaard, #1",
     "goodreads_id": "55790993",
     "editions": [
       {
@@ -4546,7 +4546,8 @@
     "publisher": "Luitingh-Sijthoff",
     "illustrator": "Linde Faas",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "nachtverhaal | biegel",
@@ -4554,7 +4555,6 @@
     "authors": [
       "Paul Biegel"
     ],
-    "series": "",
     "goodreads_id": "2182814",
     "editions": [
       {
@@ -4566,10 +4566,11 @@
     "cover": "covers/nachtverhaal-biegel.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 1992,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "nederland | dematons",
@@ -4577,7 +4578,6 @@
     "authors": [
       "Charlotte Dematons"
     ],
-    "series": "",
     "goodreads_id": "16035468",
     "editions": [
       {
@@ -4587,12 +4587,13 @@
       }
     ],
     "cover": "covers/nederland-dematons.jpg",
-    "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "jaapleest": "https://www.jaapleest.nl/na-de-honderdste-keer-nog-steeds-nieuwe-details/",
+    "age_rating": "4+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Charlotte Dematons",
     "publication_year": 2012,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "neem nooit een beste vriend | sassen",
@@ -4600,7 +4601,6 @@
     "authors": [
       "Erna Sassen"
     ],
-    "series": "",
     "goodreads_id": "83298095",
     "editions": [
       {
@@ -4615,7 +4615,8 @@
     "publisher": "Leopold",
     "illustrator": "Martijn van der Linden",
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "negen open armen | lindelauf",
@@ -4623,7 +4624,6 @@
     "authors": [
       "Benny Lindelauf"
     ],
-    "series": "",
     "goodreads_id": "8088579",
     "editions": [
       {
@@ -4634,11 +4634,12 @@
     ],
     "cover": "covers/negen-open-armen-lindelauf.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "11+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2004,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "nog 27 dagen leven | stoffels",
@@ -4646,7 +4647,6 @@
     "authors": [
       "Maren Stoffels"
     ],
-    "series": "",
     "goodreads_id": "215149885",
     "editions": [
       {
@@ -4661,7 +4661,8 @@
     "publisher": "Leopold",
     "illustrator": "Amy Kuijper",
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "oever | volbeda",
@@ -4669,7 +4670,6 @@
     "authors": [
       "Ludwig Volbeda"
     ],
-    "series": "",
     "goodreads_id": "209749885",
     "editions": [
       {
@@ -4689,7 +4689,8 @@
     "publisher": "Querido",
     "illustrator": "Ludwig Volbeda",
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "oorlogswinter | terlouw",
@@ -4697,7 +4698,6 @@
     "authors": [
       "Jan Terlouw"
     ],
-    "series": "",
     "goodreads_id": "2859279",
     "editions": [
       {
@@ -4728,11 +4728,12 @@
     ],
     "cover": "covers/oorlogswinter-terlouw.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 1972,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "otje | schmidt",
@@ -4740,7 +4741,6 @@
     "authors": [
       "Annie M.G. Schmidt"
     ],
-    "series": "",
     "goodreads_id": "2854606",
     "editions": [
       {
@@ -4762,10 +4762,11 @@
     "cover": "covers/otje-schmidt.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1980,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "over een kleine mol die wil weten wie er op zijn kop gepoept heeft | holzwarth",
@@ -4773,7 +4774,6 @@
     "authors": [
       "Werner Holzwarth"
     ],
-    "series": "",
     "goodreads_id": "2854757",
     "editions": [
       {
@@ -4804,11 +4804,12 @@
     ],
     "cover": "covers/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-holzwarth.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "age_rating": "3+",
+    "publisher": "Uitgeverij C. De Vries-Brouwers",
+    "illustrator": "Wolf Erlbruch",
     "publication_year": 1989,
-    "original_language": "German"
+    "original_language": "German",
+    "translator": null
   },
   {
     "work_key": "patroon | kunst",
@@ -4816,7 +4817,6 @@
     "authors": [
       "Marco Kunst"
     ],
-    "series": "",
     "goodreads_id": "61092730",
     "editions": [
       {
@@ -4841,7 +4841,8 @@
     "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "pippi langkous | lindgren",
@@ -4849,7 +4850,6 @@
     "authors": [
       "Astrid Lindgren"
     ],
-    "series": "Pippi Langkous, #1",
     "goodreads_id": "55459211",
     "editions": [
       {
@@ -4881,10 +4881,11 @@
     "cover": "covers/pippi-langkous-lindgren.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 1945,
-    "original_language": "Swedish"
+    "original_language": "Swedish",
+    "translator": null
   },
   {
     "work_key": "pluk van de petteflet | schmidt",
@@ -4892,7 +4893,6 @@
     "authors": [
       "Annie M.G. Schmidt"
     ],
-    "series": "",
     "goodreads_id": "2854614",
     "editions": [
       {
@@ -4924,10 +4924,11 @@
     "cover": "covers/pluk-van-de-petteflet-schmidt.jpg",
     "jaapleest": "https://jaapleest.nl/nog-meer-genieten-herziene-editie-pluk-van-de-petteflet/",
     "age_rating": "4+",
-    "publisher": null,
+    "publisher": "Querido",
     "illustrator": "Fiep Westendorp",
     "publication_year": 1971,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "polleke | kuijer",
@@ -4935,7 +4936,6 @@
     "authors": [
       "Guus Kuijer"
     ],
-    "series": "",
     "goodreads_id": "12825370",
     "editions": [
       {
@@ -4950,7 +4950,8 @@
     "publisher": null,
     "illustrator": null,
     "publication_year": 1999,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "prutje | koolwijk",
@@ -4958,7 +4959,6 @@
     "authors": [
       "Pieter Koolwijk"
     ],
-    "series": "",
     "goodreads_id": "41968643",
     "editions": [
       {
@@ -4980,10 +4980,11 @@
     "cover": "covers/prutje-koolwijk.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "publisher": "Lemniscaat",
+    "illustrator": "Linde Faas",
     "publication_year": 2018,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "quotum project z | morshuis",
@@ -4991,7 +4992,6 @@
     "authors": [
       "Marloes Morshuis"
     ],
-    "series": "",
     "goodreads_id": "121167206",
     "editions": [
       {
@@ -5011,7 +5011,8 @@
     "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "rekenen voor je leven | vendel",
@@ -5020,7 +5021,6 @@
       "Edward van de Vendel",
       "Ionica Smeets"
     ],
-    "series": "",
     "goodreads_id": "57442222",
     "editions": [
       {
@@ -5035,7 +5035,8 @@
     "publisher": "Nieuwezijds",
     "illustrator": "Floor de Goede",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "robin alle verhalen | kuyper",
@@ -5043,7 +5044,6 @@
     "authors": [
       "Sjoerd Kuyper"
     ],
-    "series": "",
     "goodreads_id": "61227889",
     "editions": [
       {
@@ -5063,7 +5063,8 @@
     "publisher": null,
     "illustrator": null,
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "ronja de roversdochter | lindgren",
@@ -5071,7 +5072,6 @@
     "authors": [
       "Astrid Lindgren"
     ],
-    "series": "",
     "goodreads_id": "6891198",
     "editions": [
       {
@@ -5102,11 +5102,12 @@
     ],
     "cover": "covers/ronja-de-roversdochter-lindgren.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Ploegsma",
     "illustrator": null,
     "publication_year": 1981,
-    "original_language": "Swedish"
+    "original_language": "Swedish",
+    "translator": null
   },
   {
     "work_key": "roversjong | aerts",
@@ -5114,7 +5115,6 @@
     "authors": [
       "Jef Aerts"
     ],
-    "series": "",
     "goodreads_id": "209446724",
     "editions": [
       {
@@ -5134,7 +5134,8 @@
     "publisher": "Querido",
     "illustrator": "Martijn van der Linden",
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "rupsje nooitgenoeg | carle",
@@ -5142,7 +5143,6 @@
     "authors": [
       "Eric Carle"
     ],
-    "series": "",
     "goodreads_id": "5505274",
     "editions": [
       {
@@ -5153,11 +5153,12 @@
     ],
     "cover": "covers/rupsje-nooitgenoeg-carle.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "3+",
+    "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 1969,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": null
   },
   {
     "work_key": "schildpadmeisje | slegers",
@@ -5165,7 +5166,6 @@
     "authors": [
       "Marlies Slegers"
     ],
-    "series": "",
     "goodreads_id": "229015199",
     "editions": [
       {
@@ -5180,7 +5180,8 @@
     "publisher": "Luitingh Sijthoff",
     "illustrator": null,
     "publication_year": 2025,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "sinterklaas | dematons",
@@ -5188,7 +5189,6 @@
     "authors": [
       "Charlotte Dematons"
     ],
-    "series": "",
     "goodreads_id": "7692635",
     "editions": [
       {
@@ -5200,10 +5200,11 @@
     "cover": "covers/sinterklaas-dematons.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
-    "illustrator": null,
+    "publisher": "Lemniscaat",
+    "illustrator": "Charlotte Dematons",
     "publication_year": 2007,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "sjakie en de chocoladefabriek | dahl",
@@ -5211,7 +5212,6 @@
     "authors": [
       "Roald Dahl"
     ],
-    "series": "",
     "goodreads_id": "4821094",
     "editions": [
       {
@@ -5243,10 +5243,11 @@
     "cover": "covers/sjakie-en-de-chocoladefabriek-dahl.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "De Fontein Jeugd",
     "illustrator": null,
     "publication_year": 1964,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": null
   },
   {
     "work_key": "spijt | slee",
@@ -5254,7 +5255,6 @@
     "authors": [
       "Carry Slee"
     ],
-    "series": "",
     "goodreads_id": "1699435",
     "editions": [
       {
@@ -5274,7 +5274,8 @@
     "publisher": null,
     "illustrator": null,
     "publication_year": 1996,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "spinder | geest",
@@ -5282,7 +5283,6 @@
     "authors": [
       "Simon van der Geest"
     ],
-    "series": "",
     "goodreads_id": "16025508",
     "editions": [
       {
@@ -5314,10 +5314,11 @@
     "cover": "covers/spinder-geest.jpg",
     "jaapleest": "https://jaapleest.nl/het-geheim-een-sluipwesp-die-alles-kapot-maakt/",
     "age_rating": "10+",
-    "publisher": null,
+    "publisher": "Querido",
     "illustrator": "Karst-Janneke Rogaar",
     "publication_year": 2012,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "struikmeisje | honingh",
@@ -5325,7 +5326,6 @@
     "authors": [
       "Tineke Honingh"
     ],
-    "series": "",
     "goodreads_id": "137182390",
     "editions": [
       {
@@ -5340,7 +5340,8 @@
     "publisher": "Van Goor",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "terra ultima de ontdekkingsreis van een onbekend continent | deleo",
@@ -5348,7 +5349,6 @@
     "authors": [
       "Raoul Deleo"
     ],
-    "series": "",
     "goodreads_id": "58202355",
     "editions": [
       {
@@ -5368,7 +5368,8 @@
     "publisher": "Lannoo",
     "illustrator": "Raoul Deleo",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "torenhoog en mijlen breed een toekomstverhaal | dragt",
@@ -5376,7 +5377,6 @@
     "authors": [
       "Tonke Dragt"
     ],
-    "series": "",
     "goodreads_id": "254103",
     "editions": [
       {
@@ -5407,11 +5407,12 @@
     ],
     "cover": "covers/torenhoog-en-mijlen-breed-een-toekomstverhaal-dragt.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "10+",
+    "publisher": "Leopold",
     "illustrator": null,
     "publication_year": 1969,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "tori | elstak",
@@ -5420,7 +5421,6 @@
       "Brian Elstak",
       "Karin Amatmoekrim"
     ],
-    "series": "",
     "goodreads_id": "36340366",
     "editions": [
       {
@@ -5435,7 +5435,8 @@
     "publisher": "Das Mag",
     "illustrator": "Brian Elstak",
     "publication_year": 2017,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "umbrador | smithuis",
@@ -5443,7 +5444,6 @@
     "authors": [
       "Marieke Smithuis"
     ],
-    "series": "",
     "goodreads_id": "198971741",
     "editions": [
       {
@@ -5463,7 +5463,8 @@
     "publisher": "Querido",
     "illustrator": "Jeska Verstegen",
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "vandaag houd ik mijn spreekbeurt over de anaconda | tak",
@@ -5471,7 +5472,6 @@
     "authors": [
       "Bibi Dumon Tak"
     ],
-    "series": "",
     "goodreads_id": "63205347",
     "editions": [
       {
@@ -5491,12 +5491,13 @@
       }
     ],
     "cover": "covers/vandaag-houd-ik-mijn-spreekbeurt-over-de-anaconda-tak.jpg",
-    "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "jaapleest": "https://jaapleest.nl/vandaag-houd-ik-mijn-spreekbeurt-over-de-anaconda/",
+    "age_rating": "8+",
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "vandaag komen we niet meer thuis | koens",
@@ -5504,7 +5505,6 @@
     "authors": [
       "Enne Koens"
     ],
-    "series": "",
     "goodreads_id": "125659234",
     "editions": [
       {
@@ -5524,7 +5524,8 @@
     "publisher": "Luitingh-Sijthoff",
     "illustrator": "Maartje Kuiper",
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "wat je moet doen als je over een nijlpaard struikelt | vendel",
@@ -5532,7 +5533,6 @@
     "authors": [
       "Edward van de Vendel"
     ],
-    "series": "",
     "goodreads_id": "46040367",
     "editions": [
       {
@@ -5567,7 +5567,8 @@
     "publisher": "Querido",
     "illustrator": "Martijn van der Linden",
     "publication_year": 2019,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "wat ons nog rest | sax",
@@ -5575,7 +5576,6 @@
     "authors": [
       "Aline Sax"
     ],
-    "series": "",
     "goodreads_id": "199332224",
     "editions": [
       {
@@ -5590,7 +5590,8 @@
     "publisher": "Davidsfonds/Infodok",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "we moeten je iets vertellen | slegers",
@@ -5598,7 +5599,6 @@
     "authors": [
       "Marlies Slegers"
     ],
-    "series": "",
     "goodreads_id": "122289309",
     "editions": [
       {
@@ -5623,7 +5623,8 @@
     "publisher": "Luitingh-Sijthoff",
     "illustrator": null,
     "publication_year": 2023,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "welkom thuis chrononauten | weber",
@@ -5631,7 +5632,6 @@
     "authors": [
       "Dirk Weber"
     ],
-    "series": "",
     "goodreads_id": "206465154",
     "editions": [
       {
@@ -5651,7 +5651,8 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2024,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "wij gaan op berenjacht | rosen",
@@ -5659,7 +5660,6 @@
     "authors": [
       "Michael Rosen"
     ],
-    "series": "",
     "goodreads_id": "12971006",
     "editions": [
       {
@@ -5675,11 +5675,12 @@
     ],
     "cover": "covers/wij-gaan-op-berenjacht-rosen.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": null,
+    "age_rating": "3+",
+    "publisher": "Gottmer",
     "illustrator": null,
     "publication_year": 1989,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": null
   },
   {
     "work_key": "winnie de poeh de complete verzameling verhalen en gedichten | milne",
@@ -5687,7 +5688,6 @@
     "authors": [
       "A.A. Milne"
     ],
-    "series": "",
     "goodreads_id": "24348748",
     "editions": [
       {
@@ -5702,7 +5702,8 @@
     "publisher": null,
     "illustrator": null,
     "publication_year": 1927,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": null
   },
   {
     "work_key": "winterijs | gestel",
@@ -5710,7 +5711,6 @@
     "authors": [
       "Peter van Gestel"
     ],
-    "series": "",
     "goodreads_id": "8331367",
     "editions": [
       {
@@ -5722,10 +5722,11 @@
     "cover": "covers/winterijs-gestel.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Lemniscaat",
     "illustrator": null,
     "publication_year": 2001,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "wiplala en wiplala weer | schmidt",
@@ -5733,7 +5734,6 @@
     "authors": [
       "Annie M.G. Schmidt"
     ],
-    "series": "Wiplala #1-2",
     "goodreads_id": "1758589",
     "editions": [
       {
@@ -5750,10 +5750,11 @@
     "cover": "covers/wiplala-en-wiplala-weer-schmidt.jpg",
     "jaapleest": null,
     "age_rating": null,
-    "publisher": null,
+    "publisher": "Querido",
     "illustrator": null,
     "publication_year": 1962,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "wonderbos | schutten",
@@ -5761,7 +5762,6 @@
     "authors": [
       "Jan Paul Schutten"
     ],
-    "series": "",
     "goodreads_id": "55587367",
     "editions": [
       {
@@ -5776,7 +5776,8 @@
     "publisher": "Lannoo",
     "illustrator": "Medy Oberendorff",
     "publication_year": 2020,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "zeb | samson",
@@ -5784,7 +5785,6 @@
     "authors": [
       "Gideon Samson"
     ],
-    "series": "",
     "goodreads_id": "38331882",
     "editions": [
       {
@@ -5804,7 +5804,8 @@
     "publisher": "Leopold",
     "illustrator": "Joren Joshua",
     "publication_year": 2018,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "zoef | schotveld",
@@ -5812,7 +5813,6 @@
     "authors": [
       "Janneke Schotveld"
     ],
-    "series": "",
     "goodreads_id": "213916443",
     "editions": [
       {
@@ -5831,8 +5831,9 @@
     "age_rating": "8+",
     "publisher": "Van Goor",
     "illustrator": "Nadia Meezen",
-    "publication_year": null,
-    "original_language": null
+    "publication_year": 2024,
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "zolang de citroenbomen bloeien | katouh",
@@ -5840,7 +5841,6 @@
     "authors": [
       "Zoulfa Katouh"
     ],
-    "series": "",
     "goodreads_id": "62909947",
     "editions": [
       {
@@ -5865,7 +5865,8 @@
     "publisher": "Blossom Books",
     "illustrator": null,
     "publication_year": 2022,
-    "original_language": "English"
+    "original_language": "English",
+    "translator": "Merel Leene"
   },
   {
     "work_key": "zonder titel | sassen",
@@ -5873,7 +5874,6 @@
     "authors": [
       "Erna Sassen"
     ],
-    "series": "",
     "goodreads_id": "57597009",
     "editions": [
       {
@@ -5903,6 +5903,7 @@
     "publisher": "Leopold",
     "illustrator": "Martijn van der Linden",
     "publication_year": 2021,
-    "original_language": null
+    "original_language": null,
+    "translator": null
   }
 ]
