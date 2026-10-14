@@ -168,7 +168,7 @@
     "cover": "covers/alfabet-dematons.jpg",
     "jaapleest": "https://jaapleest.nl/alfabet/",
     "age_rating": "4+",
-    "publisher": "Hoogland & van Klaveren",
+    "publisher": "Hoogland & Van Klaveren",
     "illustrator": "Charlotte Dematons",
     "publication_year": 2020,
     "original_language": null,
@@ -233,7 +233,7 @@
     "illustrator": null,
     "publication_year": 1987,
     "original_language": "English",
-    "translator": null
+    "translator": "unknown"
   },
   {
     "work_key": "alleen op de wereld | malot",
@@ -271,12 +271,12 @@
     ],
     "cover": "covers/alleen-op-de-wereld-malot.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "6+",
     "publisher": "Gottmer",
     "illustrator": "Charlotte Dematons",
     "publication_year": 1878,
     "original_language": "French",
-    "translator": null
+    "translator": "Tiny Fisscher"
   },
   {
     "work_key": "allemaal willen we de hemel | beerten",
@@ -542,7 +542,7 @@
     "jaapleest": null,
     "age_rating": "8+",
     "publisher": "De Fontein Jeugd",
-    "illustrator": null,
+    "illustrator": "Quentin Blake",
     "publication_year": 1975,
     "original_language": "English",
     "translator": "Harriët Freezer"
@@ -749,7 +749,7 @@
     "cover": "covers/de-glazenwasser-van-het-rijksmuseum-sy.jpg",
     "jaapleest": "https://jaapleest.nl/de-glazenwasser-van-het-rijksmuseum-van-astrid-sy/",
     "age_rating": "10+",
-    "publisher": "Luitingh Sijthoff",
+    "publisher": "Luitingh-Sijthoff",
     "illustrator": "Marieke Nelissen",
     "publication_year": 2024,
     "original_language": null,
@@ -892,7 +892,7 @@
     "jaapleest": null,
     "age_rating": "4+",
     "publisher": "Lemniscaat",
-    "illustrator": null,
+    "illustrator": "Axel Scheffler",
     "publication_year": 1999,
     "original_language": null,
     "translator": null
@@ -935,7 +935,7 @@
     "jaapleest": null,
     "age_rating": "7+",
     "publisher": "De Fontein Jeugd",
-    "illustrator": null,
+    "illustrator": "Quentin Blake",
     "publication_year": 1982,
     "original_language": "English",
     "translator": "Huberte Vriesendorp"
@@ -968,7 +968,7 @@
     "jaapleest": null,
     "age_rating": "8+",
     "publisher": "De Fontein Jeugd",
-    "illustrator": null,
+    "illustrator": "Quentin Blake",
     "publication_year": 1983,
     "original_language": "English",
     "translator": "Huberte Vriesendorp"
@@ -1164,9 +1164,9 @@
     ],
     "cover": "covers/de-kleine-kapitein-biegel.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "8+",
     "publisher": "Gottmer",
-    "illustrator": null,
+    "illustrator": "Carl Hollander",
     "publication_year": 1970,
     "original_language": null,
     "translator": null
@@ -1636,7 +1636,7 @@
     "cover": "covers/de-wonderverteller-dijkstra.jpg",
     "jaapleest": "https://jaapleest.nl/de-wonderverteller-van-lida-dijkstra/",
     "age_rating": "12+",
-    "publisher": "Luitingh Sijthoff",
+    "publisher": "Luitingh-Sijthoff",
     "illustrator": "Djenné Fila",
     "publication_year": 2024,
     "original_language": null,
@@ -1905,9 +1905,9 @@
     ],
     "cover": "covers/dwars-co-hop.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "7+",
     "publisher": "Lannoo",
-    "illustrator": null,
+    "illustrator": "Bas Schel",
     "publication_year": 2021,
     "original_language": null,
     "translator": null
@@ -2810,7 +2810,7 @@
     "jaapleest": null,
     "age_rating": "8+",
     "publisher": "Querido",
-    "illustrator": null,
+    "illustrator": "Mance Post",
     "publication_year": 1983,
     "original_language": null,
     "translator": null
@@ -2911,7 +2911,7 @@
     "cover": "covers/het-meisje-dat-er-niet-mocht-zijn-geldof.jpg",
     "jaapleest": "https://jaapleest.nl/het-meisje-dat-er-niet-mocht-zijn-van-wilma-geldof/",
     "age_rating": "14+",
-    "publisher": "Luitingh Sijthoff",
+    "publisher": "Luitingh-Sijthoff",
     "illustrator": null,
     "publication_year": 2025,
     "original_language": null,
@@ -3019,8 +3019,8 @@
     ],
     "cover": "covers/het-oneindige-verhaal-ende.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": "De Fontein",
+    "age_rating": "10+",
+    "publisher": "De Fontein Jeugd",
     "illustrator": null,
     "publication_year": 1979,
     "original_language": "German",
@@ -3207,9 +3207,9 @@
     ],
     "cover": "covers/hier-is-de-boze-heks-kraan.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "8+",
     "publisher": "Lemniscaat",
-    "illustrator": null,
+    "illustrator": "Annemarie van Haeringen",
     "publication_year": 2005,
     "original_language": null,
     "translator": null
@@ -3321,7 +3321,7 @@
     "jaapleest": null,
     "age_rating": "4+",
     "publisher": "Lemniscaat",
-    "illustrator": null,
+    "illustrator": "Mies van Hout",
     "publication_year": 2013,
     "original_language": null,
     "translator": null
@@ -4125,9 +4125,9 @@
     ],
     "cover": "covers/matilda-dahl.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "10+",
     "publisher": "De Fontein Jeugd",
-    "illustrator": null,
+    "illustrator": "Quentin Blake",
     "publication_year": 1988,
     "original_language": "English",
     "translator": "Huberte Vriesendorp"
@@ -4234,9 +4234,9 @@
     ],
     "cover": "covers/minoes-schmidt.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "8+",
     "publisher": "Querido",
-    "illustrator": null,
+    "illustrator": "Eda Kaban",
     "publication_year": 1970,
     "original_language": null,
     "translator": null
@@ -4565,9 +4565,9 @@
     ],
     "cover": "covers/nachtverhaal-biegel.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": "Gottmer",
-    "illustrator": null,
+    "age_rating": "9+",
+    "publisher": "Holland",
+    "illustrator": "Lidia Postma",
     "publication_year": 1992,
     "original_language": null,
     "translator": null
@@ -4761,9 +4761,9 @@
     ],
     "cover": "covers/otje-schmidt.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "8+",
     "publisher": "Querido",
-    "illustrator": null,
+    "illustrator": "Fiep Westendorp",
     "publication_year": 1980,
     "original_language": null,
     "translator": null
@@ -4809,7 +4809,7 @@
     "illustrator": "Wolf Erlbruch",
     "publication_year": 1989,
     "original_language": "German",
-    "translator": null
+    "translator": "unknown"
   },
   {
     "work_key": "patroon | kunst",
@@ -4880,12 +4880,12 @@
     ],
     "cover": "covers/pippi-langkous-lindgren.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "6+",
     "publisher": "Ploegsma",
-    "illustrator": null,
+    "illustrator": "Carl Hollander",
     "publication_year": 1945,
     "original_language": "Swedish",
-    "translator": null
+    "translator": "Lisbeth Borgesius-Wildschut en Saskia Ferwerda"
   },
   {
     "work_key": "pluk van de petteflet | schmidt",
@@ -4946,7 +4946,7 @@
     ],
     "cover": "covers/polleke-kuijer.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "10+",
     "publisher": "Querido",
     "illustrator": "Alice Hoogstad",
     "publication_year": 2003,
@@ -4979,7 +4979,7 @@
     ],
     "cover": "covers/prutje-koolwijk.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "10+",
     "publisher": "Lemniscaat",
     "illustrator": "Linde Faas",
     "publication_year": 2018,
@@ -5059,7 +5059,7 @@
     ],
     "cover": "covers/robin-alle-verhalen-kuyper.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "4+",
     "publisher": "Hoogland & Van Klaveren",
     "illustrator": "Marije Tolman",
     "publication_year": 2021,
@@ -5107,7 +5107,7 @@
     "illustrator": null,
     "publication_year": 1981,
     "original_language": "Swedish",
-    "translator": null
+    "translator": "Rita Verschuur"
   },
   {
     "work_key": "roversjong | aerts",
@@ -5155,10 +5155,10 @@
     "jaapleest": null,
     "age_rating": "3+",
     "publisher": "Gottmer",
-    "illustrator": null,
+    "illustrator": "Eric Carle",
     "publication_year": 1969,
     "original_language": "English",
-    "translator": null
+    "translator": "unknown"
   },
   {
     "work_key": "schildpadmeisje | slegers",
@@ -5177,7 +5177,7 @@
     "cover": "covers/schildpadmeisje-slegers.jpg",
     "jaapleest": "https://jaapleest.nl/schildpadmeisje-van-marlies-slegers/",
     "age_rating": "10+",
-    "publisher": "Luitingh Sijthoff",
+    "publisher": "Luitingh-Sijthoff",
     "illustrator": null,
     "publication_year": 2025,
     "original_language": null,
@@ -5199,7 +5199,7 @@
     ],
     "cover": "covers/sinterklaas-dematons.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "4+",
     "publisher": "Lemniscaat",
     "illustrator": "Charlotte Dematons",
     "publication_year": 2007,
@@ -5242,12 +5242,12 @@
     ],
     "cover": "covers/sjakie-en-de-chocoladefabriek-dahl.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "8+",
     "publisher": "De Fontein Jeugd",
-    "illustrator": null,
+    "illustrator": "Quentin Blake",
     "publication_year": 1964,
     "original_language": "English",
-    "translator": null
+    "translator": "Harriët Freezer"
   },
   {
     "work_key": "spijt | slee",
@@ -5494,7 +5494,7 @@
     "jaapleest": "https://jaapleest.nl/vandaag-houd-ik-mijn-spreekbeurt-over-de-anaconda/",
     "age_rating": "8+",
     "publisher": "Querido",
-    "illustrator": null,
+    "illustrator": "Annemarie van Haeringen",
     "publication_year": 2022,
     "original_language": null,
     "translator": null
@@ -5677,10 +5677,10 @@
     "jaapleest": null,
     "age_rating": "3+",
     "publisher": "Gottmer",
-    "illustrator": null,
+    "illustrator": "Helen Oxenbury",
     "publication_year": 1989,
     "original_language": "English",
-    "translator": null
+    "translator": "unknown"
   },
   {
     "work_key": "winnie de poeh de complete verzameling verhalen en gedichten | milne",
@@ -5703,7 +5703,7 @@
     "illustrator": "E.H. Shepard",
     "publication_year": 1927,
     "original_language": "English",
-    "translator": null
+    "translator": "Mies Bouhuys"
   },
   {
     "work_key": "winterijs | gestel",
@@ -5721,8 +5721,8 @@
     ],
     "cover": "covers/winterijs-gestel.jpg",
     "jaapleest": null,
-    "age_rating": null,
-    "publisher": "Lemniscaat",
+    "age_rating": "10+",
+    "publisher": "De Fontein Jeugd",
     "illustrator": null,
     "publication_year": 2001,
     "original_language": null,
@@ -5749,9 +5749,9 @@
     ],
     "cover": "covers/wiplala-en-wiplala-weer-schmidt.jpg",
     "jaapleest": null,
-    "age_rating": null,
+    "age_rating": "6+",
     "publisher": "Querido",
-    "illustrator": null,
+    "illustrator": "Philip Hopman",
     "publication_year": 1962,
     "original_language": null,
     "translator": null

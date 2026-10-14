@@ -279,7 +279,24 @@
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.78rem;
     color: var(--ink-muted);
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
   }
+
+  .filter-reset-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--blue);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  .filter-reset-btn[hidden] { display: none; }
 
   table {
     width: 100%;
@@ -645,15 +662,12 @@
   .bubble-cluster-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 23px; fill: var(--ink); text-anchor: middle; }
   .bubble-cluster-count { font-family: 'IBM Plex Mono', monospace; font-size: 15px; fill: var(--ink-muted); text-anchor: middle; }
 
-  /* Hover tooltips are deliberately fixed white-on-black, not theme-reactive
-     --ink/--bg — a consistently light tooltip reads better than one that
-     flips to a dark chip in dark mode. Shared by every hover tooltip on the
-     page (bubble chart, age-lines chart). */
+  /* Shared by every hover tooltip on the page (bubble chart, age-lines chart). */
   .hover-tooltip {
     position: fixed; pointer-events: none; display: none;
-    background: #FFFFFF; color: #15161A; border: 1px solid #15161A;
+    background: var(--surface); color: var(--ink); border: 1px solid var(--ink);
     font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600;
-    padding: 0.4rem 0.7rem; max-width: 18rem; z-index: 50; white-space: nowrap;
+    padding: 0.4rem 0.7rem; max-width: 18rem; z-index: 50;
     box-shadow: 0 4px 12px rgba(21, 22, 26, 0.25);
   }
 
@@ -733,6 +747,7 @@
     color: var(--ink-muted);
     font-size: 0.82rem;
   }
+  .site-footer p + p { margin-top: 0.5rem; }
   .site-footer a {
     color: var(--blue);
     text-decoration: none;
@@ -791,7 +806,10 @@
         <tbody id="edition-rows"></tbody>
       </table>
     </div>
-    <p class="result-count" id="result-count"></p>
+    <p class="result-count">
+      <span id="result-count"></span>
+      <button type="button" id="filter-reset" class="filter-reset-btn" hidden>Filters wissen</button>
+    </p>
   </section>
 
   <section id="panel-insights" class="panel" role="tabpanel" aria-labelledby="tab-insights">
@@ -810,6 +828,7 @@
 
   <footer class="site-footer">
     <p>De Grote Vriendelijke 100 is een initiatief van Jaap Friso en Bas Maliepaard van <a href="https://degrotevriendelijkepodcast.nl/" target="_blank" rel="noopener">De Grote Vriendelijke Podcast</a>.</p>
+    <p>De data in deze site is van verschillende bronnen verzameld. Mocht je een fout tegenkomen, laat het ons weten.</p>
   </footer>
 </div>
 
@@ -856,6 +875,7 @@
   const rowsBody = document.getElementById('edition-rows');
   const filterInput = document.getElementById('filter-input');
   const resultCountEl = document.getElementById('result-count');
+  const filterResetBtn = document.getElementById('filter-reset');
   const filterAgeEl = document.getElementById('filter-age');
   const filterPublisherEl = document.getElementById('filter-publisher');
   const filterNewcomerBtn = document.getElementById('filter-newcomer');
@@ -895,18 +915,12 @@
     return Math.abs(debutYear - book.publication_year) <= 1;
   }
 
-  // "Luitingh-Sijthoff" and "Luitingh Sijthoff" are the same publisher under
-  // two spellings in the source data; merge them for filtering and stats.
-  function normalizedPublisher(p) {
-    return p === 'Luitingh Sijthoff' ? 'Luitingh-Sijthoff' : p;
-  }
-
   function populateFilters() {
-    const ages = [...new Set(books.map(b => b.age_rating).filter(Boolean))]
-      .sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+    const usedAgeBuckets = new Set(books.map(b => b.ageNum).filter(n => n != null).map(ageBucketLabel));
+    const ages = AGE_BUCKETS.map(b => b + '+').filter(label => usedAgeBuckets.has(label));
     filterAgeEl.insertAdjacentHTML('beforeend', ages.map(a => `<option value="${a}">${a}</option>`).join(''));
 
-    const publishers = [...new Set(books.map(b => b.publisher).filter(Boolean).map(normalizedPublisher))]
+    const publishers = [...new Set(books.map(b => b.publisher).filter(Boolean))]
       .sort((a, b) => a.localeCompare(b));
     filterPublisherEl.insertAdjacentHTML('beforeend', publishers.map(p => `<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join(''));
 
@@ -941,6 +955,11 @@
       resetOtherFilters(next ? 'mainstay' : null);
       filterMainstay = next;
       filterMainstayBtn.setAttribute('aria-pressed', String(filterMainstay));
+      renderTable();
+    });
+    filterResetBtn.addEventListener('click', () => {
+      filterInput.value = '';
+      resetOtherFilters(null);
       renderTable();
     });
   }
@@ -1047,8 +1066,8 @@
       .filter(x => x.rank != null);
     const rows = yearRows
       .filter(x => !q || x.book.title.toLowerCase().includes(q) || x.book.authors.join(' ').toLowerCase().includes(q))
-      .filter(x => !filterAge || x.book.age_rating === filterAge)
-      .filter(x => !filterPublisher || normalizedPublisher(x.book.publisher) === filterPublisher)
+      .filter(x => !filterAge || (x.book.ageNum != null && ageBucketLabel(x.book.ageNum) === filterAge))
+      .filter(x => !filterPublisher || x.book.publisher === filterPublisher)
       .filter(x => !filterNewcomer || isNewcomer(x.book, currentYear))
       .filter(x => !filterMainstay || isMainstay(x.book))
       .sort((a, b) => a.rank - b.rank);
@@ -1056,6 +1075,7 @@
 
     const filterActive = !!(q || filterAge || filterPublisher || filterNewcomer || filterMainstay);
     resultCountEl.textContent = filterActive ? `${rows.length} van ${yearRows.length} resultaten getoond` : '';
+    filterResetBtn.hidden = !filterActive;
 
     rowsBody.innerHTML = '';
     if (rows.length === 0) {
@@ -1242,7 +1262,7 @@
     if (b.publication_year) metaRows.push(['Eerste uitgave', String(b.publication_year)]);
     if (b.original_language) metaRows.push(['Oorspronkelijke taal', b.original_language]);
     if (b.illustrator) metaRows.push(['Illustrator', b.illustrator]);
-    if (b.translator) metaRows.push(['Vertaler', b.translator]);
+    if (b.translator && b.translator !== 'unknown') metaRows.push(['Vertaler', b.translator]);
     modalMetaEl.style.display = metaRows.length ? '' : 'none';
     modalMetaEl.innerHTML = metaRows.map(([k, v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd>`).join('');
 
@@ -1309,8 +1329,7 @@
     const counts = {};
     yearBooks.forEach(b => {
       if (!b.publisher) return;
-      const p = normalizedPublisher(b.publisher);
-      counts[p] = (counts[p] || 0) + 1;
+      counts[b.publisher] = (counts[b.publisher] || 0) + 1;
     });
     return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, n).map(([name]) => name);
   }
@@ -1323,8 +1342,7 @@
       sub: ctx => `Top ${ctx.topPubs.length} uitgevers naar aantal boeken deze editie, de rest valt onder Overig / onbekend.`,
       clusterOf(b, ctx) {
         if (!b.publisher) return { key: 'unknown', label: 'Onbekend', color: '#D8D8D0' };
-        const p = normalizedPublisher(b.publisher);
-        if (ctx.topPubs.includes(p)) return { key: p, label: p, color: null };
+        if (ctx.topPubs.includes(b.publisher)) return { key: b.publisher, label: b.publisher, color: null };
         return { key: 'other', label: 'Overig', color: '#9D9DA6' };
       },
       order: ctx => [...ctx.topPubs, 'other', 'unknown'],
@@ -1620,9 +1638,12 @@
     return Number.isNaN(n) ? null : n;
   }
 
-  function normalizedPublisher(p) {
-    if (p === 'Luitingh Sijthoff') return 'Luitingh-Sijthoff';
-    return p;
+  // jaapleest.nl's own age-indication scale — used to bucket age_rating both
+  // in the Editions tab's filter dropdown and the Insights "Leeftijdsadvies"
+  // histogram, so the two stay in sync.
+  const AGE_BUCKETS = [1, 4, 8, 10, 12, 15];
+  function ageBucketLabel(n) {
+    return (AGE_BUCKETS.find(b => n <= b) ?? AGE_BUCKETS[AGE_BUCKETS.length - 1]) + '+';
   }
 
   function insightCard(grid, wide, html) {
@@ -1660,14 +1681,10 @@
     // scale (1+, 4+, 8+, 10+, 12+, 15+) rather than one bar per distinct
     // rating, so e.g. a 7+ and a 6+ both land in the 8+ bucket.
     (function () {
-      const AGE_BUCKETS = [1, 4, 8, 10, 12, 15];
-      const bucketLabelOf = n => (AGE_BUCKETS.find(b => n <= b) ?? AGE_BUCKETS[AGE_BUCKETS.length - 1]) + '+';
-
       const counts = {};
       books.forEach(b => {
-        const n = parseAgeNum(b.age_rating);
-        if (n == null) return;
-        const label = bucketLabelOf(n);
+        if (b.ageNum == null) return;
+        const label = ageBucketLabel(b.ageNum);
         counts[label] = (counts[label] || 0) + 1;
       });
       const order = AGE_BUCKETS.map(b => b + '+').filter(k => counts[k]);
@@ -1832,7 +1849,7 @@
         ageTooltip.style.top = (e.clientY + 14) + 'px';
         const rows = perYear.map(p => `<div>${p.year}: ${p.counts[buckets[i]]} boeken</div>`).join('');
         ageTooltip.innerHTML = `<div style="font-weight:700;margin-bottom:0.2rem;">${buckets[i]}</div>${rows}`
-          + `<div style="color:#1A44B8;font-weight:700;margin-top:0.2rem;">gem.: ${avgCounts[buckets[i]].toFixed(1)} boeken</div>`;
+          + `<div style="color:var(--blue);font-weight:700;margin-top:0.2rem;">gem.: ${avgCounts[buckets[i]].toFixed(1)} boeken</div>`;
       });
       ageSvgEl.querySelector('.age-interaction-rect').addEventListener('mouseleave', () => {
         crosshairEl.style.display = 'none';
