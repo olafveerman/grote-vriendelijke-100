@@ -404,23 +404,6 @@
   .spark-dot { fill: var(--ink-muted); }
   .spark-dot-current { fill: var(--blue); }
 
-  .no-id-chip {
-    display: inline-block;
-    margin-top: 0.3rem;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.64rem;
-    letter-spacing: 0.02em;
-    color: var(--yellow-ink);
-    background: var(--yellow);
-    padding: 0.1rem 0.4rem 0.08rem;
-  }
-
-  /* In the table, it sits under the title rather than inline with it. */
-  .title-cell .no-id-chip {
-    display: block;
-    width: fit-content;
-  }
-
   .empty-state {
     padding: 2rem 1rem;
     color: var(--ink-muted);
@@ -768,7 +751,7 @@
     <nav class="tabs" role="tablist" aria-label="Onderdelen">
       <button role="tab" id="tab-editions" aria-selected="true" aria-controls="panel-editions">
         <span class="tab-label">Edities</span>
-        <span class="tab-hint" aria-hidden="true">Rangschikking per editie, 2021&ndash;2025</span>
+        <span class="tab-hint" aria-hidden="true" id="editions-tab-hint">Rangschikking per editie</span>
       </button>
       <button role="tab" id="tab-insights" aria-selected="false" aria-controls="panel-insights">
         <span class="tab-label">Inzichten</span>
@@ -868,8 +851,8 @@
     panelInsights.classList.toggle('active', !editionsActive);
     if (editionsActive) stopBubblePlay();
   }
-  tabEditions.addEventListener('click', () => selectTab('editions'));
-  tabInsights.addEventListener('click', () => selectTab('insights'));
+  tabEditions.addEventListener('click', () => { selectTab('editions'); pushURL(); });
+  tabInsights.addEventListener('click', () => { selectTab('insights'); pushURL(); });
 
   const yearBar = document.getElementById('year-bar');
   const editionStatsEl = document.getElementById('edition-stats');
@@ -938,11 +921,13 @@
       resetOtherFilters('age');
       filterAge = filterAgeEl.value;
       renderTable();
+      pushURL();
     });
     filterPublisherEl.addEventListener('change', () => {
       resetOtherFilters('publisher');
       filterPublisher = filterPublisherEl.value;
       renderTable();
+      pushURL();
     });
     filterNewcomerBtn.addEventListener('click', () => {
       const next = !filterNewcomer;
@@ -950,6 +935,7 @@
       filterNewcomer = next;
       filterNewcomerBtn.setAttribute('aria-pressed', String(filterNewcomer));
       renderTable();
+      pushURL();
     });
     filterMainstayBtn.addEventListener('click', () => {
       const next = !filterMainstay;
@@ -957,11 +943,13 @@
       filterMainstay = next;
       filterMainstayBtn.setAttribute('aria-pressed', String(filterMainstay));
       renderTable();
+      pushURL();
     });
     filterResetBtn.addEventListener('click', () => {
       filterInput.value = '';
       resetOtherFilters(null);
       renderTable();
+      pushURL();
     });
   }
 
@@ -978,6 +966,7 @@
         renderYearBar();
         renderEditionStats();
         renderTable();
+        pushURL();
       });
       yearBar.appendChild(btn);
     });
@@ -1110,7 +1099,6 @@
       titleEl.className = 'book-title';
       titleEl.textContent = b.title;
       tdTitle.appendChild(titleEl);
-      if (!b.goodreads_id) tdTitle.insertAdjacentHTML('beforeend', noIdChipHtml());
 
       const tdAuthor = document.createElement('td');
       tdAuthor.className = 'author-cell';
@@ -1132,7 +1120,19 @@
     });
   }
 
-  filterInput.addEventListener('input', renderTable);
+  // The first keystroke of a typing burst pushes one new entry (so back()
+  // returns to whatever the search box held before this burst, not to some
+  // half-typed version of the same search); every keystroke after that just
+  // replaces that same entry, so a whole burst of typing costs one history
+  // step, not one per letter. A pause of 600ms ends the burst, so resuming
+  // later starts a fresh one with its own step.
+  let searchBurstTimer = null;
+  filterInput.addEventListener('input', () => {
+    renderTable();
+    if (searchBurstTimer === null) pushURL(); else replaceURL();
+    clearTimeout(searchBurstTimer);
+    searchBurstTimer = setTimeout(() => { searchBurstTimer = null; }, 600);
+  });
 
   // ---- book modal ----
 
@@ -1147,13 +1147,10 @@
 
   let lastFocused = null;
   let modalIndex = -1; // position of the open book within currentRows, for ←/→ nav
+  let modalOpenKey = null; // work_key of the open book, for the ?book= permalink param
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  }
-
-  function noIdChipHtml() {
-    return `<span class="no-id-chip">geen Goodreads-ID</span>`;
   }
 
   // Small inline hint next to the rank, not a badge — sits on the same line
@@ -1273,7 +1270,7 @@
 
     const goodreadsLink = b.goodreads_id
       ? `<a class="gr-link" href="https://www.goodreads.com/book/show/${b.goodreads_id}" target="_blank" rel="noopener">Goodreads &#8599;</a>`
-      : noIdChipHtml();
+      : '';
     const jaapleestLink = b.jaapleest
       ? `<a class="gr-link" href="${b.jaapleest}" target="_blank" rel="noopener">jaapleest.nl &#8599;</a>`
       : '';
@@ -1281,12 +1278,16 @@
 
     renderHistoryChart(b);
 
-    // Only capture the triggering element on a fresh open — stepModal() calls
-    // openModal() again while already open, and by then activeElement is just
-    // the close button, not whatever row started the whole thing.
-    if (modalBackdrop.classList.contains('hidden')) lastFocused = document.activeElement;
+    // A fresh open (triggered by a row click, or a ?book= deep link) gets its
+    // own back/forward entry; stepModal() calling openModal() again while
+    // already open just replaces it in place — arrow-keying through ten
+    // books shouldn't take ten presses of the back button to undo.
+    const isFreshOpen = modalBackdrop.classList.contains('hidden');
+    if (isFreshOpen) lastFocused = document.activeElement;
     modalBackdrop.classList.remove('hidden');
     document.getElementById('modal-close').focus();
+    modalOpenKey = workKey;
+    if (isFreshOpen) pushURL(); else replaceURL();
   }
 
   function stepModal(delta) {
@@ -1296,9 +1297,14 @@
     openModal(currentRows[next].book.work_key);
   }
 
+  // Replace, not push: closing just overwrites the entry opening it created,
+  // so back from a closed modal lands wherever the user was before it ever
+  // opened, not on a dead "modal, but closed" step in between.
   function closeModal() {
     modalBackdrop.classList.add('hidden');
     if (lastFocused && lastFocused.focus) lastFocused.focus();
+    modalOpenKey = null;
+    replaceURL();
   }
 
   document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -1476,6 +1482,7 @@
         bubbleYear = y;
         renderBubbleYearBar();
         rebuildBubbles();
+        pushURL();
       });
       bubbleYearBar.appendChild(btn);
     });
@@ -1513,7 +1520,7 @@
       const btn = document.createElement('button');
       btn.className = 'bubble-toggle-btn' + (key === currentBubbleLens ? ' active' : '');
       btn.textContent = lens.label;
-      btn.addEventListener('click', () => { currentBubbleLens = key; renderBubbleLayout(); });
+      btn.addEventListener('click', () => { currentBubbleLens = key; renderBubbleLayout(); pushURL(); });
       bubbleTogglesEl.appendChild(btn);
     });
   }
@@ -1928,21 +1935,132 @@
 
   }
 
+  // ---- permalinks (URL query params) ----
+  //
+  // Every piece of view state that isn't the absolute default gets written
+  // into the query string, so the current URL at any moment is a shareable
+  // permalink back to that exact view. Discrete actions (picking a year,
+  // changing a filter, switching tabs, opening a book fresh) push a new
+  // back/forward entry; continuous or "already there" ones (typing in the
+  // search box, arrow-stepping between books, the bubble-chart autoplay
+  // timer) replace in place instead, so the history stack tracks choices
+  // the user actually made, not every intermediate render. A single
+  // popstate listener re-derives state from whatever URL a back/forward
+  // step lands on and rebuilds the view from it — the same renderAll() the
+  // initial load uses — so the page and the URL can't drift apart.
+
+  let suppressHistorySync = false;
+
+  function currentStateParams() {
+    const p = new URLSearchParams();
+    const editionsActive = panelEditions.classList.contains('active');
+    if (!editionsActive) p.set('tab', 'insights');
+
+    if (currentYear !== YEARS[YEARS.length - 1]) p.set('year', String(currentYear));
+    if (filterInput.value.trim()) p.set('q', filterInput.value.trim());
+    if (filterAge) p.set('age', filterAge);
+    if (filterPublisher) p.set('publisher', filterPublisher);
+    if (filterNewcomer) p.set('filter', 'newcomer');
+    if (filterMainstay) p.set('filter', 'mainstay');
+
+    if (bubbleYear !== YEARS[YEARS.length - 1]) p.set('byear', String(bubbleYear));
+    if (currentBubbleLens !== 'publisher') p.set('lens', currentBubbleLens);
+
+    if (!modalBackdrop.classList.contains('hidden') && modalOpenKey) p.set('book', modalOpenKey);
+    return p;
+  }
+
+  function pushURL() {
+    if (suppressHistorySync) return;
+    const qs = currentStateParams().toString();
+    history.pushState(null, '', qs ? `?${qs}` : location.pathname);
+  }
+
+  function replaceURL() {
+    if (suppressHistorySync) return;
+    const qs = currentStateParams().toString();
+    history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  }
+
+  // Reads state out of the query string into the same variables the click
+  // handlers set. Always assigns every field (falling back to its default
+  // when the param is absent) rather than only overriding what's present,
+  // so this is safe to call repeatedly — once at load, and again on every
+  // popstate — without state left over from whatever the page showed before.
+  function applyURLState() {
+    const p = new URLSearchParams(location.search);
+
+    const year = Number(p.get('year'));
+    currentYear = YEARS.includes(year) ? year : YEARS[YEARS.length - 1];
+
+    filterInput.value = p.get('q') || '';
+    filterAge = p.get('age') || '';
+    filterPublisher = p.get('publisher') || '';
+    const filter = p.get('filter');
+    filterNewcomer = filter === 'newcomer';
+    filterMainstay = filter === 'mainstay';
+
+    const byear = Number(p.get('byear'));
+    bubbleYear = YEARS.includes(byear) ? byear : currentYear;
+    const lens = p.get('lens');
+    currentBubbleLens = (lens && BUBBLE_LENSES[lens]) ? lens : 'publisher';
+
+    return { tab: p.get('tab') === 'insights' ? 'insights' : 'editions', book: p.get('book') };
+  }
+
+  // Rebuilds every DOM bit that depends on the state applyURLState() (or a
+  // click handler) just set — the one function called both at first load
+  // and from the popstate handler, so "what the page shows" always matches
+  // "what the state variables say" regardless of how it got there.
+  function renderAll(urlState) {
+    if (filterAge && !Array.from(filterAgeEl.options).some(o => o.value === filterAge)) filterAge = '';
+    if (filterPublisher && !Array.from(filterPublisherEl.options).some(o => o.value === filterPublisher)) filterPublisher = '';
+    filterAgeEl.value = filterAge;
+    filterPublisherEl.value = filterPublisher;
+    filterNewcomerBtn.setAttribute('aria-pressed', String(filterNewcomer));
+    filterMainstayBtn.setAttribute('aria-pressed', String(filterMainstay));
+
+    selectTab(urlState.tab);
+    renderYearBar();
+    renderEditionStats();
+    renderTable();
+    renderBubbleYearBar();
+    rebuildBubbles();
+
+    if (urlState.book && booksByKey[urlState.book]) openModal(urlState.book);
+    else if (!modalBackdrop.classList.contains('hidden')) closeModal();
+  }
+
+  // suppressHistorySync guards every programmatic renderAll() pass — this is
+  // state already agreed with the URL (just parsed from it, on load or on
+  // popstate), so none of the render functions it calls should turn around
+  // and push or replace a history entry of their own.
+  window.addEventListener('popstate', () => {
+    if (!YEARS.length) return; // data hasn't loaded yet, nothing to restore
+    const urlState = applyURLState();
+    suppressHistorySync = true;
+    renderAll(urlState);
+    suppressHistorySync = false;
+  });
+
   fetch('gv100_books.json').then(r => r.json()).then(booksJson => {
     books = booksJson.map(b => ({ ...b, ageNum: parseAgeNum(b.age_rating) }));
     booksByKey = Object.fromEntries(books.map(b => [b.work_key, b]));
     YEARS = [...new Set(books.flatMap(b => b.editions.map(e => e.year)))].sort((a, b) => a - b);
-    currentYear = 2025;
+    currentYear = YEARS[YEARS.length - 1];
+    bubbleYear = currentYear;
+    const urlState = applyURLState();
+
     document.getElementById('header-stat').innerHTML =
       `<strong>${YEARS[0]}&ndash;${YEARS[YEARS.length - 1]}</strong>${books.length} boeken`;
+    document.getElementById('editions-tab-hint').textContent =
+      `Rangschikking per editie, ${YEARS[0]}–${YEARS[YEARS.length - 1]}`;
     populateFilters();
-    renderYearBar();
-    renderEditionStats();
-    renderTable();
-    bubbleYear = currentYear;
-    renderBubbleYearBar();
-    rebuildBubbles();
-    renderInsights();
+    renderInsights(); // static, doesn't depend on state — only needs to run once
+
+    suppressHistorySync = true;
+    renderAll(urlState);
+    suppressHistorySync = false;
   }).catch(err => {
     rowsBody.innerHTML = `<tr><td colspan="4" class="empty-state">Kan editiegegevens niet laden: ${err.message}</td></tr>`;
   });
