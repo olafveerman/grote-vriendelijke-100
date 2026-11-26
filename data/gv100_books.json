@@ -11,6 +11,11 @@
         "year": 2025,
         "rank": 29,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 29,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/19-91-rijpert.jpg",
@@ -19,6 +24,29 @@
     "publisher": "Pelckmans",
     "illustrator": null,
     "publication_year": 2025,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "abel en olle | schotveld",
+    "title": "Abel en Olle",
+    "authors": [
+      "Janneke Schotveld"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 92,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/abel-en-olle-schotveld.jpg",
+    "jaapleest": "https://jaapleest.nl/abel-en-olle-van-janneke-schotveld/",
+    "age_rating": "8+",
+    "publisher": "Querido",
+    "illustrator": "Martijn van der Linden",
+    "publication_year": 2026,
     "original_language": null,
     "translator": null
   },
@@ -54,6 +82,11 @@
         "year": 2025,
         "rank": 58,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 58,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/achtste-groepers-huilen-niet-vriens.jpg",
@@ -97,6 +130,11 @@
         "year": 2025,
         "rank": 60,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 49,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/alaska-woltz.jpg",
@@ -120,6 +158,11 @@
         "year": 2025,
         "rank": 24,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 11,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/albatros-goldewijk.jpg",
@@ -163,6 +206,11 @@
         "year": 2025,
         "rank": 55,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 68,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/alfabet-dematons.jpg",
@@ -267,6 +315,11 @@
         "year": 2025,
         "rank": 50,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 44,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/alleen-op-de-wereld-malot.jpg",
@@ -310,6 +363,11 @@
         "year": 2025,
         "rank": 93,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 97,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/allemaal-willen-we-de-hemel-beerten.jpg",
@@ -350,6 +408,29 @@
     "translator": "Aimée Warmerdam en Merel Leene"
   },
   {
+    "work_key": "aouda en passepartout | kluyver",
+    "title": "Aouda en Passepartout",
+    "authors": [
+      "Adwin de Kluyver"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 55,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/aouda-en-passepartout-kluyver.jpg",
+    "jaapleest": "https://jaapleest.nl/aouda-passepartout-reis-naar-de-vrijheid-in-tachtig-dagen-van-adwin-de-kluyver/",
+    "age_rating": "12+",
+    "publisher": "Lemniscaat",
+    "illustrator": null,
+    "publication_year": 2026,
+    "original_language": null,
+    "translator": null
+  },
+  {
     "work_key": "avonturen van de dappere ridster | schotveld",
     "title": "Avonturen van de dappere ridster",
     "authors": [
@@ -383,6 +464,29 @@
     "translator": null
   },
   {
+    "work_key": "ben je vergeten dat babygeitjes bestaan | lammers",
+    "title": "Ben je vergeten dat babygeitjes bestaan",
+    "authors": [
+      "Pim Lammers"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 84,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/ben-je-vergeten-dat-babygeitjes-bestaan-lammers.jpg",
+    "jaapleest": "https://jaapleest.nl/ben-je-vergeten-dat-babygeitjes-bestaan-van-pim-lammers/",
+    "age_rating": "8+",
+    "publisher": "Querido",
+    "illustrator": "Nadia Meezen",
+    "publication_year": 2025,
+    "original_language": null,
+    "translator": null
+  },
+  {
     "work_key": "blauwe plekken | vries",
     "title": "Blauwe plekken",
     "authors": [
@@ -409,6 +513,11 @@
         "year": 2025,
         "rank": 66,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 79,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/blauwe-plekken-vries.jpg",
@@ -480,6 +589,11 @@
         "year": 2025,
         "rank": 6,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 7,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/briefjes-voor-pelle-slegers.jpg",
@@ -569,6 +683,11 @@
         "year": 2025,
         "rank": 67,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 42,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-allergrootste-morosinotto.jpg",
@@ -635,6 +754,11 @@
         "year": 2025,
         "rank": 7,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 9,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-brief-voor-de-koning-dragt.jpg",
@@ -643,6 +767,29 @@
     "publisher": "Leopold",
     "illustrator": null,
     "publication_year": 1962,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "de eerste alix | woltz",
+    "title": "De eerste Alix",
+    "authors": [
+      "Anna Woltz"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 19,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/de-eerste-alix-woltz.jpg",
+    "jaapleest": "https://jaapleest.nl/de-eerste-alix-van-anna-woltz/",
+    "age_rating": "10+",
+    "publisher": "Querido",
+    "illustrator": null,
+    "publication_year": 2026,
     "original_language": null,
     "translator": null
   },
@@ -678,6 +825,11 @@
         "year": 2025,
         "rank": 20,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 26,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-gebroeders-leeuwenhart-lindgren.jpg",
@@ -721,6 +873,11 @@
         "year": 2025,
         "rank": 59,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 70,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-geheime-tuin-burnett.jpg",
@@ -744,6 +901,11 @@
         "year": 2025,
         "rank": 34,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 12,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-glazenwasser-van-het-rijksmuseum-sy.jpg",
@@ -787,6 +949,11 @@
         "year": 2025,
         "rank": 49,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 53,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-gorgels-myjer.jpg",
@@ -843,6 +1010,11 @@
         "year": 2025,
         "rank": 39,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 40,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-grote-boze-heks-kraan.jpg",
@@ -886,6 +1058,11 @@
         "year": 2025,
         "rank": 62,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 62,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-gruffalo-donaldson.jpg",
@@ -895,7 +1072,7 @@
     "illustrator": "Axel Scheffler",
     "publication_year": 1999,
     "original_language": null,
-    "translator": null
+    "translator": "L.M. Niskos"
   },
   {
     "work_key": "de gvr | dahl",
@@ -929,6 +1106,11 @@
         "year": 2025,
         "rank": 23,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 36,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-gvr-dahl.jpg",
@@ -975,7 +1157,7 @@
   },
   {
     "work_key": "de heksenkind trilogie | furlong",
-    "title": "De Heksenkind trilogie",
+    "title": "De heksenkind trilogie",
     "authors": [
       "Monica Furlong"
     ],
@@ -985,6 +1167,11 @@
         "year": 2025,
         "rank": 22,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 30,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-heksenkind-trilogie-furlong.jpg",
@@ -994,7 +1181,7 @@
     "illustrator": null,
     "publication_year": 1987,
     "original_language": null,
-    "translator": null
+    "translator": "Anneke Koning-Corveleijn"
   },
   {
     "work_key": "de jongen de mol de vos en het paard | mackesy",
@@ -1051,6 +1238,11 @@
         "year": 2025,
         "rank": 15,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 23,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-jongen-die-van-de-wereld-hield-veldkamp.jpg",
@@ -1059,6 +1251,29 @@
     "publisher": "Querido",
     "illustrator": "Mark Janssen",
     "publication_year": 2023,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "de kansen van joris pannemans | vlietstra",
+    "title": "De kansen van Joris Pannemans",
+    "authors": [
+      "David Vlietstra"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 87,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/de-kansen-van-joris-pannemans-vlietstra.jpg",
+    "jaapleest": "https://jaapleest.nl/de-kansen-van-joris-pannemans-van-david-vlietstra/",
+    "age_rating": "10+",
+    "publisher": "Gottmer",
+    "illustrator": "Yoko Heiligers",
+    "publication_year": 2026,
     "original_language": null,
     "translator": null
   },
@@ -1160,6 +1375,11 @@
         "year": 2025,
         "rank": 31,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 50,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-kleine-kapitein-biegel.jpg",
@@ -1183,6 +1403,11 @@
         "year": 2025,
         "rank": 65,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 54,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-kronieken-van-narnia-lewis.jpg",
@@ -1211,6 +1436,11 @@
         "year": 2025,
         "rank": 21,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 32,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-lijst-van-violet-sopjes-vlietstra.jpg",
@@ -1246,6 +1476,29 @@
     "translator": null
   },
   {
+    "work_key": "de middernachtloper | stoffels",
+    "title": "De middernachtloper",
+    "authors": [
+      "Maren Stoffels"
+    ],
+    "goodreads_id": "243644039",
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 59,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/de-middernachtloper-stoffels.jpg",
+    "jaapleest": "https://jaapleest.nl/de-middernachtloper-van-maren-stoffels/",
+    "age_rating": "12+",
+    "publisher": "Leopold",
+    "illustrator": null,
+    "publication_year": 2025,
+    "original_language": null,
+    "translator": null
+  },
+  {
     "work_key": "de neehoorn | kling",
     "title": "De NEEhoorn",
     "authors": [
@@ -1270,7 +1523,7 @@
   },
   {
     "work_key": "de raadselbreker | koops",
-    "title": "De Raadselbreker",
+    "title": "Oerbloed: De Raadselbreker",
     "authors": [
       "Rob Koops"
     ],
@@ -1280,6 +1533,11 @@
         "year": 2025,
         "rank": 48,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 85,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-raadselbreker-koops.jpg",
@@ -1313,6 +1571,11 @@
         "year": 2025,
         "rank": 72,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 100,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-reis-van-manie-schaafijs-zevenbergen.jpg",
@@ -1326,7 +1589,7 @@
   },
   {
     "work_key": "de ruines van gorlan | flanagan",
-    "title": "De ruïnes van Gorlan",
+    "title": "De Grijze Jager: De ruïnes van Gorlan",
     "authors": [
       "John Flanagan"
     ],
@@ -1336,6 +1599,11 @@
         "year": 2025,
         "rank": 97,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 67,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-ruines-van-gorlan-flanagan.jpg",
@@ -1345,7 +1613,7 @@
     "illustrator": null,
     "publication_year": 2004,
     "original_language": null,
-    "translator": null
+    "translator": "Laurent Corneille"
   },
   {
     "work_key": "de spin en de sleutel | woltz",
@@ -1410,6 +1678,11 @@
         "year": 2025,
         "rank": 40,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 69,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-toch-niet-zo-eenzame-tocht-van-torre-overduin.jpg",
@@ -1537,6 +1810,11 @@
         "year": 2025,
         "rank": 44,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 66,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-tunnel-woltz.jpg",
@@ -1588,7 +1866,7 @@
   },
   {
     "work_key": "de weg naar terug | stein",
-    "title": "De weg naar terug",
+    "title": "Pluk en Pluis: De weg naar terug",
     "authors": [
       "Mathilde Stein"
     ],
@@ -1608,6 +1886,11 @@
         "year": 2025,
         "rank": 56,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 63,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-weg-naar-terug-stein.jpg",
@@ -1631,6 +1914,11 @@
         "year": 2025,
         "rank": 18,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 27,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-wonderverteller-dijkstra.jpg",
@@ -1644,7 +1932,7 @@
   },
   {
     "work_key": "de zevensprong | dragt",
-    "title": "De Zevensprong",
+    "title": "De zevensprong",
     "authors": [
       "Tonke Dragt"
     ],
@@ -1674,6 +1962,11 @@
         "year": 2025,
         "rank": 64,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 83,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-zevensprong-dragt.jpg",
@@ -1702,6 +1995,11 @@
         "year": 2025,
         "rank": 14,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 25,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/de-zomer-die-alles-was-overman.jpg",
@@ -1878,6 +2176,11 @@
         "year": 2025,
         "rank": 43,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 76,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/duizend-stukjes-overal-overman.jpg",
@@ -1999,6 +2302,11 @@
         "year": 2025,
         "rank": 12,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 13,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/een-rugzak-vol-koolwijk.jpg",
@@ -2126,6 +2434,11 @@
         "year": 2025,
         "rank": 1,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 1,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/films-die-nergens-draaien-goldewijk.jpg",
@@ -2370,6 +2683,11 @@
         "year": 2025,
         "rank": 5,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 6,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/gozert-koolwijk.jpg",
@@ -2484,6 +2802,11 @@
         "year": 2025,
         "rank": 13,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 14,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/harry-potter-en-de-steen-der-wijzen-rowling.jpg",
@@ -2568,6 +2891,11 @@
         "year": 2025,
         "rank": 63,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 96,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/hart-van-staal-geest.jpg",
@@ -2611,6 +2939,11 @@
         "year": 2025,
         "rank": 41,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 52,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/hasse-simonsdochter-beckman.jpg",
@@ -2804,6 +3137,11 @@
         "year": 2025,
         "rank": 51,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 81,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/het-grote-boek-van-madelief-kuijer.jpg",
@@ -2883,6 +3221,11 @@
         "year": 2025,
         "rank": 100,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 74,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/het-laatste-jaar-goodfellow.jpg",
@@ -2906,6 +3249,11 @@
         "year": 2025,
         "rank": 45,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 35,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/het-meisje-dat-er-niet-mocht-zijn-geldof.jpg",
@@ -2942,7 +3290,7 @@
   },
   {
     "work_key": "het ministerie van oplossingen | rooseboom",
-    "title": "Het Ministerie van Oplossingen",
+    "title": "Het ministerie van oplossingen",
     "authors": [
       "Sanne Rooseboom"
     ],
@@ -2972,6 +3320,11 @@
         "year": 2025,
         "rank": 76,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 71,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/het-ministerie-van-oplossingen-rooseboom.jpg",
@@ -3015,6 +3368,11 @@
         "year": 2025,
         "rank": 68,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 91,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/het-oneindige-verhaal-ende.jpg",
@@ -3028,7 +3386,7 @@
   },
   {
     "work_key": "het pad van de roverkoning | rijpert",
-    "title": "Het pad van de Roverkoning",
+    "title": "De zeven sleutels: Het pad van de Roverkoning",
     "authors": [
       "Tom Rijpert"
     ],
@@ -3048,6 +3406,11 @@
         "year": 2025,
         "rank": 81,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 45,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/het-pad-van-de-roverkoning-rijpert.jpg",
@@ -3175,6 +3538,11 @@
         "year": 2025,
         "rank": 33,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 34,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/het-weeshuis-in-de-azuurblauwe-zee-klune.jpg",
@@ -3184,7 +3552,7 @@
     "illustrator": null,
     "publication_year": 2020,
     "original_language": "English",
-    "translator": "Anneke Bok en Claudia Poorter"
+    "translator": "Anneke Bok en Claudia de Poorter"
   },
   {
     "work_key": "hier is de boze heks | kraan",
@@ -3239,6 +3607,29 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2014,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "hotel zweefkees | kempen",
+    "title": "Hotel Zweefkees",
+    "authors": [
+      "Kelly van Kempen"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 18,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/hotel-zweefkees-kempen.jpg",
+    "jaapleest": "https://jaapleest.nl/hotel-zweefkees-van-kelly-van-kempen/",
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Marieke Nelissen",
+    "publication_year": 2026,
     "original_language": null,
     "translator": null
   },
@@ -3338,6 +3729,11 @@
         "year": 2025,
         "rank": 96,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 86,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/ik-ben-vincent-en-ik-ben-niet-bang-koens.jpg",
@@ -3414,6 +3810,11 @@
         "year": 2025,
         "rank": 71,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 73,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/ik-geef-je-de-zon-nelson.jpg",
@@ -3583,6 +3984,11 @@
         "year": 2025,
         "rank": 47,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 60,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/jij-mag-alles-zijn-beeck.jpg",
@@ -3616,6 +4022,11 @@
         "year": 2025,
         "rank": 69,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 56,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/jip-en-janneke-schmidt.jpg",
@@ -3679,6 +4090,52 @@
     "translator": null
   },
   {
+    "work_key": "kiezel | jansen",
+    "title": "Kiezel",
+    "authors": [
+      "Bouwien Jansen"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 31,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/kiezel-jansen.jpg",
+    "jaapleest": "https://jaapleest.nl/kiezel-van-bouwien-jansen/",
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff",
+    "illustrator": null,
+    "publication_year": 2026,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "kiki en ik | timmers",
+    "title": "Kiki & ik",
+    "authors": [
+      "Leo Timmers"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 90,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/kiki-en-ik-timmers.jpg",
+    "jaapleest": "https://jaapleest.nl/kiki-ik-van-leo-timmers/",
+    "age_rating": "4+",
+    "publisher": "Querido",
+    "illustrator": null,
+    "publication_year": 2025,
+    "original_language": null,
+    "translator": null
+  },
+  {
     "work_key": "kinderen van moeder aarde | beckman",
     "title": "Kinderen van Moeder Aarde",
     "authors": [
@@ -3710,6 +4167,11 @@
         "year": 2025,
         "rank": 16,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 8,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/kinderen-van-moeder-aarde-beckman.jpg",
@@ -3776,6 +4238,11 @@
         "year": 2025,
         "rank": 10,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 17,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/koning-van-katoren-terlouw.jpg",
@@ -3827,6 +4294,11 @@
         "year": 2025,
         "rank": 2,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 5,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/krekel-schaap.jpg",
@@ -3893,6 +4365,11 @@
         "year": 2025,
         "rank": 11,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 16,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/kruistocht-in-spijkerbroek-beckman.jpg",
@@ -3936,6 +4413,11 @@
         "year": 2025,
         "rank": 3,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 3,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/lampje-schaap.jpg",
@@ -4047,6 +4529,52 @@
     "translator": "Annie Winkler-Vonk"
   },
   {
+    "work_key": "limbusland | koolwijk",
+    "title": "Limbusland",
+    "authors": [
+      "Pieter Koolwijk"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 21,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/limbusland-koolwijk.jpg",
+    "jaapleest": "https://jaapleest.nl/limbusland-van-pieter-koolwijk/",
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Linde Faas",
+    "publication_year": 2026,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "lucy en donker | rogaar",
+    "title": "Lucy en Donker",
+    "authors": [
+      "Karst-Janneke Rogaar"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 99,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/lucy-en-donker-rogaar.jpg",
+    "jaapleest": "https://jaapleest.nl/lucy-en-donker-van-karst-janneke-rogaar/",
+    "age_rating": "4+",
+    "publisher": "Querido",
+    "illustrator": null,
+    "publication_year": 2025,
+    "original_language": null,
+    "translator": null
+  },
+  {
     "work_key": "luna | koolwijk",
     "title": "Luna",
     "authors": [
@@ -4078,6 +4606,11 @@
         "year": 2025,
         "rank": 26,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 33,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/luna-koolwijk.jpg",
@@ -4086,6 +4619,29 @@
     "publisher": "Lemniscaat",
     "illustrator": "Linde Faas",
     "publication_year": 2021,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "maantje verhuist de zee | kuyper",
+    "title": "Maantje verhuist de zee",
+    "authors": [
+      "Sjoerd Kuyper"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 89,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/maantje-verhuist-de-zee-kuyper.jpg",
+    "jaapleest": "https://jaapleest.nl/maantje-verhuist-de-zee-van-sjoerd-kuyper/",
+    "age_rating": "8+",
+    "publisher": "Hoogland & van Klaveren",
+    "illustrator": "Sanne te Loo",
+    "publication_year": 2025,
     "original_language": null,
     "translator": null
   },
@@ -4121,6 +4677,11 @@
         "year": 2025,
         "rank": 17,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 20,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/matilda-dahl.jpg",
@@ -4199,6 +4760,29 @@
     "translator": "W.I.C. Royer-Bicker"
   },
   {
+    "work_key": "meester van de zwarte molen | preussler",
+    "title": "Meester van de zwarte molen",
+    "authors": [
+      "Otfried Preussler"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 61,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/meester-van-de-zwarte-molen-preussler.jpg",
+    "jaapleest": null,
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
+    "illustrator": null,
+    "publication_year": 1971,
+    "original_language": "German",
+    "translator": "W.I.C. Royer-Bicker"
+  },
+  {
     "work_key": "minoes | schmidt",
     "title": "Minoes",
     "authors": [
@@ -4269,6 +4853,11 @@
         "year": 2025,
         "rank": 32,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 51,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/misjka-vendel.jpg",
@@ -4472,6 +5061,11 @@
         "year": 2025,
         "rank": 4,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 4,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/mot-en-de-metaalvissers-rooseboom.jpg",
@@ -4538,6 +5132,11 @@
         "year": 2025,
         "rank": 37,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 38,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/mus-kapitein-kwaadbaard-en-de-5-slangen-hassing.jpg",
@@ -4653,6 +5252,11 @@
         "year": 2025,
         "rank": 9,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 2,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/nog-27-dagen-leven-stoffels.jpg",
@@ -4681,6 +5285,11 @@
         "year": 2025,
         "rank": 35,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 65,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/oever-volbeda.jpg",
@@ -4691,6 +5300,29 @@
     "publication_year": 2024,
     "original_language": null,
     "translator": null
+  },
+  {
+    "work_key": "oktober oktober | balen",
+    "title": "Oktober, Oktober",
+    "authors": [
+      "Katya Balen"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 22,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/oktober-oktober-balen.jpg",
+    "jaapleest": "https://jaapleest.nl/oktober-oktober-van-katya-balen/",
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff",
+    "illustrator": "Angela Harding",
+    "publication_year": 2026,
+    "original_language": "English",
+    "translator": "Aleid van Eekelen-Benders"
   },
   {
     "work_key": "oorlogswinter | terlouw",
@@ -4724,6 +5356,11 @@
         "year": 2025,
         "rank": 42,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 47,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/oorlogswinter-terlouw.jpg",
@@ -4757,6 +5394,11 @@
         "year": 2025,
         "rank": 86,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 75,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/otje-schmidt.jpg",
@@ -4800,6 +5442,11 @@
         "year": 2025,
         "rank": 85,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 72,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-holzwarth.jpg",
@@ -4845,6 +5492,29 @@
     "translator": null
   },
   {
+    "work_key": "peer | kroonenberg",
+    "title": "Peer",
+    "authors": [
+      "Mohana van den Kroonenberg"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 93,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/peer-kroonenberg.jpg",
+    "jaapleest": "https://jaapleest.nl/peer-van-mohana-van-den-kroonenberg-en-karst-janneke-rogaar/",
+    "age_rating": "5+",
+    "publisher": "Querido",
+    "illustrator": "Karst-Janneke Rogaar",
+    "publication_year": 2025,
+    "original_language": null,
+    "translator": null
+  },
+  {
     "work_key": "pippi langkous | lindgren",
     "title": "Pippi Langkous",
     "authors": [
@@ -4876,6 +5546,11 @@
         "year": 2025,
         "rank": 95,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 94,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/pippi-langkous-lindgren.jpg",
@@ -4919,6 +5594,11 @@
         "year": 2025,
         "rank": 8,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 10,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/pluk-van-de-petteflet-schmidt.jpg",
@@ -4950,6 +5630,29 @@
     "publisher": "Querido",
     "illustrator": "Alice Hoogstad",
     "publication_year": 2003,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "properzia | rijckeghem",
+    "title": "Properzia",
+    "authors": [
+      "Jean-Claude van Rijckeghem"
+    ],
+    "goodreads_id": "242260298",
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 88,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/properzia-rijckeghem.jpg",
+    "jaapleest": "https://jaapleest.nl/properzia-van-jean-claude-van-rijckeghem/",
+    "age_rating": "15+",
+    "publisher": "Querido",
+    "illustrator": null,
+    "publication_year": 2025,
     "original_language": null,
     "translator": null
   },
@@ -5040,7 +5743,7 @@
   },
   {
     "work_key": "robin alle verhalen | kuyper",
-    "title": "Robin: alle verhalen",
+    "title": "Robin alle verhalen",
     "authors": [
       "Sjoerd Kuyper"
     ],
@@ -5055,6 +5758,11 @@
         "year": 2023,
         "rank": 70,
         "source": "https://www.goodreads.com/list/show/223552.De_Grote_Vriendelijke_100_2023"
+      },
+      {
+        "year": 2026,
+        "rank": 64,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/robin-alle-verhalen-kuyper.jpg",
@@ -5098,6 +5806,11 @@
         "year": 2025,
         "rank": 25,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 28,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/ronja-de-roversdochter-lindgren.jpg",
@@ -5126,6 +5839,11 @@
         "year": 2025,
         "rank": 80,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 82,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/roversjong-aerts.jpg",
@@ -5134,6 +5852,29 @@
     "publisher": "Querido",
     "illustrator": "Martijn van der Linden",
     "publication_year": 2024,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "ruby crusoe | hassing",
+    "title": "Ruby Crusoe: Het vertrek",
+    "authors": [
+      "Kevin Hassing"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 41,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/ruby-crusoe-hassing.jpg",
+    "jaapleest": "https://jaapleest.nl/ruby-crusoe-het-vertrek-van-kevin-hassing/",
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff",
+    "illustrator": null,
+    "publication_year": 2026,
     "original_language": null,
     "translator": null
   },
@@ -5172,6 +5913,11 @@
         "year": 2025,
         "rank": 30,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 15,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/schildpadmeisje-slegers.jpg",
@@ -5238,6 +5984,11 @@
         "year": 2025,
         "rank": 53,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 48,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/sjakie-en-de-chocoladefabriek-dahl.jpg",
@@ -5247,7 +5998,7 @@
     "illustrator": "Quentin Blake",
     "publication_year": 1964,
     "original_language": "English",
-    "translator": "Harriët Freezer"
+    "translator": "Harriët Freezer en Huberte Vriesendorp"
   },
   {
     "work_key": "spijt | slee",
@@ -5455,6 +6206,11 @@
         "year": 2025,
         "rank": 46,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 57,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/umbrador-smithuis.jpg",
@@ -5488,6 +6244,11 @@
         "year": 2025,
         "rank": 27,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 37,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/vandaag-houd-ik-mijn-spreekbeurt-over-de-anaconda-tak.jpg",
@@ -5516,6 +6277,11 @@
         "year": 2025,
         "rank": 19,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 43,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/vandaag-komen-we-niet-meer-thuis-koens.jpg",
@@ -5526,6 +6292,29 @@
     "publication_year": 2024,
     "original_language": null,
     "translator": null
+  },
+  {
+    "work_key": "verbied dit boek | gratz",
+    "title": "Verbied dit boek",
+    "authors": [
+      "Alan Gratz"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 24,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/verbied-dit-boek-gratz.jpg",
+    "jaapleest": "https://jaapleest.nl/verbied-dit-boek-van-alan-gratz/",
+    "age_rating": "12+",
+    "publisher": "Kluitman",
+    "illustrator": null,
+    "publication_year": 2017,
+    "original_language": "English",
+    "translator": "Pim Lammers"
   },
   {
     "work_key": "wat je moet doen als je over een nijlpaard struikelt | vendel",
@@ -5582,6 +6371,11 @@
         "year": 2025,
         "rank": 77,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 80,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/wat-ons-nog-rest-sax.jpg",
@@ -5615,6 +6409,11 @@
         "year": 2025,
         "rank": 38,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 77,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/we-moeten-je-iets-vertellen-slegers.jpg",
@@ -5643,6 +6442,11 @@
         "year": 2025,
         "rank": 61,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 95,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/welkom-thuis-chrononauten-weber.jpg",
@@ -5651,6 +6455,29 @@
     "publisher": "Querido",
     "illustrator": null,
     "publication_year": 2024,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "wie stout is | koolwijk",
+    "title": "Wie stout is…",
+    "authors": [
+      "Pieter Koolwijk"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 46,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/wie-stout-is-koolwijk.jpg",
+    "jaapleest": null,
+    "age_rating": "10+",
+    "publisher": "Lemniscaat",
+    "illustrator": "Linde Faas",
+    "publication_year": 2025,
     "original_language": null,
     "translator": null
   },
@@ -5681,6 +6508,29 @@
     "publication_year": 1989,
     "original_language": "English",
     "translator": "unknown"
+  },
+  {
+    "work_key": "willem zoetelief koning van aloeka | veen",
+    "title": "Willem Zoetelief, koning van Aloeka",
+    "authors": [
+      "Ronnie van Veen"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 78,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/willem-zoetelief-koning-van-aloeka-veen.jpg",
+    "jaapleest": "https://jaapleest.nl/willem-zoetelief-koning-van-aloeka/",
+    "age_rating": "10+",
+    "publisher": "Luitingh-Sijthoff",
+    "illustrator": "Mark Janssen",
+    "publication_year": 2025,
+    "original_language": null,
+    "translator": null
   },
   {
     "work_key": "winnie de poeh de complete verzameling verhalen en gedichten | milne",
@@ -5857,6 +6707,11 @@
         "year": 2025,
         "rank": 28,
         "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+      },
+      {
+        "year": 2026,
+        "rank": 39,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
       }
     ],
     "cover": "covers/zolang-de-citroenbomen-bloeien-katouh.jpg",
@@ -5903,6 +6758,30 @@
     "publisher": "Leopold",
     "illustrator": "Martijn van der Linden",
     "publication_year": 2021,
+    "original_language": null,
+    "translator": null
+  },
+  {
+    "work_key": "zusje | schotveld",
+    "title": "Zusje",
+    "authors": [
+      "Janneke Schotveld",
+      "Rifka Mels"
+    ],
+    "goodreads_id": null,
+    "editions": [
+      {
+        "year": 2026,
+        "rank": 98,
+        "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
+      }
+    ],
+    "cover": "covers/zusje-schotveld.jpg",
+    "jaapleest": "https://jaapleest.nl/zusje-van-janneke-schotveld-en-rifka-mels/",
+    "age_rating": "15+",
+    "publisher": "Querido",
+    "illustrator": null,
+    "publication_year": 2025,
     "original_language": null,
     "translator": null
   }

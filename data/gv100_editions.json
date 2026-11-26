@@ -43,5 +43,14 @@
     "voting_closed": "",
     "announced": "2025-11-23",
     "source": "https://www.goodreads.com/list/show/237563.De_Grote_Vriendelijke_100_2025"
+  },
+  {
+    "year": 2026,
+    "entries": 100,
+    "complete": "yes",
+    "voters": "6163",
+    "voting_closed": "2026-11-01",
+    "announced": "2026-11-25",
+    "source": "https://degrotevriendelijkepodcast.nl/gv100-2026/"
   }
 ]
