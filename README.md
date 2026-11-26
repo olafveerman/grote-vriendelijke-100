@@ -42,10 +42,6 @@ pnpm run serve   # builds dist/ and serves it at http://localhost:5173
 
 Covers are plain committed files in `site/covers/`; each book's path to its own file lives in its `cover` field in `data/gv100_books.json`. There's no script that (re)produces any of this — add a new cover by dropping the file in `site/covers/` and setting `cover` on the matching book by hand. The modal also shows publisher, age rating, first-published year, original language, illustrator, and translator wherever those fields are set, plus a jaapleest.nl link next to the Goodreads one.
 
-## TODO
-
-- [ ] Check if all co-authors are correct
-
 ## License
 
 MIT for the code. See [LICENSE](LICENSE) — the data and cover images are handled differently than the code; that file explains how.

@@ -2247,10 +2247,9 @@
     "work_key": "een jaar bij kikker en pad | lobel",
     "title": "Een jaar bij Kikker en Pad",
     "authors": [
-      "A. Lobel",
-      "A.G. van Melle"
+      "Arnold Lobel"
     ],
-    "goodreads_id": "",
+    "goodreads_id": null,
     "editions": [
       {
         "year": 2022,
@@ -2262,10 +2261,10 @@
     "jaapleest": null,
     "age_rating": "3+",
     "publisher": "Ploegsma",
-    "illustrator": null,
-    "publication_year": 1995,
-    "original_language": null,
-    "translator": null
+    "illustrator": "Arnold Lobel",
+    "publication_year": 1976,
+    "original_language": "English",
+    "translator": "A.G. van Melle en W.J. van Melle-Meijer"
   },
   {
     "work_key": "een kleine geschiedenis van de mens door dierenogen | akveld",
