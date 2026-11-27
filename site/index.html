@@ -180,7 +180,7 @@
 
   .year-pill:last-child { border-right: none; }
 
-  .year-pill[aria-pressed="true"] {
+  .year-pill[aria-selected="true"] {
     color: var(--red-ink);
     background: var(--red);
   }
@@ -960,7 +960,7 @@
       btn.className = 'year-pill';
       btn.textContent = y;
       btn.setAttribute('role', 'tab');
-      btn.setAttribute('aria-pressed', String(y === currentYear));
+      btn.setAttribute('aria-selected', String(y === currentYear));
       btn.addEventListener('click', () => {
         currentYear = y;
         renderYearBar();
@@ -1021,7 +1021,7 @@
   // number (in the adjacent column) has somewhere to land on the shape.
   function sparklineMarkup(book) {
     const W = 64, H = 22, PAD = 2;
-    const xAt = i => PAD + (i / (YEARS.length - 1)) * (W - 2 * PAD);
+    const xAt = i => PAD + (i / Math.max(1, YEARS.length - 1)) * (W - 2 * PAD);
     const yAt = rank => PAD + ((rank - 1) / 99) * (H - 2 * PAD);
 
     const segments = [];
@@ -1176,7 +1176,7 @@
     const W = 300, H = 120, M = { top: 14, right: 10, bottom: 20, left: 24 };
     const plotW = W - M.left - M.right;
     const plotH = H - M.top - M.bottom;
-    const xAt = i => M.left + (i / (YEARS.length - 1)) * plotW;
+    const xAt = i => M.left + (i / Math.max(1, YEARS.length - 1)) * plotW;
     const yAt = rank => M.top + ((rank - 1) / 99) * plotH;
 
     const bestRank = Math.min(...book.editions.map(e => e.rank));
@@ -1265,14 +1265,14 @@
     modalMetaEl.innerHTML = metaRows.map(([k, v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd>`).join('');
 
     modalCoverEl.innerHTML = b.cover
-      ? `<img src="${b.cover}" alt="Cover van ${escapeHtml(b.title)}">`
+      ? `<img src="${escapeHtml(b.cover)}" alt="Cover van ${escapeHtml(b.title)}">`
       : `<div class="cover-placeholder"><span class="initial">${escapeHtml(b.title.charAt(0).toUpperCase())}</span><p>Nog geen cover</p></div>`;
 
     const goodreadsLink = b.goodreads_id
-      ? `<a class="gr-link" href="https://www.goodreads.com/book/show/${b.goodreads_id}" target="_blank" rel="noopener">Goodreads &#8599;</a>`
+      ? `<a class="gr-link" href="https://www.goodreads.com/book/show/${escapeHtml(b.goodreads_id)}" target="_blank" rel="noopener">Goodreads &#8599;</a>`
       : '';
     const jaapleestLink = b.jaapleest
-      ? `<a class="gr-link" href="${b.jaapleest}" target="_blank" rel="noopener">jaapleest.nl &#8599;</a>`
+      ? `<a class="gr-link" href="${escapeHtml(b.jaapleest)}" target="_blank" rel="noopener">jaapleest.nl &#8599;</a>`
       : '';
     modalLinksEl.innerHTML = goodreadsLink + jaapleestLink;
 
@@ -1476,7 +1476,7 @@
       btn.className = 'year-pill';
       btn.textContent = y;
       btn.setAttribute('role', 'tab');
-      btn.setAttribute('aria-pressed', String(y === bubbleYear));
+      btn.setAttribute('aria-selected', String(y === bubbleYear));
       btn.addEventListener('click', () => {
         stopBubblePlay();
         bubbleYear = y;
@@ -1828,7 +1828,7 @@
 
       const W = 760, H = 190, M = { top: 14, right: 36, bottom: 26, left: 26 };
       const plotW = W - M.left - M.right, plotH = H - M.top - M.bottom;
-      const xAt = i => M.left + (i / (buckets.length - 1)) * plotW;
+      const xAt = i => M.left + (i / Math.max(1, buckets.length - 1)) * plotW;
       const maxV = Math.max(...perYear.flatMap(p => Object.values(p.counts)), ...Object.values(avgCounts));
       const yAt = v => M.top + (1 - v / maxV) * plotH;
 

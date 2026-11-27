@@ -22,6 +22,9 @@ for (const b of books) {
   if (!Array.isArray(b.editions) || b.editions.length === 0) {
     errors.push(`book has no editions: ${b.work_key}`);
   }
+  if (b.translator && b.translator !== "unknown" && !b.original_language) {
+    errors.push(`book has a translator but no original_language: ${b.work_key}`);
+  }
 }
 
 const rowsByYear = {};

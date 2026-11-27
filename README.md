@@ -17,7 +17,7 @@ Structured data for **De Grote Vriendelijke 100**, the yearly reader-voted list 
 
 ### Sources and caveats
 
-- [jaapleest.nl](https://jaapleest.nl), run by one of the people behind De Grote Vriendelijke Podcast and the chart itself, is the closest thing this project has to a primary source — reviews there carry `age_rating`, `publisher`, `illustrator`, and `translator` where shown. It only reviews new releases as they come out, not the backlist, so it has reviewed 110 of 189 works and that won't change on its own with time — everything else is sourced from Dutch retailer/library sites (bol.com, kinderboeken.nl, bibliotheek.nl, the Koninklijke Bibliotheek catalog, publishers' own pages) or Goodreads. Watch for omnibus/trilogy reviews surfacing under a different title than the one being checked — a review of a bundled edition shouldn't be applied to a standalone entry it doesn't actually describe.
+- [jaapleest.nl](https://jaapleest.nl), run by one of the people behind De Grote Vriendelijke Podcast and the chart itself, is the closest thing this project has to a primary source — reviews there carry `age_rating`, `publisher`, `illustrator`, and `translator` where shown. It only reviews new releases as they come out, not the backlist, so it has reviewed 129 of 210 works and that won't change on its own with time — everything else is sourced from Dutch retailer/library sites (bol.com, kinderboeken.nl, bibliotheek.nl, the Koninklijke Bibliotheek catalog, publishers' own pages) or Goodreads. Watch for omnibus/trilogy reviews surfacing under a different title than the one being checked — a review of a bundled edition shouldn't be applied to a standalone entry it doesn't actually describe.
 
 ## Editing the data
 
